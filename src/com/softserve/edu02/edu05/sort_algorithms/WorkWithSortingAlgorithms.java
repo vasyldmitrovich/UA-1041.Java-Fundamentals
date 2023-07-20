@@ -1,4 +1,4 @@
-package com.softserve.edu05.sort_algorithms;
+package com.softserve.edu02.edu05.sort_algorithms;
 
 import java.util.Arrays;
 

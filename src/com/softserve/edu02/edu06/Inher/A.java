@@ -1,4 +1,4 @@
-package com.softserve.edu06.Inher;
+package com.softserve.edu02.edu06.Inher;
 
 //public class A extends Base {
 public class A { // extends Object {

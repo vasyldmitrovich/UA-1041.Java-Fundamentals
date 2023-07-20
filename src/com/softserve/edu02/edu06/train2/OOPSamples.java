@@ -1,4 +1,4 @@
-package com.softserve.edu06.train2;
+package com.softserve.edu02.edu06.train2;
 
 public class OOPSamples {
 	public static void main(String... args) {
