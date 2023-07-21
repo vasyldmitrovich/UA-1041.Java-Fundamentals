@@ -1,0 +1,3 @@
+2. Create console application. In main() method write code to solve the following tasks:
+1. Flower bed is shaped like a circle. Calculate its perimeter and area. Input the radius
+from the console, and output obtained results.
