@@ -1,0 +1,14 @@
+1. Write a program that reads three strings and outputs them in the reverse order, each on a new line.
+
+2. Write a program that takes three numbers from console as input to calculate and print output the average of the numbers
+
+3*. Create Console Application project in Java.
+    In main() method write code for solving next tasks:
+        1. Define integer variables a and b. Read values a and b from Console and calculate:
+            • a+b
+            • a-b
+            • a*b
+            • a/b.
+        Output obtained results.
+
+4*. Output question “How are you?“. Define string variable answer. Read the value answer and output: “You are (answer)".
