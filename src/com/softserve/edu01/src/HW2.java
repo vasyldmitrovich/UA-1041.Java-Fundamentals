@@ -1,3 +1,5 @@
+package com.softserve.edu01.src;
+
 import java.util.Scanner;
 
 public class HW2 {
