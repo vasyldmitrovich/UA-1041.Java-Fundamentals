@@ -1,4 +1,4 @@
-package com.softferve.edu.homeworks.hw1;
+package com.softserve.edu.homeworks.hw1;
 
 import java.util.Scanner;
 
