@@ -1,0 +1,8 @@
+1. Clone repository
+2. Add to file «Zapovit.txt» few lines and commit it to local repository.
+3. Push it to remote repository. Resolve conflict if needed.
+4. Make branch and checkout to it.
+5. Add few lines in the file.
+6. Push changes to remote repository.
+7. Merge the branch with master.
+8. Resolve conflicts, if needed.
