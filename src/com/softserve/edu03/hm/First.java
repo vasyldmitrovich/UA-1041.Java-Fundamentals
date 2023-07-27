@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class First{
     public static double getArea(double num1, double num2, double num3){
 
-        double area = num1 + num2 + num3;
+        double s = (num1 + num2 + num3)/2;
+        double area = Math.sqrt(s * (s - num1) * (s - num2) * (s - num3));
         return area;
     }
     public static void main(String[] args){
