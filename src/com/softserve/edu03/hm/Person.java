@@ -59,13 +59,13 @@ public class Person {
     }
     public int getAge(){
         int yearNow = Year.now().getValue();
-        int age = yearNow - birthYear;
+        int age = yearNow - getBirthYear();
         return age;
     }
     public String toString() {
         return "Person{" +
-                "name=" + firstName +
-                ", surname=" + lastName +
+                "name=" + getFirstName() +
+                ", surname=" + getLastName() +
                 ", age=" + getAge() +
                 '}';
     }
