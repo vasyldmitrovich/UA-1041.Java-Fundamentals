@@ -3,6 +3,7 @@ package com.softserve.edu03.hw;
 import java.util.Scanner;
 
 public class SmallestNum {
+    static  Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         int num1 =getNum("Input the first number: ");
         int num2 =getNum("Input the second number: ");
@@ -13,7 +14,7 @@ public class SmallestNum {
     static int getNum(String prompt){
 
         int num = 0 ;
-        Scanner sc = new Scanner(System.in);
+
 
         do {
             System.out.println(prompt);
