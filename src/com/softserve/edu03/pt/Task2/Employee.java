@@ -91,6 +91,7 @@ public class Employee {
         emp2.setSalary(emp2.getSalary(emp2.rate,emp2.hours));
         emp3.setSalary(emp3.getSalary(emp3.rate,emp3.hours));
 
-        System.out.println("Total salary of employees are:" + totalSum(emp1.getSalary(),emp2.getSalary(), emp3.getSalary()));
+        int sum = totalSum(emp1.getSalary(), emp2.getSalary(), emp3.getSalary());
+        System.out.println("Total salary of employees are:" + sum);
     }
 }
