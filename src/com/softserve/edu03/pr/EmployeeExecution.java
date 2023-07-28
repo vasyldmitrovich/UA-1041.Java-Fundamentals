@@ -11,6 +11,7 @@ public class EmployeeExecution {
         sc.nextLine();
         String firstEmployee  = employee1.toString();
         System.out.println(firstEmployee);
+
         System.out.println("enter name, rate and hours");
         Employee employee2 = new Employee(sc.nextLine(), sc.nextInt(), sc.nextInt() );
         sc.nextLine();
