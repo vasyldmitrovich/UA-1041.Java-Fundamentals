@@ -2,7 +2,7 @@ package com.softserve.edu01.hw;
 
 import java.util.Scanner;
 
-public class hw01 {
+public class Hw01 {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
         System.out.println("Enter radius flower bed , m ");

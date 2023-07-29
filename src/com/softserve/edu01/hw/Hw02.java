@@ -2,7 +2,7 @@ package com.softserve.edu01.hw;
 
 import java.util.Scanner;
 
-public class hw02 {
+public class Hw02 {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
         System.out.println("What is your name?");

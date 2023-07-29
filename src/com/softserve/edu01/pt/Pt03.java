@@ -2,7 +2,7 @@ package com.softserve.edu01.pt;
 
 import java.util.Scanner;
 
-public class pt03 {
+public class Pt03 {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
         System.out.print("Enter a = ");

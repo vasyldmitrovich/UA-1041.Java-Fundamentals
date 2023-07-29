@@ -2,7 +2,7 @@ package com.softserve.edu01.hw;
 
 import java.util.Scanner;
 
-public class hw03 {
+public class Hw03 {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
         System.out.println("Enter cost per minute ");
