@@ -15,10 +15,10 @@ public class NameOfContinent {
     }
 
     public static void promptContName(NameOfContinent name) {
-        System.out.print("Input the name of the country number: ");
+        System.out.print("Input the name of the country: ");
         String countryName = SCANNER.nextLine();
         name.setNameCont(countryName);
-        System.out.print("Name of continent is: ");
+        System.out.print("Name of the continent is: ");
         name.getContinentName(name);
     }
 
