@@ -74,7 +74,7 @@ public class Main {
     }
 
     public static void printLine() {
-        System.out.println("");
+        System.out.println(" ");
         int count = 40;
         for (int i = 0; i < count; i++) {
             System.out.print("-_-_");
