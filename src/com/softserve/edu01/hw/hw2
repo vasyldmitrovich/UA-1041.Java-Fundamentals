@@ -1,0 +1,12 @@
+package com.softserve.scjrbach.homework;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        var Scanner = new Scanner(System.in);
+        System.out.println("What is your name?");
+        var answer = Scanner.nextLine();
+        System.out.println("Where do you live Dmytro?");
+    }
+}
