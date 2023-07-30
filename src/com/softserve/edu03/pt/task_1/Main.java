@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-int a=getNumber("input first  number:");
-        int b=getNumber("input second  number:");
-        int total=getTotal(a,b);
-        double average=getAverage(a,b);
-        System.out.format("The sum of %d and %d is %d\n",a,b,total);
-        System.out.format("The average of %d and %d is %.1f",a,b,average);
+        int a = getNumber("input first  number:");
+        int b = getNumber("input second  number:");
+        int total = getTotal(a, b);
+        double average = getAverage(a, b);
+        System.out.format("The sum of %d and %d is %d\n", a, b, total);
+        System.out.format("The average of %d and %d is %.1f", a, b, average);
     }
 
     public static int getTotal(int a, int b) {
