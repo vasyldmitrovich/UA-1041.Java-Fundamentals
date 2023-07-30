@@ -20,9 +20,7 @@ public class Main {
                 case 1 -> performFirstTask();
                 case 2 -> performSecondTask();
                 case 3 -> performThirdTask();
-                case 4 -> performFourthTask();
-                case 5 -> performFivesTask();
-                case 0 -> System.out.println("Exiting............");
+                case 0 -> System.out.println("Exiting...");
                 default -> System.out.println("Invalid number of the task. Please select the correct one");
             }
             printLine();
@@ -39,8 +37,7 @@ public class Main {
         obj.isOdd(obj);
         obj.promptNumOfOdd(obj);
         printLine();
-        System.out.print("\nTask 1 completed!" +
-                "Press ENTER to go back to the menu");
+        System.out.print("\nTask 1 completed! " + "Press ENTER to go back to the menu");
         SCANNER.nextLine();
     }
 
@@ -51,8 +48,7 @@ public class Main {
         DayOfTheWeek.promptDayName(day);
         day.nameOfTheDay(day);
         printLine();
-        System.out.print("\nTask 2 completed!" +
-                "Press ENTER to go back to the menu");
+        System.out.print("\nTask 2 completed! " + "Press ENTER to go back to the menu");
         SCANNER.nextLine();
     }
 
@@ -61,16 +57,8 @@ public class Main {
         NameOfContinent name = new NameOfContinent();
         NameOfContinent.promptContName(name);
         printLine();
-        System.out.print("\nTask 3 completed!" +
-                "Press ENTER to go back to the menu");
+        System.out.print("\nTask 3 completed! " + "Press ENTER to go back to the menu");
         SCANNER.nextLine();
-    }
-
-    private static void performFourthTask() {
-
-    }
-
-    private static void performFivesTask() {
     }
 
     public static void printLine() {
@@ -86,8 +74,6 @@ public class Main {
                 "\n\t1 - First practical task" +
                 "\n\t2 - Second practical task" +
                 "\n\t3 - Third practical task" +
-                "\n\t4 - Fourth practical task" +
-                "\n\t5 - Fives practical task" +
                 "\n\t0 - Exit");
     }
 }
