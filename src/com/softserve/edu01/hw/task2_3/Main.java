@@ -5,9 +5,11 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("input cost per minute of a phone call to the country 1, с1:");
+
+
         double c1 = sc.nextDouble();
         System.out.println("input cost per minute of a phone call to the country 2, с2:");
         double c2 = sc.nextDouble();
