@@ -1,5 +1,6 @@
 package com.softserve.edu03.pt.task_2;
 
+//Nice class
 public class Employee {
     private String name;
     private double rate;

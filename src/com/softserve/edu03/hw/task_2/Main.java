@@ -3,6 +3,7 @@ package com.softserve.edu03.hw.task_2;
 import java.util.Scanner;
 
 public class Main {
+    //All is good
     public static void main(String[] args) {
         int n = getNumber("input amount of numbers:");
         int[] arr = new int[n];

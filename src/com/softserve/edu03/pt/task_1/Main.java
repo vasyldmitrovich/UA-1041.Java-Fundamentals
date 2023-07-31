@@ -3,6 +3,7 @@ package com.softserve.edu03.pt.task_1;
 import java.util.Scanner;
 
 public class Main {
+    //Nice very nice, good
     public static void main(String[] args) {
         int a = getNumber("input first  number:");
         int b = getNumber("input second  number:");

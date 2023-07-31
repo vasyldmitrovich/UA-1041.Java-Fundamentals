@@ -3,6 +3,7 @@ package com.softserve.edu03.hw.task_1;
 import java.util.Scanner;
 
 public class Main {
+    //Perfect
     public static void main(String[] args) {
         int side1 = getSide("Input side 1:");
         int side2 = getSide("Input side 2:");
