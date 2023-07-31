@@ -8,6 +8,8 @@ public class First{
         double s = (num1 + num2 + num3)/2;
         double area = Math.sqrt(s * (s - num1) * (s - num2) * (s - num3));
         return area;
+        //instead of writing the result to a variable and then returning it, write like this
+        // return Math.sqrt(s * (s - num1) * (s - num2) * (s - num3));
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);

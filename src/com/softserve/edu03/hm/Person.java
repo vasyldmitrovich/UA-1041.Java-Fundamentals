@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Person {
 
+    //Please use reformat code before push your cone to git
+    //Read about code convention. firstly should go fields after that constructors and after another methods
     private int birthYear;
     private String firstName;
     private String lastName;
