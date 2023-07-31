@@ -6,6 +6,7 @@ public class Employee {
     private double hours;
 
     //не зрозумів, як порахувати total salary
+    //Use non static block initialization
 
     private static double totalSum;
 
@@ -58,6 +59,7 @@ public class Employee {
         return this.getSalary() * 0.1;
     }
 
+    //Main method should be in class like App.java. Move this main method
     public static void main(String[] args) {
         Employee employee1 = new Employee();
         employee1.setName("Dmitro");

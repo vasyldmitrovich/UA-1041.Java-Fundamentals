@@ -2,7 +2,7 @@ package com.softserve.edu03.hw;
 
 import java.util.Scanner;
 
-public class Hw02 {
+public class Hw02 {//Good
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Input the first number: ");
