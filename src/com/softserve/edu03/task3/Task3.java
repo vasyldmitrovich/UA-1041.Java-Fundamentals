@@ -1,7 +1,7 @@
 package com.softserve.edu03.task3;
 
 public class Task3 {
-
+    //Good readable code, very nice
     public static void main(String[] args) {
 
         Person person1 = new Person();

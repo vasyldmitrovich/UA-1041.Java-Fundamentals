@@ -19,6 +19,7 @@ public class Task1 {
 
         double p = (side1 + side2 + side3) / 2.0;
 
+        //Move this logic to some method, and call this method here
         double area = Math.sqrt(p * (p - side1) * (p - side2) * (p - side3));
 
         System.out.printf("Area: %.2f", area);

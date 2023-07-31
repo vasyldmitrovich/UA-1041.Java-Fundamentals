@@ -22,7 +22,7 @@ public class Task2 {
 
         System.out.println("The smallest number is " + findSmallest(a, b, c));
     }
-
+    //Nice
     public static int findSmallest(int a, int b, int c) {
         int smallest = a;
 
