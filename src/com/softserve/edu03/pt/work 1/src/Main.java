@@ -1,4 +1,12 @@
 import java.util.Scanner;
+
+/*
+* Look in the package com.softserve.edu03.pt
+* I rewrite your code
+* All your packages and classes should look like they
+* Because I could not run your code and see what your program show
+*
+* */
     class Num {
         static final Scanner SCANNER = new Scanner(System.in);
         static int getTotal(int a, int b) {
