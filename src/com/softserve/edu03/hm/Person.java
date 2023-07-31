@@ -70,7 +70,7 @@ public class Person {
                 '}';
     }
     public void changeName(String fn, String ln){
-        setLastName(fn);
+        setFirstName(fn);
         setLastName(ln);
     }
 
