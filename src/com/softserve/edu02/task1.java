@@ -1,5 +1,5 @@
-package src.com.softserve.edu02;
-
+package com.softserve.edu02;
+//In your local project mark as source code package src
 import java.util.Scanner;
 
 public class task1 {
