@@ -1,7 +1,7 @@
-package hw;
+package com.softserve.edu04.hw;
 
 import java.util.Scanner;
-
+//Name of class should start from upper case
 public class task2 {
     public static void main(String[] args) {
         var scanner =new Scanner(System.in);

@@ -1,8 +1,10 @@
-package lesson_3_Homework;
-
+package com.softserve.edu03;
+//In first line was bad package
 import java.util.Scanner;
 
 public class Person {
+    //Do not correct order
+    // firstly should be private variable, after static, after constructors, after getters and setters and after another methods
     static Scanner SCANNER=new Scanner(System.in);
     static private int totalPeople;
     private String firstName;
@@ -71,6 +73,8 @@ public class Person {
         System.out.println("Your year of birth: "+(birthYear));
 
     }
+
+    //this method do not work correct, should be this.fn=ln etc...
     public void changeName(String fn, String ln){
         String the_Third_Cup;
         the_Third_Cup=fn;
@@ -78,6 +82,7 @@ public class Person {
         ln=the_Third_Cup;
     }
 
+    //Move this method to class like App.java
     public static void main(String[] args) {
 
 
@@ -91,6 +96,8 @@ public class Person {
         people3.input();
         people4.input();
         people5.input();
+
+        //please add spaces between different peoples
         people1.getAge();
         people1.output();
         people2.output();

@@ -1,8 +1,9 @@
-package hw;
+package com.softserve.edu04.hw;
 
 import java.util.Scanner;
 
 public class Faculty {
+    //enum should not be there should be in file Season.java
     public enum Season {
         WINTER, SPRING, SUMMER,AUTUMN
     }
@@ -37,6 +38,7 @@ public class Faculty {
         System.out.println(response);
     }
 
+    //Use static method if you do not want to create many objects
     public static void main(String[] args) {
         Faculty student1=new Faculty();
         Faculty student2=new Faculty();

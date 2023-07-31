@@ -1,5 +1,5 @@
-package lesson_3_Homework;
-
+package com.softserve.edu03;
+//In first line was bad package
 import java.util.Scanner;
 
 public class task2 {//program for finding the maximum and minimum for a dynamic array of numbers
