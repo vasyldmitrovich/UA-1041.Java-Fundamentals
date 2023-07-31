@@ -1,7 +1,9 @@
+package edu3;
+
 import java.util.Scanner;
 import java.lang.Math;
 
-public class hw1 {
+public class task1 {
     public static void main(String[] args){
         var scanner = new Scanner(System.in);
         System.out.println("Input side a:");

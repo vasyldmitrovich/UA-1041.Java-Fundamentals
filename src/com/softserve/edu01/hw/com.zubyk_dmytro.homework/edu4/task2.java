@@ -1,6 +1,8 @@
+package edu4;
+
 import java.util.Scanner;
-import java.lang.Math;
-public class hw1_2 {
+
+public class task2 {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
         System.out.println("Enter 1 number");
@@ -10,6 +12,8 @@ public class hw1_2 {
         System.out.println("Enter 3 number");
         int c = scanner.nextInt();
         int smallest;
+        int biggest;
+
         //find the smallest
         if(a<b) {
             if(c<a) {
@@ -24,7 +28,21 @@ public class hw1_2 {
                 smallest = c;
             }
         }
-
-        System.out.println(smallest + " is the smallest.");
+        //find the biggest
+        if(a>b) {
+            if(c>a) {
+                biggest = c;
+            } else {
+                biggest = a;
+            }
+        } else {
+            if(b>c) {
+                biggest = b;
+            } else {
+                biggest = c;
+            }
+        }
+        System.out.println("Biggest number:" + biggest);
+        System.out.println("Smallest number:" + smallest);
     }
 }
