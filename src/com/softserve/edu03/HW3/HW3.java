@@ -8,7 +8,7 @@ import static com.softserve.edu03.HW3.Person.printPersonAge;
 public class HW3 {
     static final Scanner SCANNER = new Scanner(System.in);
     public static void main(String[] args) {
-
+        //Good
         Person person1 = new Person();
         Person.promptParameters(person1);
         System.out.println(person1);

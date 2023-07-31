@@ -2,6 +2,7 @@ package com.softserve.edu03;
 
 import java.util.Scanner;
 
+//Give name class like Hw1.java or App.java
 public class HW1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
