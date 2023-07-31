@@ -8,6 +8,7 @@ public class Main {
 
 
                 System.out.print("Input first number: ");
+                //Variable A should be a not A
                 int A = scanner.nextInt();
                 System.out.print("Input second number: ");
                 int B = scanner.nextInt();
