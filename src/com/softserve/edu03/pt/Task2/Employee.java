@@ -6,6 +6,8 @@ public class Employee {
     private int hours;
     private int salary;
     private int bonuses;
+
+    //methods like this should be in the end of class
     static int totalSum(int... nums){
         int sum = 0;
         for (int num:nums
@@ -77,6 +79,7 @@ public class Employee {
                 '}';
     }
 
+    //Create class for example App.java where will be main method, not there
     public static void main(String[] args) {
         Employee emp1 = new Employee("Ivan",100,23);
         Employee emp2 = new Employee("Fedor",172,36);

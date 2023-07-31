@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Person p1 = new Person();
         p1.input();
+        //if the following code is not needed, delete it
        /* Person p2 = new Person();
         p2.input();
         Person p3 = new Person();
