@@ -1,5 +1,5 @@
-package src.com.softserve.edu04.practicaltask;
-
+package com.softserve.edu04.practicaltask;
+//In your local project mark directory src like source code
 
 import static src.com.softserve.edu03.homework1.Main.SCANNER;
 

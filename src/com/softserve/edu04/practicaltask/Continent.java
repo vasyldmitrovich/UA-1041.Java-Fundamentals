@@ -1,5 +1,5 @@
-package src.com.softserve.edu04.practicaltask;
-
+package com.softserve.edu04.practicaltask;
+//In your local project mark directory src like source code
 public enum Continent {
     AFRICA ("Africa"),
     ANTARCTICA ("Antarctica"),

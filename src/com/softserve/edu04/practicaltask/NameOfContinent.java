@@ -1,7 +1,7 @@
-package src.com.softserve.edu04.practicaltask;
+package com.softserve.edu04.practicaltask;
 
-import static src.com.softserve.edu03.homework1.Main.SCANNER;
-import static src.com.softserve.edu04.practicaltask.Continent.*;
+import static com.softserve.edu03.homework1.Main.SCANNER;
+import static com.softserve.edu04.practicaltask.Continent.*;
 
 public class NameOfContinent {
     private String nameCont;
@@ -30,6 +30,7 @@ public class NameOfContinent {
         this.nameCont = nameCont;
     }
 
+    //Nice
     public void getContinentName(NameOfContinent name) {
         switch (getNameCont().toLowerCase()) {
             case "algeria", "angola", "benin", "botswana", "burkina faso", "burundi", "cabo verde", "cameroon",

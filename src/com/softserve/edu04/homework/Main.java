@@ -1,4 +1,4 @@
-package src.com.softserve.edu04.homework;
+package com.softserve.edu04.homework;
 
 import java.util.Scanner;
 
@@ -6,6 +6,7 @@ public class Main {
     public static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
+        //Can use bool variable instead int
         int taskNum;
 
         do {

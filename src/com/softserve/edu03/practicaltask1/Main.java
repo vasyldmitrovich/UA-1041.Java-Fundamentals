@@ -1,4 +1,4 @@
-package src.com.softserve.edu03.practicaltask1;
+package com.softserve.edu03.practicaltask1;
 
 
 import java.util.Scanner;

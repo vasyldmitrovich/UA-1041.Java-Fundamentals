@@ -1,6 +1,6 @@
-package src.com.softserve.edu03.homework1;
+package com.softserve.edu03.homework1;
 
-import static src.com.softserve.edu03.homework1.Main.SCANNER;
+import static com.softserve.edu03.homework1.Main.SCANNER;
 
 public class TriangleArea {
     private int side1;

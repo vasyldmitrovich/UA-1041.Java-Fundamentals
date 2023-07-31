@@ -1,6 +1,6 @@
-package src.com.softserve.edu04.homework;
+package com.softserve.edu04.homework;
 
-import static src.com.softserve.edu04.homework.Main.SCANNER;
+import static com.softserve.edu04.homework.Main.SCANNER;
 
 public class MaxAndMin {
     private int firstNum;
