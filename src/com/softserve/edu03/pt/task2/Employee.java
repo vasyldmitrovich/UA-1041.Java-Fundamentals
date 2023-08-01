@@ -1,5 +1,7 @@
 package com.softserve.edu03.pt.task2;
 
+import java.util.Scanner;
+
 public class Employee {
     private String name;
     private int rate;
@@ -9,10 +11,8 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String name, int rate, int hours) {
+    public Employee(String name) {
         this.name = name;
-        this.rate = rate;
-        this.hours = hours;
     }
 
     public Employee(int rate, int hours) {
@@ -52,6 +52,18 @@ public class Employee {
         Employee.totalSum = totalSum;
     }
 
+    public void input(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input the name of the employee: ");
+        String name1 = sc.nextLine();
+        setName(name1);
+        System.out.print("Input the rate of the employee: ");
+        int rate1 = sc.nextInt();
+        setRate(rate1);
+        System.out.print("Input the number of working hours of the employee: ");
+        int hours1 = sc.nextInt();
+        setHours(hours1);
+    }
     public double getSalary() {
         return rate * hours;
     }
