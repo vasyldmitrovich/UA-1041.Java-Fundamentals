@@ -9,6 +9,10 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = getNumber("input " + (i + 1) + "st number:");
         }
+        areBelongRange(arr);
+    }
+
+    private static void areBelongRange(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] >= -5 && arr[i] <= 5) {
                 System.out.println("number: " + arr[i] + " is belong to the range [-5, 5].");
@@ -17,6 +21,7 @@ public class Main {
             }
         }
     }
+
 
     public static int getNumber(String prompt) {
         Scanner sc = new Scanner(System.in);
