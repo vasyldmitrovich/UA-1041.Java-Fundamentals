@@ -8,16 +8,17 @@ public class Main {
 
 
                 System.out.print("Input first number: ");
-                int A = scanner.nextInt();
+                //Variable A should be a not A
+                int a = scanner.nextInt();
                 System.out.print("Input second number: ");
-                int B = scanner.nextInt();
+                int b = scanner.nextInt();
                 System.out.print("Input third number: ");
-                int C = scanner.nextInt();
-                int min = Math.min(A, B);
+                int c = scanner.nextInt();
+                int min = Math.min(a, b);
 
 
-                if (min > C) {
-                    min = C;
+                if (min > c) {
+                    min = c;
         }
                 System.out.print("Min number is = " + min);
 
