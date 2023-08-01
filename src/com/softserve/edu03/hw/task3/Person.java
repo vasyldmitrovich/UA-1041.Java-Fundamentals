@@ -55,6 +55,7 @@ public class Person {
         System.out.print("Input the birth year of the person: ");
         int birthYear1 = SC.nextInt();
         setBirthYear(birthYear1);
+        SC.nextLine();
     }
 
     public void output() {
@@ -66,18 +67,5 @@ public class Person {
     public void changeName(String fn, String ln) {
         setFirstName(fn);
         setLastName(ln);
-    }
-
-    public static void main(String[] args) {
-        Person person1 = new Person();
-        person1.input();
-        Person person2 = new Person();
-        person2.input();
-        Person person3 = new Person();
-        person3.input();
-        Person person4 = new Person();
-        person4.input();
-        Person person5 = new Person();
-        person5.input();
     }
 }

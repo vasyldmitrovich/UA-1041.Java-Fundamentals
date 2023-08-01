@@ -68,14 +68,5 @@ public class Employee {
                 ", hours = " + hours +
                 '.';
     }
-
-    public static void main(String[] args) {
-        Employee employee1 = new Employee("George", 4, 10);
-        Employee employee2 = new Employee("Steve", 7, 8);
-        Employee employee3 = new Employee("William", 12, 6);
-        System.out.println("Total salary of all employees is " + getTotalSum(employee1, employee2, employee3) + " dollars.");
-        System.out.println(employee1 + " His salary is " + employee1.getSalary() + " dollars a day.");
-        System.out.println(employee2 + " His bonus is " + employee2.getBonuses() + " dollars daily.");
-    }
 }
 

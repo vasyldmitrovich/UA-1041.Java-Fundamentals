@@ -27,7 +27,7 @@ public class Task1 {
         int num1 = getNumber("Enter the first number: ");
         int num2 = getNumber("Enter the second number: ");
         int num3 = getNumber("Enter the third number: ");
-        oddChecker(num1,num2,num3);
+        oddChecker(num1, num2, num3);
     }
 }
 
