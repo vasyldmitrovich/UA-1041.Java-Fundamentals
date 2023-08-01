@@ -16,7 +16,6 @@ public class Main {
                 int c = scanner.nextInt();
                 int min = Math.min(a, b);
 
-
                 if (min > c) {
                     min = c;
         }
