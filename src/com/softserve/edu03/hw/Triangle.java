@@ -30,6 +30,7 @@ public class Triangle {
 
         return side;
     }
+    //please use reformat code and give more understandable names to the variables in method parameter
     static double calcArea(int a , int b, int c){
         double s = (double) ((a+b+c)/2);
 

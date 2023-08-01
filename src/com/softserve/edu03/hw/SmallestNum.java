@@ -15,6 +15,7 @@ public class SmallestNum {
 
         int num = 0 ;
 
+        //please delete not needed lines
 
         do {
             System.out.println(prompt);
