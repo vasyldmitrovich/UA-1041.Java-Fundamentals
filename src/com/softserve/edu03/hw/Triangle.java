@@ -34,7 +34,7 @@ public class Triangle {
 
 
     static double calcArea(int sideA, int sideB, int sideC) {
-        double s = (double) ((sideA + sideB + sideC) / 2);
+        double s = (sideA + sideB + sideC) / 2;
 
         /*Side of a triangle cannot be greater than its semiperimeter.
         It contradicts a fundamental property of triangles known as the "Triangle Inequality."*/
