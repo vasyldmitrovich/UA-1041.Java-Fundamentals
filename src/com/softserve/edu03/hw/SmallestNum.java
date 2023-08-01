@@ -37,13 +37,13 @@ public class SmallestNum {
     }
 
     static int findSmallest(int... nums) {
-        int smallsest = nums[0];
+        int smallest = nums[0];
         for (int num : nums
         ) {
-            if (num < smallsest) {
-                smallsest = num;
+            if (num < smallest) {
+                smallest = num;
             }
         }
-        return smallsest;
+        return smallest;
     }
 }

@@ -7,10 +7,10 @@ import java.util.Scanner;
 
 
 public class Person {
+    Scanner sc = new Scanner(System.in);
     private String firstName;
     private String lastName;
     private LocalDate dob;
-    Scanner sc = new Scanner(System.in);
 
     public Person() {
 
@@ -19,6 +19,10 @@ public class Person {
     public Person(String firstName, String lastName) {
         this.firstName = formatNames(firstName);
         this.lastName = formatNames(lastName);
+    }
+
+    static String formatNames(String str) {
+        return str.substring(0, 1).toUpperCase() + str.substring(1).toLowerCase();
     }
 
     public String getFirstName() {
@@ -74,10 +78,6 @@ public class Person {
     protected void changeName(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-    }
-
-    static String formatNames(String str) {
-        return str.substring(0, 1).toUpperCase() + str.substring(1).toLowerCase();
     }
 
     @Override
