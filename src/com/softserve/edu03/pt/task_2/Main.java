@@ -6,9 +6,12 @@ public class Main {
         employee1.setName("Nikolay");
         employee1.setRate(50.5);
         employee1.setHours(40);
+
         Employee employee2=new Employee("Vasyl",40.5,30);
         Employee employee3=new Employee("Olga",60,50);
+
         double totalSalary=employee1.getSalary()+employee2.getSalary()+employee3.getSalary();
+
         System.out.println(employee1);
         System.out.println(employee2);
         System.out.println(employee3);
