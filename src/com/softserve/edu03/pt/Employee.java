@@ -7,18 +7,16 @@ public class Employee {
     static private double totalSum = 0;
     double bonus = 1.1;
     public Employee() {
-        totalSum += getSalary();
+
     }
 
-    public Employee(String name, int rate,double hours) {
+    public Employee(String name) {
         this.name = name;
+    }
+
+    public Employee(int rate, double hours) {
         this.rate = rate;
         this.hours = hours;
-        totalSum += getSalary();
-    }
-
-    public Employee( double bonus) {
-        this.bonus = bonus;
         totalSum += getSalary();
     }
 
