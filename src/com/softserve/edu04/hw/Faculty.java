@@ -1,8 +1,5 @@
 package com.softserve.edu04.hw;
 
-import java.sql.SQLOutput;
-
-import static com.softserve.edu04.hw.Http.HTTPError.*;
 import static com.softserve.edu04.util.CollectInputs.inputNumberInt;
 import static com.softserve.edu04.util.CollectInputs.inputString;
 import static com.softserve.edu04.util.WorkingWithStrings.capitalizeString;

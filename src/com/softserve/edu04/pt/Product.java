@@ -1,4 +1,5 @@
 package com.softserve.edu04.pt;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,31 +15,6 @@ public class Product {
         this.price = price;
         storehouse.add(this);
     }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
 
     public static Product getMostExpensiveProduct() {
         double maxPrice = 0;
@@ -64,6 +40,30 @@ public class Product {
             }
         }
         return maxQuantityProd;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     @Override

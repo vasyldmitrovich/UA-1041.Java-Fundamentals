@@ -6,6 +6,14 @@ import static com.softserve.edu04.util.CollectInputs.inputNumberInt;
 public class DaysOfWeek {
     private int numOfDay;
 
+    public DaysOfWeek() {
+
+    }
+
+    public DaysOfWeek(int numOfDay) {
+        this.numOfDay = numOfDay;
+    }
+
     public int getNumOfDay() {
         return numOfDay;
     }
@@ -14,16 +22,8 @@ public class DaysOfWeek {
         this.numOfDay = numOfDay;
     }
 
-    public DaysOfWeek() {
-
-    }
-
     public void enterNumOfDay() {
         this.numOfDay = inputNumberInt("Please enter number of day from 1 to 7");
-    }
-
-    public DaysOfWeek(int numOfDay) {
-        this.numOfDay = numOfDay;
     }
 
     public void printDay() {

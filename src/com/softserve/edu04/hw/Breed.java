@@ -12,12 +12,13 @@ public enum Breed {
     ROTTWEILER("Rottweiler"),
     SIBERIAN_HUSKY("Siberian Husky");
 
-    private String breed;
+    private final String breed;
 
     Breed(String breed) {
         this.breed = breed;
     }
-    public String getBreed(){
+
+    public String getBreed() {
         return this.breed;
     }
 }
