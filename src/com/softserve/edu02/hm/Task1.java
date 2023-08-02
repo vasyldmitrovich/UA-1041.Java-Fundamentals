@@ -2,6 +2,7 @@ package com.softserve.edu02.hm;
 
 import java.util.Scanner;
 public class Task1 {
+    //I suspect this tasks from edu01
     public static void main(String[] args) {
         System.out.println("Enter the radius:");
         Double radius;
