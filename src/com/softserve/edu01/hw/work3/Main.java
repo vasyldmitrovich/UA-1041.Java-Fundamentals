@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-    double c1, c2, c3;
+        //Use reformat code before push your code to git
+    double c1, c2, c3;//Please give variables more informative names
     double t1, t2, t3;
     double v1, v2, v3; // вартість
         double cost; // загальна вартість

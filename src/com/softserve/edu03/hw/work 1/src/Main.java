@@ -1,5 +1,11 @@
 import java.util.Scanner;
-
+/*
+ * Look in the package com.softserve.edu03.pt
+ * I rewrite your code
+ * All your packages and classes should look like they
+ * Because I could not run your code and see what your program show
+ *
+ * */
 public class Main {
     static final Scanner SCANNER = new Scanner(System.in);
     static double s1 = 0, s2 = 0, s3 = 0;
