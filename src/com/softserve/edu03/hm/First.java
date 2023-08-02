@@ -6,8 +6,7 @@ public class First{
     public static double getArea(double num1, double num2, double num3){
 
         double s = (num1 + num2 + num3)/2;
-        double area = Math.sqrt(s * (s - num1) * (s - num2) * (s - num3));
-        return area;
+        return Math.sqrt(s * (s - num1) * (s - num2) * (s - num3));
         //instead of writing the result to a variable and then returning it, write like this
         // return Math.sqrt(s * (s - num1) * (s - num2) * (s - num3));
     }

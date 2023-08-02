@@ -10,6 +10,16 @@ public class Person {
     private int birthYear;
     private String firstName;
     private String lastName;
+
+    public Person() {
+        this("NoFirstName", "NoLastName");
+    }
+
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -35,16 +45,7 @@ public class Person {
         return birthYear;
     }
 
-    public Person() {
-        this("NoFirstName", "NoLastName");
-    }
-
-    public Person(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-    public static void input(Person person){
+    public static void input(Person person) {
         Scanner sc = new Scanner(System.in);
         System.out.println("What is your first name?");
         String name = sc.nextLine();
@@ -56,22 +57,22 @@ public class Person {
         int birth = sc.nextInt();
         person.setBirthYear(birth);
     }
-    public static void output(Person person){
+
+    public static void output(Person person) {
         System.out.println(person);
     }
-    public int getAge(){
+
+    public int getAge() {
         int yearNow = Year.now().getValue();
         int age = yearNow - getBirthYear();
         return age;
     }
+
     public String toString() {
-        return "Person{" +
-                "name=" + getFirstName() +
-                ", surname=" + getLastName() +
-                ", age=" + getAge() +
-                '}';
+        return "Person{" + "name=" + getFirstName() + ", surname=" + getLastName() + ", age=" + getAge() + '}';
     }
-    public void changeName(String fn, String ln){
+
+    public void changeName(String fn, String ln) {
         setFirstName(fn);
         setLastName(ln);
     }
