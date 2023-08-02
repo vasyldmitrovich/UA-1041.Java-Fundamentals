@@ -61,9 +61,9 @@ public class Person {
     }
 
     public void output() {
-        System.out.println("First Name: " + firstName);
-        System.out.println("Last Name: " + lastName);
-        System.out.println("Birth Year: " + birthYear);
+        System.out.println("First Name: " + getFirstName());
+        System.out.println("Last Name: " + getLastName());
+        System.out.println("Birth Year: " + getBirthYear());
         System.out.println("Age: " + getAge());
     }
 }
