@@ -2,7 +2,7 @@ package com.softserve.edu04.util;
 
 public class WorkingWithStrings {
     public static String capitalizeString(String str) {
-
+        str.replace("_"," ");
         String[] words = str.split(" ");
         StringBuilder capitalizedStr = new StringBuilder(" ");
         for (String word : words

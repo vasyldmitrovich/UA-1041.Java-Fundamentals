@@ -41,6 +41,7 @@ public class Errors {
             case 415 -> System.out.println(ERROR_415.getDesc());
             case 416 -> System.out.println(ERROR_416.getDesc());
             case 417 -> System.out.println(ERROR_417.getDesc());
+            default -> System.out.println("No such error");
         }
     }
 }

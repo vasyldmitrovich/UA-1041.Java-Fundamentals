@@ -24,6 +24,8 @@ public class Main {
                 case 1 -> runFirtsTask();
                 case 2 -> runSecondTask();
                 case 3 -> runThirdTask();
+                case 4 -> runForthTask();
+                case 5 -> runFifthTask();
                 case 0 -> System.out.println("Goodbye");
                 default -> System.out.println("Invalid number of the task. Please select the correct one");
             }
@@ -57,4 +59,31 @@ public class Main {
         err.inputHttpError();
         err.outputError();
     }
+    private static void runForthTask(){
+        Faculty fc = new Faculty();
+        fc.intputNumOfStudents();
+        fc.inputSeason();
+        fc.outputNumOfStudents();
+        fc.outputSeason();
+    }
+    private static void runFifthTask(){
+        Dog dog1 = new Dog();
+        Dog dog2 = new Dog();
+        Dog dog3 = new Dog();
+
+
+        System.out.println("______________");
+        dog1.fullFillDogInfo();
+        System.out.println("______________");
+        dog2.fullFillDogInfo();
+        System.out.println("______________");
+        dog3.fullFillDogInfo();
+        System.out.println("______________");
+
+        System.out.println("The oldest dog is: "+Dog.getOldestDog());
+        System.out.println("Are there dogs with same names: "+Dog.hasDuplicatedNames());
+
+
+    }
+
 }
