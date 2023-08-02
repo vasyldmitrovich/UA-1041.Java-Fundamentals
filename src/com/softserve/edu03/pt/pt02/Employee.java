@@ -1,4 +1,4 @@
-package com.softserve.edu03.pt;
+package com.softserve.edu03.pt.pt02;
 
 public class Employee {
     private String name;
@@ -7,23 +7,26 @@ public class Employee {
 
     //не зрозумів, як порахувати total salary
     //Use non static block initialization
+    //все одно не можу додумати, як оптимізувати код, щоб не додавати в мейн змінну
 
-    private static double totalSum;
+    public static int totalSum;
 
     public Employee() {
+        totalSum++;
     }
 
     public Employee(String name, double rate) {
         this.name = name;
         this.rate = rate;
-
+        totalSum++;
     }
 
     public Employee(String name, double rate, double hours) {
         this.name = name;
         this.rate = rate;
         this.hours = hours;
-    }
+        totalSum++;
+            }
 
     public void setName(String name) {
         this.name = name;
@@ -42,7 +45,12 @@ public class Employee {
     public double getSalary() {
         return rate * hours;
     }
-
+    public static int getTotalSum() {
+        return totalSum;
+    }
+    public double getBonuses() {
+        return this.getSalary() * 0.1;
+    }
     @Override
     public String toString() {
         return "Employee:\n" +
@@ -55,24 +63,7 @@ public class Employee {
     }
 
 
-    public double getBonuses() {
-        return this.getSalary() * 0.1;
-    }
-
     //Main method should be in class like App.java. Move this main method
-    public static void main(String[] args) {
-        Employee employee1 = new Employee();
-        employee1.setName("Dmitro");
-        employee1.setRate(120);
-        employee1.setHours(45);
-        System.out.println(employee1);
+    //створив
 
-        Employee employee2 = new Employee("Nadiya", 114);
-        employee1.setHours(45);
-        System.out.println(employee2);
-
-        Employee employee3 = new Employee("Alex", 101, 50);
-        System.out.println(employee3);
-
-    }
 }

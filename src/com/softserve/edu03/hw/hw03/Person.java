@@ -9,6 +9,15 @@ public class Person {
     private int birthYear;
 
     //After fields should go constructor, after getters and setters and after another methods
+
+    public Person() {
+    }
+
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -33,16 +42,12 @@ public class Person {
         this.birthYear = birthYear;
     }
 
-    public Person() {
-    }
-
-    public Person(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
     public int getAge() {
         return 2023 - birthYear;
+    }
+    public void changeName(String fn, String ln) {
+        this.firstName = fn;
+        this.lastName = ln;
     }
 
     public void input() {
@@ -60,10 +65,5 @@ public class Person {
         System.out.println("Last Name: " + lastName);
         System.out.println("Birth Year: " + birthYear);
         System.out.println("Age: " + getAge());
-    }
-
-    public void changeName(String fn, String ln) {
-        this.firstName = fn;
-        this.lastName = ln;
     }
 }
