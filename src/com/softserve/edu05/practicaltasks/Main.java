@@ -7,12 +7,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        Array array = new Array();
-//        array.promptStringArray(array);
-//
-//        AverageValue obj = new AverageValue();
-//        obj.promptAverageValue(obj);
+        Array array = new Array();
+        array.promptStringArray(array);
 
+        AverageValue obj = new AverageValue();
+        obj.promptAverageValue(obj);
 
     }
 }

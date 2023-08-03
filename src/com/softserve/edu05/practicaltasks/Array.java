@@ -27,7 +27,9 @@ public class Array {
     }
 
     public void promptStringArray(Array array) {
-        System.out.println("Input string array: ");
+        System.out.println("Practical task #1");
+        System.out.println("Please provide string array and separate it by commas (Example: apple, banana, orange)");
+        System.out.print("Input string array: ");
         String input = SCANNER.nextLine();
         setStringArray(input);
         sortStringArray(array);
@@ -37,17 +39,21 @@ public class Array {
     public void sortStringArray(Array array) {
         String[] splitString = stringArray.split(",\\s*");
         Arrays.sort(splitString);
-        System.out.println("Sorted String: ");
+        System.out.print("Sorted string array: ");
         for (String item : splitString) {
-            System.out.println(item);
+            System.out.printf("%s ", item);
         }
+        System.out.println("\n------------------------------");
     }
 
     public void consistTheValue(Array array) {
-        System.out.print("\nPlease provide the variable: ");
+        System.out.println("Verify an array. Is contain value which you will search?");
+        System.out.print("Please provide the variable/value: ");
         String searchValue = SCANNER.nextLine();
         String[] splitString = stringArray.split(",\\s*");
         boolean containsValue = containsValueInArray(splitString, searchValue);
-        System.out.printf("Array contains %s?: %s", searchValue, containsValue);
+        System.out.printf("Array contains \"%s\"?: %s", searchValue, containsValue);
+        System.out.println("\n------------------------------");
+
     }
 }

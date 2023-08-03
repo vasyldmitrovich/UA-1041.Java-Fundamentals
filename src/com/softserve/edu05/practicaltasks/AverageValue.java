@@ -27,11 +27,11 @@ public class AverageValue {
     }
 
     public void promptAverageValue(AverageValue obj) {
-        System.out.println("Practical task #1");
+        System.out.println("Practical task #2");
         userInputNumber(obj);
 //        System.out.println("User set array: " + Arrays.toString(getAverageArray(obj)));
         getAverage(obj);
-        System.out.println("-------------");
+        System.out.println("------------------------------");
         consistTheValue(obj);
     }
 
@@ -50,8 +50,8 @@ public class AverageValue {
         int count = 0;
         double average;
 
-        for (int i = 0; i < array.length; i++) {
-            sum += array[i];
+        for (int j : array) {
+            sum += j;
             count++;
         }
 
@@ -60,7 +60,8 @@ public class AverageValue {
     }
 
     public void consistTheValue(AverageValue obj) {
-        System.out.println("Please provide the variable: ");
+        System.out.println("Input the number which you want to check in array of integers?");
+        System.out.print("Please provide the number: ");
         SCANNER.nextLine();
         String searchValue = SCANNER.nextLine();
         int[] array = getAverageArray(obj);
