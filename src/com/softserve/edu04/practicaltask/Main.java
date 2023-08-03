@@ -1,5 +1,5 @@
-package src.com.softserve.edu04.practicaltask;
-
+package com.softserve.edu04.practicaltask;
+//In your local project mark directory src like source code
 import java.util.Scanner;
 
 
@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
         int numOfTask;
 
+        //Good very good
         do {
             printMenu();
             System.out.print("\nPlease input the number of the task: ");
@@ -54,8 +55,8 @@ public class Main {
 
     private static void performThirdTask() {
         //Third practical task "Output the name of the continent by name of country"
-        NameOfContinent name = new NameOfContinent();
-        NameOfContinent.promptContName(name);
+//        NameOfContinent name = new NameOfContinent();
+//        NameOfContinent.promptContName(name);
         printLine();
         System.out.print("\nTask 3 completed! " + "Press ENTER to go back to the menu");
         SCANNER.nextLine();

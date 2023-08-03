@@ -1,8 +1,9 @@
-package src.com.softserve.edu03.practicaltask2;
+package com.softserve.edu03.practicaltask2;
 
-import static src.com.softserve.edu03.practicaltask2.Main.SCANNER;
+import static com.softserve.edu03.practicaltask2.Main.SCANNER;
 
 public class Employee {
+    //static variable should go after private
     static public double totalSum;
     private String name;
     private double rate;
@@ -19,6 +20,7 @@ public class Employee {
         totalSum += getSalary();
     }
 
+    //Next three method move to the end of class
     public static void printEmployeeTotal() {
         System.out.println("\nTotal salary = " + totalEmployeeSum());
     }

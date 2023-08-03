@@ -1,8 +1,8 @@
-package src.com.softserve.edu03.practicaltask2;
+package com.softserve.edu03.practicaltask2;
 
 import java.util.Scanner;
 
-import static src.com.softserve.edu03.practicaltask2.Employee.printEmployeeTotal;
+import static com.softserve.edu03.practicaltask2.Employee.printEmployeeTotal;
 
 public class Main {
     static public final Scanner SCANNER = new Scanner(System.in);

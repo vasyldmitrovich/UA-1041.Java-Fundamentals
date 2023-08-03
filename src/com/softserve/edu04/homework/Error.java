@@ -1,4 +1,4 @@
-package src.com.softserve.edu04.homework;
+package com.softserve.edu04.homework;
 
 public enum Error {
     ERROR_400(400, "Bad Request"),
