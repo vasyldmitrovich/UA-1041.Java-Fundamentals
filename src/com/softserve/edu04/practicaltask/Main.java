@@ -55,8 +55,8 @@ public class Main {
 
     private static void performThirdTask() {
         //Third practical task "Output the name of the continent by name of country"
-//        NameOfContinent name = new NameOfContinent();
-//        NameOfContinent.promptContName(name);
+        NameOfContinent name = new NameOfContinent();
+        NameOfContinent.promptContName(name);
         printLine();
         System.out.print("\nTask 3 completed! " + "Press ENTER to go back to the menu");
         SCANNER.nextLine();
