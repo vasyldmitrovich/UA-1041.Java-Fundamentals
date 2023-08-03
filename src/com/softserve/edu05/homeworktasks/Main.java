@@ -10,5 +10,7 @@ public class Main {
         DaysInMonth day = new DaysInMonth();
         day.promptUserInput(day);
 
+        CalcNumbers obj = new CalcNumbers();
+        obj.promptCalcNumber(obj);
     }
 }

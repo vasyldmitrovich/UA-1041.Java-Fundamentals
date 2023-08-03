@@ -1,7 +1,5 @@
 package com.softserve.edu05.homeworktasks;
 
-import java.util.Arrays;
-
 import static com.softserve.edu05.homeworktasks.Main.SCANNER;
 
 public class DaysInMonth {
