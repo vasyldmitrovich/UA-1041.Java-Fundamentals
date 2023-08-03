@@ -1,7 +1,6 @@
-package com.softserve.edu03.task3;
+package com.softserve.edu03.hw.task3;
 
 import java.time.LocalDate;
-import java.time.Period;
 import java.util.Scanner;
 
 public class Person {

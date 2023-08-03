@@ -1,4 +1,4 @@
-package com.softserve.edu02.task3;
+package com.softserve.edu02.hw.task3;
 
 import java.util.Scanner;
 

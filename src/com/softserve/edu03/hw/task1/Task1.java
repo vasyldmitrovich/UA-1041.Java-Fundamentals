@@ -1,4 +1,4 @@
-package com.softserve.edu03.task1;
+package com.softserve.edu03.hw.task1;
 
 import java.util.Scanner;
 
@@ -17,13 +17,15 @@ public class Task1 {
         System.out.print("Input Side 3: ");
         int side3 = scanner.nextInt();
 
-        double p = (side1 + side2 + side3) / 2.0;
-
-        //Move this logic to some method, and call this method here
-        double area = Math.sqrt(p * (p - side1) * (p - side2) * (p - side3));
+        double area = calculateArea(side1, side2, side3);
 
         System.out.printf("Area: %.2f", area);
     }
 
+    private static double calculateArea(int a, int b, int c) {
+        double p = (a + b + c) / 2.0;
+
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+    }
 
 }
