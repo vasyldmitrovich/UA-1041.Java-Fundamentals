@@ -1,4 +1,4 @@
-package src.com.softserve.edu01.hw;
+package com.softserve.edu01.hw;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class FlowerBed {
         double perimeter = 2 * Math.PI + radius;
         double area = Math.PI * Math.pow(radius, 2);
 
-        System.out.format("\nThe perimeter of flower bed is: %.2f", + perimeter);
-        System.out.format("\nAn area of flower bed is: %.2f", + area);
+        System.out.format("\nThe perimeter of flower bed is: %.2f", +perimeter);
+        System.out.format("\nAn area of flower bed is: %.2f", +area);
     }
 }

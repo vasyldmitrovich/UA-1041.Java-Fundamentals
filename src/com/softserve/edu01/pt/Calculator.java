@@ -1,4 +1,4 @@
-package src.com.softserve.edu01.pt;
+package com.softserve.edu01.pt;
 
 import java.util.Scanner;
 
@@ -14,10 +14,10 @@ public class Calculator {
         double multi = a * b;
         double div = a / b;
 
-        System.out.format("\nYour sum result is: %.2f", + sum);
-        System.out.format("\nYour subtraction result is: %.2f", + sub);
-        System.out.format("\nYour multiply result is: %.2f", + multi);
-        System.out.format("\nYour divide result is: %.2f", + div);
+        System.out.format("\nYour sum result is: %.2f", +sum);
+        System.out.format("\nYour subtraction result is: %.2f", +sub);
+        System.out.format("\nYour multiply result is: %.2f", +multi);
+        System.out.format("\nYour divide result is: %.2f", +div);
 
 
     }
