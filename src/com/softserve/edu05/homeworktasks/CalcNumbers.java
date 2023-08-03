@@ -1,9 +1,6 @@
 package com.softserve.edu05.homeworktasks;
 
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
 
 import static com.softserve.edu05.homeworktasks.Main.SCANNER;
 
