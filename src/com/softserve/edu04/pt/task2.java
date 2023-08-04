@@ -1,6 +1,10 @@
+package com.softserve.edu04.pt;
+//When you past your code there, write package like package com.softserve.edu04.pt;
 import java.util.Scanner;
 
+//Name of class should start from upper case
 public class task2 {
+    //This method should be in class like App.java
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
         System.out.println("Number of day: ");

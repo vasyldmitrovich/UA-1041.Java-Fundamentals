@@ -1,3 +1,5 @@
+package com.softserve.edu04.pt;
+
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -38,12 +40,14 @@ public class Product {
     }
 
 
-
+    //This method should be in class like App.java
     public static void main(String[] args) {
         Product Product1 = new Product("Banana",10,20);
         Product Product2 = new Product("apple",30.3,70);
         Product Product3 = new Product("Grape",100,1300);
         Product Product4 = new Product("Cheese",500,200);
+
+        //Separate logic to methods and call methods in main method
         if(Product1.price>Product2.price && Product1.price>Product3.price && Product1.price>Product4.price){
             System.out.println("The most expensive item is:"+(Product1.name)+(" quantity: ")+(Product1.quantity));
         }

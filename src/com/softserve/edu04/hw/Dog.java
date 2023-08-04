@@ -1,4 +1,4 @@
-package hw;
+package com.softserve.edu04.hw;
 
 import javax.management.MBeanAttributeInfo;
 import java.util.Objects;
@@ -6,12 +6,15 @@ import java.util.Scanner;
 
 public class Dog {
     static Scanner SCANNER = new Scanner(System.in);
+    //This enum should be in another file like Breed.java
     public enum Breed{
         BEAGLE, BOXER, BULLDOG, CANES
     }
     private String name;
     private String breed;
     private  int age;
+
+    //Add spaces between fields and methods
     void input() {
 
         System.out.println("name: ");
