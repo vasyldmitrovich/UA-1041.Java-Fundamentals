@@ -2,7 +2,7 @@ package com.softserve.edu01.hw;
 
 import java.util.Scanner;
 
-public class Main {
+public class task1 {
     public static void main(String[] args) {
         System.out.println("Input the radius:");
         Scanner sc = new Scanner(System.in);
