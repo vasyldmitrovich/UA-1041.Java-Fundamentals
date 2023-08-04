@@ -3,10 +3,7 @@ package com.softserve.edu04.hw;
 import java.util.Scanner;
 
 public class Faculty {
-    //enum should not be there should be in file Season.java
-    public enum Season {
-        WINTER, SPRING, SUMMER,AUTUMN
-    }
+
     static Scanner SCANNER = new Scanner(System.in);
     private String name;
     private int age;
@@ -14,7 +11,7 @@ public class Faculty {
     private String SeasonPS;
     private static String University;
 
-    void input() {
+    void  static input() {
         System.out.println("Your name: ");
         name = SCANNER.nextLine();
         System.out.println("Your age: ");
