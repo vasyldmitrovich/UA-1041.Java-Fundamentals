@@ -1,9 +1,9 @@
-package com.softserve.edu03;
+package com.softserve.edu03.hw;
 //In first line was bad package
 import java.util.Scanner;
 
 public class task {
-    static Scanner SCANNER=new Scanner(System.in);
+    static Scanner scanner=new Scanner(System.in);
     //If variable is not final then name should be scanner not SCANNER
     /**
      * HalfPerimetr- it is double variable that contains half perimeter which we need for calculation area using the Heron's formula
@@ -24,7 +24,7 @@ public class task {
      */
     static int getNumber(String txt){
         System.out.print(txt);
-        return SCANNER.nextInt();
+        return scanner.nextInt();
     }
 
     public static void main(String[] args) {

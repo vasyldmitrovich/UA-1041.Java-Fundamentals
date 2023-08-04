@@ -1,4 +1,4 @@
-package com.softserve.edu03;
+package  com.softserve.edu03.hw;
 //In first line was bad package
 import java.util.Scanner;
 
