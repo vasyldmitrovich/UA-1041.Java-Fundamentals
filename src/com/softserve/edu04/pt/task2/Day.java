@@ -29,4 +29,4 @@ public enum Day {
     public String getUkrainian() {
         return ukrainian;
     }
-}
+}//Good

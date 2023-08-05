@@ -23,7 +23,7 @@ public class Task2 {
 
 
     }
-
+//Good all is good
     private static Day getDay(int numDay) {
         return switch (numDay) {
             case 1 -> Day.MONDAY;

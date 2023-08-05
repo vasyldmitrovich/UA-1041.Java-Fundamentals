@@ -26,4 +26,6 @@ public class Faculty {
     public void setCurrentSeason(Season currentSeason) {
         this.currentSeason = currentSeason;
     }
+
+    //Add toString equals and hash code
 }

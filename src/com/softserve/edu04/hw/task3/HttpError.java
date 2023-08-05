@@ -20,4 +20,4 @@ public enum HttpError {
     public String getMessage() {
         return message;
     }
-}
+}//Good

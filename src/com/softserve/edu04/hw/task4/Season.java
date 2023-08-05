@@ -15,4 +15,4 @@ public enum Season {
     public String getName() {
         return name;
     }
-}
+}//Good

@@ -6,7 +6,7 @@ public class Task3 {
     private static Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
-
+//Good
         System.out.print("Enter http error code(400, 401, 402, 403, 404, 405): ");
         int code = SCANNER.nextInt();
 

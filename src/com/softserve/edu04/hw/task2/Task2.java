@@ -6,7 +6,7 @@ public class Task2 {
     private static Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
-
+//Nice very nice
 
         int a = getNum("Enter your first number: ");
 

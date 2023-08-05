@@ -5,6 +5,7 @@ public class Product {
     private double price;
     private int quantity;
 
+    //Always add constructor without parameters and in the button add to string equals and hash code
     public Product(String name, double price, int quantity) {
         this.name = name;
         this.price = price;

@@ -8,7 +8,7 @@ public class Task4 {
         Product product3 = new Product("Product 3", 5.99, 8);
         Product product4 = new Product("Product 4", 25.49, 2);
 
-        Product expensive = findMostExpensiveProduct(product1, product2, product3, product4);
+        Product expensive = findMostExpensiveProduct(product1, product2, product3, product4);//Nice
 
         System.out.println("The most expensive product has name - " + expensive.getName() + " and has price - " + expensive.getPrice());
 
