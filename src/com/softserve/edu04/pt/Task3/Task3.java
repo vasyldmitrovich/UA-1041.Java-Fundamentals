@@ -1,15 +1,10 @@
-package com.softserve.edu04.pt;
+package com.softserve.edu04.pt.Task3;
 //When you past your code there, write package like package com.softserve.edu04.pt;
 import java.util.Scanner;
 
 //Name of class should start from upper case
-public class task3 {
-    //enum should not be there should be in file Country.java
-    public enum Country {
-        England, USA, CHILE, BRAZIL, NORWAY, FRANCE, ITALY
-    }
-
-
+public class Task3 {
+    //enum should not be there should be in file com.softserve.edu04.pt.Task3.Country.java
     //This method should be in class like App.java
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);

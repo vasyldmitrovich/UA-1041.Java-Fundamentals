@@ -1,23 +1,26 @@
-package com.softserve.edu03;
+package com.softserve.edu03.hw.task3;
 //In first line was bad package
 import java.util.Scanner;
 
 public class Person {
     //Do not correct order
     // firstly should be private variable, after static, after constructors, after getters and setters and after another methods
-    static Scanner SCANNER=new Scanner(System.in);
-    static private int totalPeople;
     private String firstName;
     private String lastName;
     private int birthYear;
+
+    static Scanner SCANNER=new Scanner(System.in);
+    static private int totalPeople;
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+
 
     public String getLastName() {
         return lastName;
@@ -44,8 +47,10 @@ public class Person {
         this.lastName = lastName;
         totalPeople++;
     }
-    private void getAge(){
+    public void getAge(){
+        System.out.println();
         System.out.println("you are: "+(2023-birthYear));
+        System.out.println();
 
     }
 
@@ -60,6 +65,7 @@ public class Person {
         System.out.print("Your year of birth: ");
         birthYear=SCANNER.nextInt();
         SCANNER.nextLine();
+        System.out.println();
     }
 
     /**
@@ -71,6 +77,7 @@ public class Person {
         System.out.println("Your last name: "+(lastName));
 
         System.out.println("Your year of birth: "+(birthYear));
+        System.out.println();
 
     }
 
@@ -78,31 +85,10 @@ public class Person {
     public void changeName(String fn, String ln){
         String the_Third_Cup;
         the_Third_Cup=fn;
-        fn=ln;
-        ln=the_Third_Cup;
+        this.firstName=ln;
+        this.lastName=the_Third_Cup;
     }
 
     //Move this method to class like App.java
-    public static void main(String[] args) {
 
-
-        Person people1=new Person();
-        Person people2=new Person();
-        Person people3=new Person();
-        Person people4=new Person();
-        Person people5=new Person();
-        people1.input();
-        people2.input();
-        people3.input();
-        people4.input();
-        people5.input();
-
-        //please add spaces between different peoples
-        people1.getAge();
-        people1.output();
-        people2.output();
-        people3.output();
-        people4.output();
-        people5.output();
-    }
 }

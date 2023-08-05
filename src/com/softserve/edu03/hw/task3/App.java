@@ -1,4 +1,5 @@
-package com.softserve.edu03.task3;
+package com.softserve.edu03.hw.task3;
+
 public class App {
     public static void main(String[] args) {
 

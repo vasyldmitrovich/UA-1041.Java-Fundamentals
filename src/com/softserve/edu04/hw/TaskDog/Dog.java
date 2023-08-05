@@ -1,6 +1,5 @@
-package com.softserve.edu04.hw;
+package com.softserve.edu04.hw.TaskDog;
 
-import javax.management.MBeanAttributeInfo;
 import java.util.Objects;
 import java.util.Scanner;
 

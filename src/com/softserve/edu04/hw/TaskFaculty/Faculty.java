@@ -1,4 +1,4 @@
-package com.softserve.edu04.hw;
+package com.softserve.edu04.hw.TaskFaculty;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class Faculty {
     private String SeasonPS;
     private static String University;
 
-    void  static input() {
+    void  input() {
         System.out.println("Your name: ");
         name = SCANNER.nextLine();
         System.out.println("Your age: ");
@@ -21,17 +21,22 @@ public class Faculty {
         SCANNER.nextLine();
         System.out.println("Your University: ");
         University = SCANNER.nextLine();
-        System.out.println("Your Season: ");
+        System.out.println("Your com.softserve.edu04.hw.TaskFaculty.Season: ");
         SeasonPS = SCANNER.nextLine();
         Season sezon = Season.valueOf(SeasonPS);
-        String response = switch (sezon) {
-            case WINTER, SPRING -> {
-                yield "1 semester";
-            }
-            case SUMMER, AUTUMN -> {
-                yield "2 semester";
-            }
-        };
+        String response;
+        switch (sezon) {
+            case WINTER:
+            case SPRING:
+                response = "1 semester";
+                break;
+            case SUMMER:
+            case AUTUMN:
+                response = "2 semester";
+                break;
+            default:
+                throw new IllegalArgumentException();
+        }
         System.out.println(response);
     }
 
