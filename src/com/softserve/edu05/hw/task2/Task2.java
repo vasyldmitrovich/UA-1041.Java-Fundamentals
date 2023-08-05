@@ -3,7 +3,8 @@ package com.softserve.edu05.hw.task2;
 import java.util.Scanner;
 
 public class Task2 {
-    static final Scanner SC = new Scanner(System.in);
+    static final Scanner SC = new Scanner(System.in);//Make field final only if you initial this field once
+    //I understand that there you use only once, but maybe in future you will use this field if you write new functionality in this class
 
     public static void main(String[] args) {
         getSum();

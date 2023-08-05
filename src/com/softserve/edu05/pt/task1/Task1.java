@@ -27,7 +27,7 @@ public class Task1 {
 
     public static void checkNumber(int[] arr1) {
         boolean check = false;
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);//Make method which take data from user like you already use in previous tasks
         System.out.print("Input any number to check if it is inside of an array: ");
         int number = sc.nextInt();
         for (int i = 0; i < arr1.length; i++) {
