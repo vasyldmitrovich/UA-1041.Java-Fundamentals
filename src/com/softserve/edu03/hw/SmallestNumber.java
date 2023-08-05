@@ -7,10 +7,13 @@ public class SmallestNumber {
         Scanner getNum = new Scanner(System.in);
         System.out.print("Input first number: ");
         double a = getNum.nextDouble();
+
         System.out.print("Input second number: ");
         double b = getNum.nextDouble();
+
         System.out.print("Input third number: ");
         double c = getNum.nextDouble();
+        //move this if to some method and call this method there
        if (a < b && a < c ) {
            System.out.print("The smallest number is: " + (int)a);
            } else if (b < a && b < c) {

@@ -25,6 +25,7 @@ public class Employee {
 
     }
 
+    //toString should be after getters and setters
     @Override
     public String toString() {
         return "Employee{" +

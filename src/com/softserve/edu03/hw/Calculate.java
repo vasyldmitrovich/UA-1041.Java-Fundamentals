@@ -7,8 +7,10 @@ public class Calculate {
         Scanner getSide = new Scanner(System.in);
         System.out.print("Input side 1: ");
         double a = getSide.nextDouble();
+
         System.out.print("Input side 2: ");
         double b = getSide.nextDouble();
+
         System.out.print("Input side 3: ");
         double c = getSide.nextDouble();
 
