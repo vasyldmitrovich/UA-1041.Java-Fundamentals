@@ -1,6 +1,6 @@
 package com.softserve.edu04.hw.task_3;
 
-public enum HTTPError {
+public enum HTTPError {//Good
 
     ERR_100(100, "Continue"), ERR_101(101, "Switching Protocols"), ERR_102(102, "Processing"),
     ERR_200(200, "OK"), ERR_201(201, "Created"), ERR_202(202, "Accepted"),

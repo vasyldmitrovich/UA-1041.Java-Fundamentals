@@ -2,7 +2,7 @@ package com.softserve.edu04.hw.task_2;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main {//Good
     public static void main(String[] args) {
         int[] arr = new int[3];
         System.out.println("Input three integer numbers)");

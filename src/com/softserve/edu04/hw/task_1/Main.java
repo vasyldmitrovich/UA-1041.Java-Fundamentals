@@ -2,7 +2,7 @@ package com.softserve.edu04.hw.task_1;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main {//Good
     public static void main(String[] args) {
         float[] arr = new float[3];
         System.out.println("Input three float numbers(use ',')");

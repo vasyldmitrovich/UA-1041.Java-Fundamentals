@@ -1,7 +1,7 @@
 package com.softserve.edu04.pt.task_4_5;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Nice
         Product[] products = new Product[4];
         products[0] = new Product("Orange", 60.5, 10);
         products[1] = new Product("Tomato", 40.7, 15);

@@ -46,4 +46,5 @@ public class Product {
                 ", quantity=" + quantity +
                 '}';
     }
+    //Add equals and hash code
 }
