@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Odd {
     public static void main(String[] args) {
+
+        //Do not write all logic in main method
         Scanner sc = new Scanner(System.in);
         System.out.println("enter first number:");
         int num1 = sc.nextInt();

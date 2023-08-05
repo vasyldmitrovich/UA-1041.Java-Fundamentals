@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class DoWhile {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         String response;
+        //Logic like that write in some method and there call this method
         do {
             System.out.println("Enter two numbers");
             int num1 = sc.nextInt();

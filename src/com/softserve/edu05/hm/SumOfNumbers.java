@@ -6,6 +6,9 @@ import java.util.Scanner;
 public class SumOfNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+
+        //Do the same things about separate logic to different methods
         int[] numArray = new int[10];
         for (int i = 0; i < numArray.length; i++) {
             numArray[i] = sc.nextInt();

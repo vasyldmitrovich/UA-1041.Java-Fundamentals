@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class DayOfWeek {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        //This is not good Enum should be in another file like Day.java
+        //And there you use this enum
     enum Day{
         Mon("Понеділок", "Monday"), Tue("Вівторок", "Tuesday"), Wed("Середа", "Wednesday"),
                 Thu("Четвер", "Thursday"), Fri("П'ятниця", "Friday"), Sat("Субота", "Saturday"), Sun("Неділя", "Sunday");
