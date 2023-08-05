@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Product {
-    static List<Product> storehouse = new ArrayList<Product>();
+    static List<Product> storehouse = new ArrayList<Product>();//List like that move to class like App.class
     int quantity;
     String name;
     double price;
@@ -27,7 +27,7 @@ public class Product {
             }
         }
         return maxPriceProd;
-    }
+    }//This and next method move to class like App.java
 
     public static Product getMostQuantifiedProduct() {
         int maxQuantity = 0;

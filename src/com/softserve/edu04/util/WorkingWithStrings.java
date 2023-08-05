@@ -1,6 +1,6 @@
 package com.softserve.edu04.util;
 
-public class WorkingWithStrings {
+public class WorkingWithStrings {//Ok
     public static String capitalizeString(String str) {
         str.replace("_", " ");
         String[] words = str.split(" ");

@@ -2,7 +2,7 @@ package com.softserve.edu05.util;
 
 import java.util.Scanner;
 
-public class CollectInputs {
+public class CollectInputs {//All ok
     private static final Scanner sc = new Scanner(System.in);
 
     public static float inputNumberFloat(String message) {

@@ -15,4 +15,5 @@ public class WorkingWithStrings {
     public static String capitalizeWord(String word) {
         return word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
     }
-}
+}//You do not use this class and method
+//Write class App.java with main method and represent your work

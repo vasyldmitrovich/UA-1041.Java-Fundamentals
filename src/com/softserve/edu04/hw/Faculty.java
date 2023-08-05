@@ -35,7 +35,7 @@ public class Faculty {
 
     public void intputNumOfStudents() {
         this.numOfStudents = inputNumberInt("Input num of students");
-    }
+    }//Move to App.java
 
     public void inputSeason() {
         String season = capitalizeString(inputString("Please enter name of season"));
@@ -46,7 +46,7 @@ public class Faculty {
             case "Autumn", "Осінь" -> this.season = Season.AUTUMN.getEngSeason();
             default -> System.out.println("No such season");
         }
-    }
+    }//Move to App.java and next two methods too
 
     public void outputNumOfStudents() {
         System.out.println("The number of students is: " + this.numOfStudents);

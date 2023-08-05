@@ -10,12 +10,12 @@ import static com.softserve.edu04.util.CollectInputs.inputNumberInt;
 public class Main {
     public static void main(String[] args) {
         runProgram();
-    }
+    }//Good practice if in main method only one method
 
     private static void runProgram() {
         int numOfTask = -1;
         do {
-            printList();
+            printList();//Good decision divide different logic to different methods and call this method there
             System.out.print("\nPlease input the number of the task: ");
             numOfTask = inputNumberInt();
             System.out.println("\nWelcome to " + numOfTask + " task\n");

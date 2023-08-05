@@ -55,7 +55,7 @@ public class Task3 {
                 ", countOfNegative=" + countOfNegative +
                 ", countOfPositive=" + countOfPositive +
                 '}';
-    }
+    }//Why you add toString to this class, this class do not represent entity, it is working class
 
 
 }

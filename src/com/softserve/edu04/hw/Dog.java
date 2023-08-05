@@ -8,7 +8,8 @@ import static com.softserve.edu04.util.CollectInputs.inputString;
 import static com.softserve.edu04.util.WorkingWithStrings.capitalizeString;
 
 public class Dog {
-    static List<Dog> petShop = new ArrayList<Dog>();
+    static List<Dog> petShop = new ArrayList<Dog>();//This list and all logic move to class Main.java or App.java
+    //Class like that have one functionality representing entity that all
     private int age;
     private String breed;
     private String name;
@@ -41,7 +42,7 @@ public class Dog {
         }
 
         return false;
-    }
+    }//This method move to class like App.java
 
     public static Dog getOldestDog() {
         int maxAge = 0;
@@ -54,14 +55,14 @@ public class Dog {
             }
         }
         return oldestDog;
-    }
+    }//This method move to class like App.java too
 
     public void fullFillDogInfo() {
         inputAge();
         inputName();
         inputBreed();
         petShop.add(this);
-    }
+    }//And this method, and next three methods too
 
     public void inputAge() {
         this.age = inputNumberInt("Please enter age of dog");
