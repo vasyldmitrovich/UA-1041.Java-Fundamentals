@@ -17,7 +17,7 @@ public class Faculty {
         System.out.print("Input number of students for autumn: ");
         int num4 = scanner.nextInt();
 
-       Season season1 = Season.AUTUMN;
+       Season season1 = Season.AUTUMN;//Add one space before this lind, should be four staces
        Season season2 = Season.SPRING;
        Season season3 = Season.SUMMER;
        Season season4 = Season.WINTER;

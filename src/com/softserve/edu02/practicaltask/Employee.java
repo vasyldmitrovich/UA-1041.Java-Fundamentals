@@ -5,7 +5,7 @@ import javax.swing.text.html.HTML;
 import java.util.Scanner;
 
 public class Employee {
-    private static final Scanner SCANNER = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);//This scanner should be in class like App.java where should be main method
     private static double totalSum;
     private String name;
     private int rate;
@@ -13,8 +13,8 @@ public class Employee {
 
 
     public Employee() {
-        this("N/A", 0 , 0);
-
+        this("N/A", 0 , 0);//You do not need doing something like that
+//primitive field by default will have data like int field will have 0. string will initialize null
     }
 
     public Employee(String name, int rate, int hours) {
@@ -39,7 +39,7 @@ public class Employee {
         return totalSum;
     }
 
-    public static void promParameters(Employee employee) {
+    public static void promParameters(Employee employee) {//Method like that should bi in class like App.java where should be main method
         System.out.println("Input name: ");
         String name = SCANNER.nextLine();
         employee.setName(name);
@@ -103,8 +103,8 @@ public class Employee {
         Employee employee3 = new Employee();
         Employee.promParameters(employee3);
 
-
-
+//Move to class like App.java
+//This class Employee should represent entity not all this thing
 
 
 
