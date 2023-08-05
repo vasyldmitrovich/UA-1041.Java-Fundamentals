@@ -5,7 +5,9 @@ public class App {
         Dog dog1 = new Dog("Jessie", 6);
         Dog dog2 = new Dog("Richard", 10);
         Dog dog3 = new Dog("Alfie", 12);
+
         Dog.checkName(dog1, dog2, dog3);
+
         Dog.getOldest(dog1, dog2, dog3);
     }
 }

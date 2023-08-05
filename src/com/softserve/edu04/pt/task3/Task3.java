@@ -7,7 +7,7 @@ public class Task3 {
         String country = getCountry("Input one of the countries from the list (Indonesia, Australia, Kenya, Ukraine, Brazil, Mexico) to see their continent: ");
         getContinent(country);
     }
-
+//All good
     private static void getContinent(String number) {
         Continent continent;
         continent = switch (number) {

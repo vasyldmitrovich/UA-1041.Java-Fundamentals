@@ -10,6 +10,7 @@ public class Person {
     public Person() {
     }
 
+    //Static field should go after not static fields
     static final Scanner SC = new Scanner(System.in);
 
     public Person(String firstName, String lastName) {
@@ -45,6 +46,7 @@ public class Person {
         return 2023 - birthYear;
     }
 
+    //Good
     public void input() {
         System.out.print("Input the Firstname of the person: ");
         String firstName1 = SC.nextLine();

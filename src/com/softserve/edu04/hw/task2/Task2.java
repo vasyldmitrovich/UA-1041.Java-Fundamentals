@@ -7,6 +7,7 @@ public class Task2 {
         int num1 = getNumber("Input the first number: ");
         int num2 = getNumber("Input the second number: ");
         int num3 = getNumber("Input the third number: ");
+
         System.out.println("The biggest number is: " + getMax(num1, num2, num3));
         System.out.println("The smallest number is: " + getMin(num1, num2, num3));
     }

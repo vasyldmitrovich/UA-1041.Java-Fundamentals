@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Task1 {
     public static int getNumber(String number) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print(number);
+
         return sc.nextInt();
     }
 

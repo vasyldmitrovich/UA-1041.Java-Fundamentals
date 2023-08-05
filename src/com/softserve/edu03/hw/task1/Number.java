@@ -18,7 +18,8 @@ public class Number {
         double num1 = getNumber("Input the first number: ");
         double num2 = getNumber("Input the second number: ");
         double num3 = getNumber("Input the third number: ");
-        double min = getMin(num1, num2, num3);
+
+        double min = getMin(num1, num2, num3);//Good :-)
         System.out.format("The smallest number is %.2f", min);
     }
 }

@@ -19,6 +19,7 @@ public class Triangle {
         double firstSide = getNumber("Input side 1: ");
         double secondSide = getNumber("Input side 2: ");
         double thirdSide = getNumber("Input side 3: ");
+
         double area = getArea(firstSide, secondSide, thirdSide);
         System.out.format("The area of the triangle is %.2f", area);
     }

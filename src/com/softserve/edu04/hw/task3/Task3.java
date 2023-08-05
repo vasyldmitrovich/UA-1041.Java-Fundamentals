@@ -22,7 +22,7 @@ public class Task3 {
         } else {
             System.out.println(error);
         }
-    }
+    }//Good
 
     public static String getNumber(String num) {
         Scanner sc = new Scanner(System.in);

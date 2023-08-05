@@ -5,7 +5,7 @@ public class Dog {
 
     enum Breed {
         SHEPARD, LABRADOR, MALAMUTE
-    }
+    }//This enum write in separate file like Breed.java
 
     private int age;
 
@@ -47,7 +47,7 @@ public class Dog {
         } else {
             System.out.println("The oldest dog is: " + dog3.getName() + ", " + Breed.MALAMUTE);
         }
-    }
+    }//Method like that write in class App.java
 }
 
 

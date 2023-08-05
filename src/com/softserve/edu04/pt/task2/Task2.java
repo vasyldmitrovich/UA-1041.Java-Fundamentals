@@ -25,6 +25,7 @@ public class Task2 {
 
     public static void main(String[] args) {
         int dayOfWeek = getNumber("Input the number of the day of the week: ");
+
         getDay(dayOfWeek);
     }
 }

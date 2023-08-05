@@ -46,7 +46,7 @@ public class Employee {
 
     public static double getTotalSum(Employee emp1, Employee emp2, Employee emp3) {
         return totalSum = emp1.getSalary() + emp2.getSalary() + emp3.getSalary();
-    }
+    }//Good
 
     public static void setTotalSum(int totalSum) {
         Employee.totalSum = totalSum;

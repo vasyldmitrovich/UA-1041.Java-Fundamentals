@@ -6,7 +6,7 @@ public class Task1 {
     public static double getTotal(double a, double b) {
         return a + b;
     }
-
+//All is good
     public static double getAverage(double a, double b) {
         return (a + b) * 0.5;
     }
