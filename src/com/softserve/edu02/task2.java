@@ -2,6 +2,7 @@ package com.softserve.edu02;
 //In your local project mark as source code package src
 import java.util.Scanner;
 
+//Class should start from upper case, for example Task2.java
 public class task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
