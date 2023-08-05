@@ -54,5 +54,5 @@ public class TwoNumbers {
             }
         } while (answer.equals("y"));
         System.out.println("--------------------------------");
-    }
+    }//And this method you do not use
 }

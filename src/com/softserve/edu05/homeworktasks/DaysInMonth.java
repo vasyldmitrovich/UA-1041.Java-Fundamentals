@@ -2,7 +2,7 @@ package com.softserve.edu05.homeworktasks;
 
 import static com.softserve.edu05.homeworktasks.Main.SCANNER;
 
-public class DaysInMonth {
+public class DaysInMonth {//Nice
     private static final int[] daysInMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     private static int numOfMonth;
 

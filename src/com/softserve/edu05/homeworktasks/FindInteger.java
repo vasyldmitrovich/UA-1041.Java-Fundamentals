@@ -62,5 +62,5 @@ public class FindInteger {
         getPosition(obj);
         getMinimumValue(obj);
         System.out.println("--------------------------------");
-    }
+    }//You do not use this method, Why?
 }

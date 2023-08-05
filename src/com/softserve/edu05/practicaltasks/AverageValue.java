@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import static com.softserve.edu05.practicaltasks.Main.SCANNER;
 
-public class AverageValue {
+public class AverageValue {//All good, nice
     private int[] averageArray;
 
     public AverageValue() {
