@@ -5,7 +5,7 @@ public class Task1_2 {
     public static void main(String[] args) {
         Scanner scaner=new Scanner(System.in);
         int[] array = new int[10];
-        boolean f=true;
+        boolean f=true;//Give correct name of variables
         int s=0;
         int d=1;
         for (int i = 0; i < 10; i++) {

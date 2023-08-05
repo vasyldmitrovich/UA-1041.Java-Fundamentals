@@ -9,7 +9,7 @@ public class Task1_3 {
         int[] array = new int[5];
         boolean f = true;
         int s = 0;
-        int t=0;
+        int t=0;//Give more informative name of variables
         int r=0;
         int p=1;
         int d = 1;

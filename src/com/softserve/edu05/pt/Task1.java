@@ -7,9 +7,9 @@ import static java.util.Arrays.sort;
 public class Task1 {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
-        String [] ARRAY={"cdsdcs","scscscsd","erfefefef","pojopokpojpo","qweqeqe"};
+        String [] ARRAY={"cdsdcs","scscscsd","erfefefef","pojopokpojpo","qweqeqe"};//Upper case name give if variable is final
         int[] arayint= {9, 7, 6, 4, 1};
-        int s=0;
+        int s=0;//Name of variable should be informative
         boolean d=false;
         int k=0;
         Arrays.sort(ARRAY);
