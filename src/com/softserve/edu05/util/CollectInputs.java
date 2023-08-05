@@ -28,5 +28,12 @@ public class CollectInputs {
         String str = sc.next();
         return str;
     }
-
+    public static void fulfillIntArray(int[]array){
+        System.out.println("Please fulfill array:\n");
+        int i = 0;
+        while(i<array.length){
+           array[i] = inputNumberInt("Number "+(i+1));
+           i++;
+        }
+    }
 }
