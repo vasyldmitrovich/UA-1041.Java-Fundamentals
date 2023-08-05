@@ -1,6 +1,6 @@
-package com.softserve.edu04.hw.hw03;
+package com.softserve.edu04.hw;
 
-public enum HttpEnum {
+public enum HttpEnum {//Ok
     ERR_400("Bad Request"),
     ERR_401("Unauthorized"),
     ERR_402("Payment Required"),

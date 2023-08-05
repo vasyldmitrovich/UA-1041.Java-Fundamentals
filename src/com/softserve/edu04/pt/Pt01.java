@@ -18,6 +18,8 @@ public class Pt01 {
         System.out.print("Enter third number: ");
         int num3 = scanner.nextInt();
 
+
+        //Divide this logic to some methods and call this method there
         if (num1 % 2 == 0) {
             System.out.println(num1 + " is even");
         } else {

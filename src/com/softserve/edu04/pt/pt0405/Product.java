@@ -5,6 +5,8 @@ public class Product {
     private double price;
     private int quantity;
 
+    //Add constructor without parameters
+
     public Product(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
@@ -36,7 +38,7 @@ public class Product {
     }
 
 
-    public static void getMaxPrice(Product prod1, Product prod2, Product prod3, Product prod4) {
+    public static void getMaxPrice(Product prod1, Product prod2, Product prod3, Product prod4) { // Method like that should be in class where is main method
         double maxPrice = Math.max(prod1.getPrice(), Math.max(prod2.getPrice(), Math.max(prod3.getPrice(), prod4.getPrice())));
 
         if (maxPrice == prod1.getPrice()) {
@@ -53,7 +55,7 @@ public class Product {
         }
     }
 
-    public static void getMaxQuantity(Product prod1, Product prod2, Product prod3, Product prod4) {
+    public static void getMaxQuantity(Product prod1, Product prod2, Product prod3, Product prod4) {//And this method too
 
         int maxQuantity = Math.max(prod1.getQuantity(), Math.max(prod2.getQuantity(), Math.max(prod3.getQuantity(), prod4.getQuantity())));
 
@@ -79,4 +81,6 @@ public class Product {
                 ", quantity = " + quantity +
                 '}';
     }
+
+    //Add equals and hash code
 }

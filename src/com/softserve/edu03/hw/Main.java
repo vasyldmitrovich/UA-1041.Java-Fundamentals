@@ -1,4 +1,4 @@
-package com.softserve.edu03.hw.hw03;
+package com.softserve.edu03.hw;
 
 public class Main {
     public static void main(String[] args) {

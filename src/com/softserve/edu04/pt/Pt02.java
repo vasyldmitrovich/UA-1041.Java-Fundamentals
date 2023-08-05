@@ -9,6 +9,7 @@ public class Pt02 {
         System.out.print("Enter number day of week: ");
         int day = scanner.nextInt();
 
+        //Use switch case not if statement, code will be more readable
         if (day == 1) {
             System.out.println("Monday\nПонеділок");
         }

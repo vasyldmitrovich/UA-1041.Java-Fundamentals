@@ -6,7 +6,7 @@ public class Pt03 {
     public static void main(String[] args) {
         enum Continent {
             EUROPE, AUSTRALIA, NORTH_AMERICA
-        }
+        }//This enum should be in file Continent.java not there
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter country: ");
         String nameCountry = scanner.nextLine();

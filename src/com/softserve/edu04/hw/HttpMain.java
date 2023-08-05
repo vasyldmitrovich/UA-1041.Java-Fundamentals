@@ -1,10 +1,10 @@
-package com.softserve.edu04.hw.hw03;
+package com.softserve.edu04.hw;
 
 import java.util.Scanner;
 
 public class HttpMain {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);//Move this and next two lines to some method and there call this method
         System.out.print("Enter number HTTP error (400...405): ");
         int numErr = scanner.nextInt();
 
