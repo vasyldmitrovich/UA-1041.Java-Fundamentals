@@ -1,3 +1,4 @@
+package com.softserve.edu04.hw.work1;
 import java.util.Scanner;
 
 public class Main {
@@ -12,6 +13,7 @@ public class Main {
         System.out.println("Input third float number: ");
         float num3 = SCANNER.nextFloat();
 
+        //Move this if to some method and call this method there
         if (num1 >= -5 && num1 <= 5 && num2 >= -5 && num2 <= 5 && num3 >= -5 && num3 <= 5) {
             System.out.println("All numbers belong to the range [-5, 5]");
         } else {

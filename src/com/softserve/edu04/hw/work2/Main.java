@@ -1,3 +1,5 @@
+package com.softserve.edu04.hw.work2;
+
 import java.util.Scanner;
 
 public class Main {
@@ -6,8 +8,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Input first number: ");
         int num1 = SCANNER.nextInt();
+
         System.out.println("Input second number: ");
         int num2 = SCANNER.nextInt();
+
         System.out.println("Input third number: ");
         int num3 = SCANNER.nextInt();
 

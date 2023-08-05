@@ -1,9 +1,11 @@
+package com.softserve.edu04.hw.work3;
+
 import java.util.Scanner;
 
 public class Main {
     enum HTTPError {
         BAD_REQUEST, UNAUTHORIZED, PAYMENT_REQUIRED, FORBIDDEN, NOT_FOUND
-    }
+    }//This enum should be in another file HTTPError.java not there
     static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
