@@ -3,13 +3,11 @@ package com.softserve.edu05.hw;
 import com.softserve.edu05.hw.Task1.FiveIntegers;
 import com.softserve.edu05.hw.Task1.MonthsDays;
 import com.softserve.edu05.hw.Task1.TenIntegers;
-import com.softserve.edu05.pt.Employee;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-import static com.softserve.edu04.util.CollectInputs.inputNumberInt;
+import static com.softserve.edu04.util.CollectInputs.*;
 
 public class App {
     static ArrayList<Car>  garage = new ArrayList<>();
@@ -29,8 +27,8 @@ public class App {
                 case 1 -> runTask1_1();
                 case 2 -> runTask1_2();
                 case 3 -> runTask1_3();
-                case 4 -> runTaks2();
-                case 5 -> System.out.println();
+                case 4 -> runTask2();
+                case 5 -> runTaks3();
                 case 6 -> System.out.println();
                 case 0 -> System.out.println("Goodbye");
                 default -> System.out.println("Invalid number of the task. Please select the correct one");
@@ -69,7 +67,7 @@ public class App {
                 "\nMin value index: " + fi1.positionOfSecondPositive());
         System.out.println("Production of even numbers: " + fi1.productionOfEvens());
     }
-    static void runTaks2(){
+    static void runTaks3(){
         Car car1 = new Car("Wagon",2018,3000);
         Car car2 = new Car("Crossover",2015,2000);
         Car car3 = new Car("Sedan",2017,2500);
@@ -97,5 +95,24 @@ public class App {
             System.out.println(car);
         }
 
+    }
+    static void runTask2(){
+        boolean condition = true;
+        do{
+            int num1 = inputNumberInt("Input first num:");
+            int num2 = inputNumberInt("Input second num:");
+            System.out.format("%d + %d = %d",num1,num2,(num1+num2));
+            switch (inputString("Do you want to continue:Y/N")){
+                case "Yes","Y" -> System.out.println("Lets continue");
+                case "No","N" -> {
+                    System.out.println("Exit");
+                    condition=false;
+                }
+                default -> {
+                    System.out.println("No such operation");
+                    condition=false;
+                }
+            }
+        }while(true);
     }
 }
