@@ -29,7 +29,7 @@ public class App {
                 case 3 -> runTask1_3();
                 case 4 -> runTask2();
                 case 5 -> runTaks3();
-                case 6 -> System.out.println();
+                case 6 -> runTask4();
                 case 0 -> System.out.println("Goodbye");
                 default -> System.out.println("Invalid number of the task. Please select the correct one");
             }
@@ -114,5 +114,21 @@ public class App {
                 }
             }
         }while(true);
+    }
+    static void runTask4(){
+        int randNum = com.softserve.edu05.util.RandNums.randInt(-10,11);
+        System.out.println("The rand num is "+randNum+"tssssssssss!");
+        boolean notGuessed = true;
+        do {
+        int answer = inputNumberInt("Input your guess");
+            if(answer>randNum){
+                System.out.println("Too high, try again");
+            } else if (answer<randNum) {
+                System.out.println("Too low, try again");
+            }else{
+                System.out.println("You guessed! The number was "+answer);
+                notGuessed= false;
+            }
+        }while (notGuessed);
     }
 }
