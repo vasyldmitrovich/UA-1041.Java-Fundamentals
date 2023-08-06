@@ -8,26 +8,19 @@ public class Task_2 {
         System.out.println("Please write a number: ");
         int numberOfDay = scanner.nextInt();
         if (numberOfDay == 1) {
-            System.out.println("Sunday");
-            System.out.println("Воскресенье");
+            System.out.println("In English Sunday, in Russian Воскресенье");
         } else if(numberOfDay == 2) {
-            System.out.println("Monday");
-            System.out.println("Понедельник");
+            System.out.println("In English Monday, in Russian Понедельник");
         } else if(numberOfDay == 3) {
-            System.out.println("Tuesday");
-            System.out.println("Вторинк");
+            System.out.println("In English Tuesday, in Russian Вторинк");
         }else if(numberOfDay == 4) {
-            System.out.println("Wednesday");
-            System.out.println("Среда");
+            System.out.println("In English Wednesday, in Russian Среда");
         }else if(numberOfDay == 5) {
-            System.out.println("Thersday");
-            System.out.println("Четверг");
+            System.out.println("In English Thersday, in Russian Четверг");
         }else if(numberOfDay == 6) {
-            System.out.println("Friday");
-            System.out.println("Пятница");
+            System.out.println("In English Friday, in Russian Пятница");
         }else if(numberOfDay == 7) {
-            System.out.println("Saturday");
-            System.out.println("Суббота");
+            System.out.println("In English Saturday, in Russian Суббота");
         } else {
             System.out.println("It is not a day of the week");
         }
