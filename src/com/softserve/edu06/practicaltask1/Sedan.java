@@ -1,4 +1,4 @@
-package com.softserve.edu06.practicaltasts;
+package com.softserve.edu06.practicaltask1;
 
 public class Sedan extends Car {
     public Sedan() {
