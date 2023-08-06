@@ -7,17 +7,17 @@ import static java.util.Arrays.sort;
 public class Task1 {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
-        String [] ARRAY={"cdsdcs","scscscsd","erfefefef","pojopokpojpo","qweqeqe"};
+        String [] array={"cdsdcs","scscscsd","erfefefef","pojopokpojpo","qweqeqe"};
         int[] arayint= {9, 7, 6, 4, 1};
-        int summ=0;
+        double summ=0;
         boolean flag=false;
         int counter=0;
-        Arrays.sort(ARRAY);
+        Arrays.sort(array);
         /**
          * this loop sort the array of string
          */
-        for (int i = 0; i < ARRAY.length; i++) {
-            System.out.println(ARRAY[i]);
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
         }
         /**
          * this loop sums all elements of the array
@@ -25,13 +25,13 @@ public class Task1 {
         for (int i = 0; i < 4; i++) {
             summ+=arayint[i];
         }
-        System.out.println("the average value of 5 array elements: "+(summ/4));
+        System.out.println("the average value of 5 array elements: "+(summ/5));
         scanner.nextLine();
         System.out.println("input a number ");
         var users=scanner.nextLine();
 
-        for (int i = 0; i < ARRAY.length; i++) {
-            if(users.equals(ARRAY[i])){
+        for (int i = 0; i < array.length; i++) {
+            if(users.equals(array[i])){
                 flag=true;
                 counter++;
             }
