@@ -6,7 +6,7 @@ public class Main {
                 new Employee("John", 25, 1500.50),
                 new Developer("Bob", 30, "Senior Java Developer", 6000.2)
         };
-        for(var staff : employee){
+        for (var staff : employee) {
             System.out.println(staff.report());
         }
     }

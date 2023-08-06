@@ -10,7 +10,8 @@ public class Employee {
         this.age = age;
         this.salary = salary;
     }
-    public String report(){
+
+    public String report() {
         return String.format("Name: %s, Age: %d," + "Salary: ₴ %.2f.", name, age, salary);
     }
 }

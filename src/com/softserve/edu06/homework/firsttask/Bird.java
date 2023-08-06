@@ -35,10 +35,6 @@ abstract class Bird {
 
     @Override
     public String toString() {
-        return "Bird{" +
-                "nameOfBird='" + nameOfBird + '\'' +
-                ", feathers='" + feathers + '\'' +
-                ", layEggs=" + layEggs +
-                '}';
+        return "Bird{" + "nameOfBird='" + nameOfBird + '\'' + ", feathers='" + feathers + '\'' + ", layEggs=" + layEggs + '}';
     }
 }
