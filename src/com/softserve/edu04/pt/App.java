@@ -12,6 +12,7 @@ import static com.softserve.edu04.util.CollectInputs.inputNumberInt;
 
 public class App {
     static List<Product> storehouse = new ArrayList<Product>();
+
     public static void main(String[] args) {
         runProgram();
     }
@@ -75,6 +76,7 @@ public class App {
                 "\n\t4 or 5 - Forth-Fifth task" +
                 "\n\t0 - Exit\n");
     }
+
     public static Product getMostExpensiveProduct() {
         double maxPrice = 0;
         Product maxPriceProd = null;

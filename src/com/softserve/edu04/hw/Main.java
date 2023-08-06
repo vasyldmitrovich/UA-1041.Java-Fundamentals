@@ -8,11 +8,11 @@ import java.util.List;
 import static com.softserve.edu04.hw.MinAndMax.findMinAndMax;
 import static com.softserve.edu04.hw.ThreeNumbers.checkIfAllNumsInRange;
 import static com.softserve.edu04.util.CollectInputs.*;
-import static com.softserve.edu04.util.CollectInputs.inputString;
 import static com.softserve.edu04.util.WorkingWithStrings.capitalizeString;
 
 public class Main {
     static List<Dog> petShop = new ArrayList<Dog>();
+
     public static void main(String[] args) {
         runProgram();
     }
@@ -96,6 +96,7 @@ public class Main {
 
 
     }
+
     public static boolean hasDuplicatedNames() {
         if (petShop == null || petShop.isEmpty()) {
             return false;
@@ -139,27 +140,28 @@ public class Main {
         dog.setAge(inputNumberInt("Please enter age of dog"));
     }
 
-    public static void inputDogName(Dog dog ) {
+    public static void inputDogName(Dog dog) {
         dog.setName(inputString("Please enter name of dog"));
     }
 
     public static void inputBreed(Dog dog) {
         String breed = capitalizeString(inputString("Please enter breed of dog:"));
         switch (breed) {
-            case "Beagle" -> dog.setBreed( Breed.BEAGLE.getBreed());
-            case "Boxer" ->  dog.setBreed( Breed.BOXER.getBreed()) ;
-            case "Bulldog" ->  dog.setBreed( Breed.BULLDOG.getBreed())  ;
-            case "Dachshund" ->  dog.setBreed( Breed.DACHSHUND.getBreed()) ;
-            case "German Shepherd" ->  dog.setBreed(  Breed.GERMAN_SHEPHERD.getBreed()) ;
-            case "Golder Retriever" ->  dog.setBreed( Breed.GOLDEN_RETRIEVER.getBreed());
-            case "Labrador Retriever" ->  dog.setBreed( Breed.LABRADOR_RETRIEVER.getBreed());
-            case "Poodle" ->  dog.setBreed(Breed.POODLE.getBreed());
-            case "Rottweiler" ->  dog.setBreed( Breed.ROTTWEILER.getBreed()) ;
-            case "Siberian Husky" ->  dog.setBreed(Breed.SIBERIAN_HUSKY.getBreed());
+            case "Beagle" -> dog.setBreed(Breed.BEAGLE.getBreed());
+            case "Boxer" -> dog.setBreed(Breed.BOXER.getBreed());
+            case "Bulldog" -> dog.setBreed(Breed.BULLDOG.getBreed());
+            case "Dachshund" -> dog.setBreed(Breed.DACHSHUND.getBreed());
+            case "German Shepherd" -> dog.setBreed(Breed.GERMAN_SHEPHERD.getBreed());
+            case "Golder Retriever" -> dog.setBreed(Breed.GOLDEN_RETRIEVER.getBreed());
+            case "Labrador Retriever" -> dog.setBreed(Breed.LABRADOR_RETRIEVER.getBreed());
+            case "Poodle" -> dog.setBreed(Breed.POODLE.getBreed());
+            case "Rottweiler" -> dog.setBreed(Breed.ROTTWEILER.getBreed());
+            case "Siberian Husky" -> dog.setBreed(Breed.SIBERIAN_HUSKY.getBreed());
 
             default -> System.out.println("No such season");
         }
     }
+
     public static void intputNumOfStudents(Faculty fc) {
         fc.setNumOfStudents(inputNumberInt("Input num of students"));
     }
@@ -167,16 +169,16 @@ public class Main {
     public static void inputSeason(Faculty fc) {
         String season = capitalizeString(inputString("Please enter name of season"));
         switch (season) {
-            case "Summer", "Літо" -> fc.setSeason( Season.SUMMER.getEngSeason());
-            case "Spring", "Весна" -> fc.setSeason( Season.SPRING.getEngSeason());
-            case "Winter", "Зима" -> fc.setSeason( Season.WINTER.getEngSeason());
-            case "Autumn", "Осінь" -> fc.setSeason( Season.AUTUMN.getEngSeason());
+            case "Summer", "Літо" -> fc.setSeason(Season.SUMMER.getEngSeason());
+            case "Spring", "Весна" -> fc.setSeason(Season.SPRING.getEngSeason());
+            case "Winter", "Зима" -> fc.setSeason(Season.WINTER.getEngSeason());
+            case "Autumn", "Осінь" -> fc.setSeason(Season.AUTUMN.getEngSeason());
             default -> System.out.println("No such season");
         }
     }
 
     public static void outputNumOfStudents(Faculty fc) {
-        System.out.println("The number of students is: " + fc.getNumOfStudents() );
+        System.out.println("The number of students is: " + fc.getNumOfStudents());
     }
 
     public static void outputSeason(Faculty fc) {
