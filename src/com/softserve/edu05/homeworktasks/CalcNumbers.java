@@ -36,21 +36,21 @@ public class CalcNumbers {//Good
         int[] num = numbers;
         int[] reverseNum = new int[10];
         int j = 0;
-        for(int i = num.length - 1; i >= 0; i--){
+        for (int i = num.length - 1; i >= 0; i--) {
             reverseNum[j] = num[i];
             j++;
         }
         int sumPos = 0;
-        int sumNeg =0;
+        int sumNeg = 0;
 
-        for(int i = 0; i <= reverseNum.length / 2; i++) {
-            if(reverseNum[i] >= 0){
+        for (int i = 0; i <= reverseNum.length / 2; i++) {
+            if (reverseNum[i] >= 0) {
                 sumPos += reverseNum[i];
             }
         }
 
-        for(int k = 5; k <= reverseNum.length - 1; k++){
-            if(reverseNum[k] < 0){
+        for (int k = 5; k <= reverseNum.length - 1; k++) {
+            if (reverseNum[k] < 0) {
                 sumNeg += reverseNum[k];
             }
         }

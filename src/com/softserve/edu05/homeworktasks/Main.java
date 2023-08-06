@@ -12,5 +12,11 @@ public class Main {
 
         CalcNumbers obj = new CalcNumbers();
         obj.promptCalcNumber(obj);
+
+        FindInteger findInt = new FindInteger();
+        findInt.promptFindNumber(findInt);
+
+        TwoNumbers number = new TwoNumbers();
+        number.promptTwoNumbers(number);
     }
 }

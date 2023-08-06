@@ -29,7 +29,7 @@ public class AverageValue {//All good, nice
     public void promptAverageValue(AverageValue obj) {
         System.out.println("Practical task #2");
         userInputNumber(obj);
-//        System.out.println("User set array: " + Arrays.toString(getAverageArray(obj)));
+        System.out.println("User set array: " + Arrays.toString(getAverageArray(obj)));
         getAverage(obj);
         System.out.println("------------------------------");
         consistTheValue(obj);
