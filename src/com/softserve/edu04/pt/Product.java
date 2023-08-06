@@ -1,10 +1,7 @@
 package com.softserve.edu04.pt;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Product {
-    static List<Product> storehouse = new ArrayList<Product>();//List like that move to class like App.class
+
     int quantity;
     String name;
     double price;
@@ -13,34 +10,9 @@ public class Product {
         this.quantity = quantity;
         this.name = name;
         this.price = price;
-        storehouse.add(this);
     }
 
-    public static Product getMostExpensiveProduct() {
-        double maxPrice = 0;
-        Product maxPriceProd = null;
-        for (var product : storehouse
-        ) {
-            if (product.getPrice() > maxPrice) {
-                maxPriceProd = product;
-                maxPrice = product.getPrice();
-            }
-        }
-        return maxPriceProd;
-    }//This and next method move to class like App.java
 
-    public static Product getMostQuantifiedProduct() {
-        int maxQuantity = 0;
-        Product maxQuantityProd = null;
-        for (var product : storehouse
-        ) {
-            if (product.getQuantity() > maxQuantity) {
-                maxQuantityProd = product;
-                maxQuantity = product.getQuantity();
-            }
-        }
-        return maxQuantityProd;
-    }
 
     public int getQuantity() {
         return quantity;

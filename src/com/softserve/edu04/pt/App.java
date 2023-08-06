@@ -3,11 +3,15 @@ package com.softserve.edu04.pt;
 import com.softserve.edu04.pt.Continents.Countries;
 import com.softserve.edu04.pt.DaysOfWeek.DaysOfWeek;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static com.softserve.edu04.pt.Odds.calcOdds;
 import static com.softserve.edu04.util.CollectInputs.inputNumberFloat;
 import static com.softserve.edu04.util.CollectInputs.inputNumberInt;
 
 public class App {
+    static List<Product> storehouse = new ArrayList<Product>();
     public static void main(String[] args) {
         runProgram();
     }
@@ -54,8 +58,13 @@ public class App {
         Product p1 = new Product(19, "T-shirt", 200);
         Product p2 = new Product(8, "Iphone", 1200);
         Product p3 = new Product(10, "Laptop", 500);
-        System.out.println("The most expensive is: " + Product.getMostExpensiveProduct());
-        System.out.println("The most quantified is: " + Product.getMostQuantifiedProduct());
+
+        storehouse.add(p1);
+        storehouse.add(p2);
+        storehouse.add(p3);
+
+        System.out.println("The most expensive is: " + getMostExpensiveProduct());
+        System.out.println("The most quantified is: " + getMostQuantifiedProduct());
     }
 
     private static void printList() {
@@ -65,6 +74,31 @@ public class App {
                 "\n\t3 - Third task" +
                 "\n\t4 or 5 - Forth-Fifth task" +
                 "\n\t0 - Exit\n");
+    }
+    public static Product getMostExpensiveProduct() {
+        double maxPrice = 0;
+        Product maxPriceProd = null;
+        for (var product : storehouse
+        ) {
+            if (product.getPrice() > maxPrice) {
+                maxPriceProd = product;
+                maxPrice = product.getPrice();
+            }
+        }
+        return maxPriceProd;
+    }
+
+    public static Product getMostQuantifiedProduct() {
+        int maxQuantity = 0;
+        Product maxQuantityProd = null;
+        for (var product : storehouse
+        ) {
+            if (product.getQuantity() > maxQuantity) {
+                maxQuantityProd = product;
+                maxQuantity = product.getQuantity();
+            }
+        }
+        return maxQuantityProd;
     }
 }
 
