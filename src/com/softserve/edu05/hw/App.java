@@ -3,10 +3,16 @@ package com.softserve.edu05.hw;
 import com.softserve.edu05.hw.Task1.FiveIntegers;
 import com.softserve.edu05.hw.Task1.MonthsDays;
 import com.softserve.edu05.hw.Task1.TenIntegers;
+import com.softserve.edu05.pt.Employee;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import static com.softserve.edu04.util.CollectInputs.inputNumberInt;
 
 public class App {
+    static ArrayList<Car>  garage = new ArrayList<>();
     public static void main(String[] args) {
         runProgram();
     }
@@ -23,7 +29,7 @@ public class App {
                 case 1 -> runTask1_1();
                 case 2 -> runTask1_2();
                 case 3 -> runTask1_3();
-                case 4 -> System.out.println();
+                case 4 -> runTaks2();
                 case 5 -> System.out.println();
                 case 6 -> System.out.println();
                 case 0 -> System.out.println("Goodbye");
@@ -62,5 +68,34 @@ public class App {
         System.out.println("Min value: " + fi1.getFiveIntArr()[fi1.smallestValueIndex()] +
                 "\nMin value index: " + fi1.positionOfSecondPositive());
         System.out.println("Production of even numbers: " + fi1.productionOfEvens());
+    }
+    static void runTaks2(){
+        Car car1 = new Car("Wagon",2018,3000);
+        Car car2 = new Car("Crossover",2015,2000);
+        Car car3 = new Car("Sedan",2017,2500);
+        garage.add(car1);
+        garage.add(car2);
+        garage.add(car3);
+        printCertainModelYears();
+        printSortedByYear();
+    }
+    static void printCertainModelYears(){
+        int year = inputNumberInt("Please enter a year");
+        for (Car car:garage
+             ) {
+            if(car.getYear()==year){System.out.println(car);}
+        }
+    }
+    static void printSortedByYear(){
+        ArrayList<Car> copiedGarage = new ArrayList<>();
+        Collections.copy(copiedGarage,garage);
+        copiedGarage.sort(Comparator.comparing(
+                Car::getYear
+        ));
+        for (Car car:copiedGarage
+             ) {
+            System.out.println(car);
+        }
+
     }
 }
