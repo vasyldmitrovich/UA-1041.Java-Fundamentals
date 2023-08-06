@@ -1,4 +1,4 @@
-package javaapplication5;
+package com.softserve.edu01.hw;
 
 import java.util.Scanner;
 public class NewClass1 {

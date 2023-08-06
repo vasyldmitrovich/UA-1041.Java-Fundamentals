@@ -1,16 +1,36 @@
-package com.softserve.edu04.hw;
+package com.softserve.edu04.hw.Task2;
 
 import java.util.Scanner;
 //Name of class should start from upper case
 public class Task2 {
-    public static void main(String[] args) {
-        var scanner =new Scanner(System.in);
-        System.out.println("First number: ");
-        int number1=scanner.nextInt();
-        System.out.println("Second number: ");
-        var number2=scanner.nextInt();
-        System.out.println("Third number: ");
-        var number3=scanner.nextInt();
+    private int number1;
+    private int number2;
+    private int number3;
+
+    public int getNumber1() {
+        return number1;
+    }
+
+    public void setNumber1(int number1) {
+        this.number1 = number1;
+    }
+
+    public int getNumber2() {
+        return number2;
+    }
+
+    public void setNumber2(int number2) {
+        this.number2 = number2;
+    }
+
+    public int getNumber3() {
+        return number3;
+    }
+
+    public void setNumber3(int number3) {
+        this.number3 = number3;
+    }
+    public void Maximum(int number1,int number2,int number3){
         if(number1>number2 && number1>number3){
             System.out.println("The maximum is "+(number1));
         }
@@ -18,7 +38,8 @@ public class Task2 {
             System.out.println("The maximum is "+(number2));
         }
         else System.out.println("The maximum is "+(number3));
-
+    }
+    public void Minimum(int number1,int number2,int number3){
         if(number1<number2 && number1<number3){
             System.out.println("The minimum is "+(number1));
         }
@@ -27,4 +48,6 @@ public class Task2 {
         }
         else System.out.println("The minimum is "+(number3));
     }
+
+
 }
