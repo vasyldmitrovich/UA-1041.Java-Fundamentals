@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class HW1 {
     public static void main(String[] args) {
-
+        //Ok
         System.out.println("input flower bed radius: ");
         Scanner scan = new Scanner(System.in);
         double radius = scan.nextDouble();

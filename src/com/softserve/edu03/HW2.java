@@ -3,7 +3,7 @@ package com.softserve.edu03;
 import java.util.Scanner;
 
 public class HW2 {
-
+    //Nice
     public static void main(String[] args) {
 
         System.out.println("Enter the number of digits to compare: ");
