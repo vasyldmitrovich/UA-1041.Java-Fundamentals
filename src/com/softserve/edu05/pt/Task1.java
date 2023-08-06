@@ -7,36 +7,36 @@ import static java.util.Arrays.sort;
 public class Task1 {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
-        String [] array={"cdsdcs","scscscsd","erfefefef","pojopokpojpo","qweqeqe"};
+        String [] ARRAY={"cdsdcs","scscscsd","erfefefef","pojopokpojpo","qweqeqe"};
         int[] arayint= {9, 7, 6, 4, 1};
-        int summ=0;
-        boolean flag=false;
-        int counter=0;
-        Arrays.sort(array);
+        int s=0;
+        boolean d=false;
+        int k=0;
+        Arrays.sort(ARRAY);
         /**
          * this loop sort the array of string
          */
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+        for (int i = 0; i < ARRAY.length; i++) {
+            System.out.println(ARRAY[i]);
         }
         /**
          * this loop sums all elements of the array
          */
         for (int i = 0; i < 4; i++) {
-            summ+=arayint[i];
+            s+=arayint[i];
         }
-        System.out.println("the average value of 5 array elements: "+(summ/4));
+        System.out.println("the average value of 5 array elements: "+(s/4));
         scanner.nextLine();
         System.out.println("input a number ");
         var users=scanner.nextLine();
 
-        for (int i = 0; i < array.length; i++) {
-            if(users.equals(array[i])){
-                flag=true;
-                counter++;
+        for (int i = 0; i < ARRAY.length; i++) {
+            if(users.equals(ARRAY[i])){
+                d=true;
+                k++;
             }
         }
 
-        System.out.println("your value: "+(users)+"the same value in the array: "+(flag)+"it value repeated: "+(counter));
+        System.out.println("your value: "+(users)+"the same value in the array: "+(d)+"it value repeated: "+(k));
     }
 }

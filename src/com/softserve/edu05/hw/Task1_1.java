@@ -3,7 +3,7 @@ package com.softserve.edu05.hw;
 import java.util.Scanner;
 
 public class Task1_1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         Scanner scanner=new Scanner(System.in);
         System.out.println("Number: ");
         int[] arrayDayMonth={31,28,31,30,31,30,31,31,30,31,30,31};
