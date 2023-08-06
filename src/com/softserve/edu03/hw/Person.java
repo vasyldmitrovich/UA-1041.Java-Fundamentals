@@ -2,6 +2,8 @@ package com.softserve.edu03.hw;
 
 // third task
 
+import java.util.Scanner;
+
 public class Person {
     private String firstName;
     private String lastName;
@@ -20,6 +22,7 @@ public class Person {
         return firstName;
     }
     public void output () {
+
         System.out.println(firstName + lastName);
     }
     public void input() {
@@ -30,7 +33,15 @@ public class Person {
         this.setFirstName(firstName);
         this.setLastName(lastName);
     }
-
+public static void createPerson (Person person) {
+    System.out.println("Input First name: ");
+    Scanner scanner = new Scanner(System.in);
+    String firstName = scanner.nextLine();
+    System.out.println("Input last name: ");
+    String lastName = scanner.nextLine();
+    person.setFirstName(firstName);
+    person.setLastName(lastName);
+}
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
