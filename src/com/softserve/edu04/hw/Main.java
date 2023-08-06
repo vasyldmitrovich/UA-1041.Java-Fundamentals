@@ -2,12 +2,17 @@ package com.softserve.edu04.hw;
 
 import com.softserve.edu04.hw.Http.Errors;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static com.softserve.edu04.hw.MinAndMax.findMinAndMax;
 import static com.softserve.edu04.hw.ThreeNumbers.checkIfAllNumsInRange;
-import static com.softserve.edu04.util.CollectInputs.inputNumberFloat;
-import static com.softserve.edu04.util.CollectInputs.inputNumberInt;
+import static com.softserve.edu04.util.CollectInputs.*;
+import static com.softserve.edu04.util.CollectInputs.inputString;
+import static com.softserve.edu04.util.WorkingWithStrings.capitalizeString;
 
 public class Main {
+    static List<Dog> petShop = new ArrayList<Dog>();
     public static void main(String[] args) {
         runProgram();
     }//Good practice if in main method only one method
@@ -79,17 +84,80 @@ public class Main {
 
 
         System.out.println("______________");
-        dog1.fullFillDogInfo();
+        fullFillDogInfo(dog1);
         System.out.println("______________");
-        dog2.fullFillDogInfo();
+        fullFillDogInfo(dog2);
         System.out.println("______________");
-        dog3.fullFillDogInfo();
+        fullFillDogInfo(dog3);
         System.out.println("______________");
 
-        System.out.println("The oldest dog is: " + Dog.getOldestDog());
-        System.out.println("Are there dogs with same names: " + Dog.hasDuplicatedNames());
+        System.out.println("The oldest dog is: " + getOldestDog());
+        System.out.println("Are there dogs with same names: " + hasDuplicatedNames());
 
 
     }
+    public static boolean hasDuplicatedNames() {
+        if (petShop == null || petShop.isEmpty()) {
+            return false;
+        }
 
+        List<String> namesArray = new ArrayList<String>();
+
+        for (Dog dog : petShop
+        ) {
+            String name = dog.getName();
+            if (namesArray.contains(name)) {
+                return true;
+            }
+            namesArray.add(name);
+        }
+
+        return false;
+    }
+
+    public static Dog getOldestDog() {
+        int maxAge = 0;
+        Dog oldestDog = null;
+        for (var dog : petShop
+        ) {
+            if (dog.getAge() > maxAge) {
+                oldestDog = dog;
+                maxAge = dog.getAge();
+            }
+        }
+        return oldestDog;
+    }
+
+    public static void fullFillDogInfo(Dog dog) {
+        inputDogAge(dog);
+        inputDogName(dog);
+        inputBreed(dog);
+        petShop.add(dog);
+    }
+
+    public static void inputDogAge(Dog dog) {
+        dog.setAge(inputNumberInt("Please enter age of dog"));
+    }
+
+    public static void inputDogName(Dog dog ) {
+        dog.setName(inputString("Please enter name of dog"));
+    }
+
+    public static void inputBreed(Dog dog) {
+        String breed = capitalizeString(inputString("Please enter breed of dog:"));
+        switch (breed) {
+            case "Beagle" -> dog.setBreed( Breed.BEAGLE.getBreed());
+            case "Boxer" ->  dog.setBreed( Breed.BOXER.getBreed()) ;
+            case "Bulldog" ->  dog.setBreed( Breed.BULLDOG.getBreed())  ;
+            case "Dachshund" ->  dog.setBreed( Breed.DACHSHUND.getBreed()) ;
+            case "German Shepherd" ->  dog.setBreed(  Breed.GERMAN_SHEPHERD.getBreed()) ;
+            case "Golder Retriever" ->  dog.setBreed( Breed.GOLDEN_RETRIEVER.getBreed());
+            case "Labrador Retriever" ->  dog.setBreed( Breed.LABRADOR_RETRIEVER.getBreed());
+            case "Poodle" ->  dog.setBreed(Breed.POODLE.getBreed());
+            case "Rottweiler" ->  dog.setBreed( Breed.ROTTWEILER.getBreed()) ;
+            case "Siberian Husky" ->  dog.setBreed(Breed.SIBERIAN_HUSKY.getBreed());
+
+            default -> System.out.println("No such season");
+        }
+    }
 }
