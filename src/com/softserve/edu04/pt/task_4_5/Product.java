@@ -1,5 +1,7 @@
 package com.softserve.edu04.pt.task_4_5;
 
+import java.util.Objects;
+
 public class Product {
     private String name;
     private double price;
@@ -36,6 +38,29 @@ public class Product {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Product product = (Product) o;
+
+        if (Double.compare(product.price, price) != 0) return false;
+        if (quantity != product.quantity) return false;
+        return Objects.equals(name, product.name);
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = name != null ? name.hashCode() : 0;
+        temp = Double.doubleToLongBits(price);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + quantity;
+        return result;
     }
 
     @Override
