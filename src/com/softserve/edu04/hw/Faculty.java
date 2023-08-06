@@ -1,7 +1,5 @@
 package com.softserve.edu04.hw;
 
-import static com.softserve.edu04.util.CollectInputs.inputNumberInt;
-import static com.softserve.edu04.util.CollectInputs.inputString;
 import static com.softserve.edu04.util.WorkingWithStrings.capitalizeString;
 
 public class Faculty {

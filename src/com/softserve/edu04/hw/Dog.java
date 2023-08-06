@@ -1,12 +1,5 @@
 package com.softserve.edu04.hw;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static com.softserve.edu04.util.CollectInputs.inputNumberInt;
-import static com.softserve.edu04.util.CollectInputs.inputString;
-import static com.softserve.edu04.util.WorkingWithStrings.capitalizeString;
-
 public class Dog {
     private int age;
     private String breed;

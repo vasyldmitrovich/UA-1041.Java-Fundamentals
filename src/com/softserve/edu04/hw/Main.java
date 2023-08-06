@@ -15,12 +15,12 @@ public class Main {
     static List<Dog> petShop = new ArrayList<Dog>();
     public static void main(String[] args) {
         runProgram();
-    }//Good practice if in main method only one method
+    }
 
     private static void runProgram() {
         int numOfTask = -1;
         do {
-            printList();//Good decision divide different logic to different methods and call this method there
+            printList();
             System.out.print("\nPlease input the number of the task: ");
             numOfTask = inputNumberInt();
             System.out.println("\nWelcome to " + numOfTask + " task\n");
@@ -173,7 +173,7 @@ public class Main {
             case "Autumn", "Осінь" -> fc.setSeason( Season.AUTUMN.getEngSeason());
             default -> System.out.println("No such season");
         }
-    }//Move to App.java and next two methods too
+    }
 
     public static void outputNumOfStudents(Faculty fc) {
         System.out.println("The number of students is: " + fc.getNumOfStudents() );
