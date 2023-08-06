@@ -19,6 +19,17 @@ public class Person {
     public String getFirstName() {
         return firstName;
     }
+    public void output () {
+        System.out.println(firstName + lastName);
+    }
+    public void input() {
+
+    }
+
+    public void changeName(String firstName, String lastName) {
+        this.setFirstName(firstName);
+        this.setLastName(lastName);
+    }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
