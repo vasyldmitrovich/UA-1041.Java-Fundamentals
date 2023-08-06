@@ -15,7 +15,7 @@ public class Task3 {
         Task3 t3 = new Task3();
         System.out.println("Default array: " + Arrays.toString(arrayOfNums));
         t3.loopThroughArray();
-        System.out.println(t3);
+        t3.printMessage();
         if (t3.countOfPositive > t3.countOfNegative) {
             System.out.println("There are more positive numbers");
         } else if (t3.countOfPositive < t3.countOfNegative) {
@@ -47,15 +47,15 @@ public class Task3 {
         this.countOfPositive = countOfPositive;
     }
 
-    @Override
-    public String toString() {
-        return "Task3{" +
+
+    public void printMessage() {
+        System.out.println( "Task3{" +
                 "biggestNum=" + biggestNum +
                 ", sum=" + sum +
                 ", countOfNegative=" + countOfNegative +
                 ", countOfPositive=" + countOfPositive +
-                '}';
-    }//Why you add toString to this class, this class do not represent entity, it is working class
+                '}');
+    }
 
 
 }
