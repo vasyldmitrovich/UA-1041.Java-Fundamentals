@@ -36,4 +36,4 @@ public enum HTTPError {
         return this.descOfError;
     }
 
-}//Good
+}
