@@ -1,10 +1,9 @@
 package com.softserve.edu04.hw;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
-public class Hw_task2 {
+public class HW_task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int [] listOfNumbers = new int[3];
