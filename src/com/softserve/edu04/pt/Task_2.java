@@ -14,7 +14,7 @@ public class Task_2 {
             System.out.println("Monday");
             System.out.println("Понедельник");
         } else if(numberOfDay == 3) {
-            System.out.println("Thuesday");
+            System.out.println("Tuesday");
             System.out.println("Вторинк");
         }else if(numberOfDay == 4) {
             System.out.println("Wednesday");
@@ -26,7 +26,7 @@ public class Task_2 {
             System.out.println("Friday");
             System.out.println("Пятница");
         }else if(numberOfDay == 7) {
-            System.out.println("Sutarday");
+            System.out.println("Saturday");
             System.out.println("Суббота");
         } else {
             System.out.println("It is not a day of the week");
