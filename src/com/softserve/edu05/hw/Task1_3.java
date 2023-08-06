@@ -7,7 +7,6 @@ public class Task1_3 {
     public static void main(String[] args) {
         Scanner scaner = new Scanner(System.in);
         int[] array = new int[5];
-        boolean f = true;
         int counterOfPositive = 0;
         int positionOfSecondPositive=0;
         int positionOfMinimum=0;
