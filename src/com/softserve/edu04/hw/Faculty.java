@@ -33,33 +33,6 @@ public class Faculty {
         this.season = capitalizeString(season);
     }
 
-    public void intputNumOfStudents() {
-        this.numOfStudents = inputNumberInt("Input num of students");
-    }//Move to App.java
 
-    public void inputSeason() {
-        String season = capitalizeString(inputString("Please enter name of season"));
-        switch (season) {
-            case "Summer", "Літо" -> this.season = Season.SUMMER.getEngSeason();
-            case "Spring", "Весна" -> this.season = Season.SPRING.getEngSeason();
-            case "Winter", "Зима" -> this.season = Season.WINTER.getEngSeason();
-            case "Autumn", "Осінь" -> this.season = Season.AUTUMN.getEngSeason();
-            default -> System.out.println("No such season");
-        }
-    }//Move to App.java and next two methods too
-
-    public void outputNumOfStudents() {
-        System.out.println("The number of students is: " + this.numOfStudents);
-    }
-
-    public void outputSeason() {
-        switch (this.season) {
-            case "Summer", "Літо" -> System.out.println("This is beautiful hot summer");
-            case "Spring", "Весна" -> System.out.println("This is blooming spring");
-            case "Winter", "Зима" -> System.out.println("This is frozen winter");
-            case "Autumn", "Осінь" -> System.out.println("This is mystery autumn");
-            default -> System.out.println("No such season");
-        }
-    }
 
 }

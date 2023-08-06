@@ -71,10 +71,10 @@ public class Main {
 
     private static void runForthTask() {
         Faculty fc = new Faculty();
-        fc.intputNumOfStudents();
-        fc.inputSeason();
-        fc.outputNumOfStudents();
-        fc.outputSeason();
+        intputNumOfStudents(fc);
+        inputSeason(fc);
+        outputNumOfStudents(fc);
+        outputSeason(fc);
     }
 
     private static void runFifthTask() {
@@ -157,6 +157,34 @@ public class Main {
             case "Rottweiler" ->  dog.setBreed( Breed.ROTTWEILER.getBreed()) ;
             case "Siberian Husky" ->  dog.setBreed(Breed.SIBERIAN_HUSKY.getBreed());
 
+            default -> System.out.println("No such season");
+        }
+    }
+    public static void intputNumOfStudents(Faculty fc) {
+        fc.setNumOfStudents(inputNumberInt("Input num of students"));
+    }
+
+    public static void inputSeason(Faculty fc) {
+        String season = capitalizeString(inputString("Please enter name of season"));
+        switch (season) {
+            case "Summer", "Літо" -> fc.setSeason( Season.SUMMER.getEngSeason());
+            case "Spring", "Весна" -> fc.setSeason( Season.SPRING.getEngSeason());
+            case "Winter", "Зима" -> fc.setSeason( Season.WINTER.getEngSeason());
+            case "Autumn", "Осінь" -> fc.setSeason( Season.AUTUMN.getEngSeason());
+            default -> System.out.println("No such season");
+        }
+    }//Move to App.java and next two methods too
+
+    public static void outputNumOfStudents(Faculty fc) {
+        System.out.println("The number of students is: " + fc.getNumOfStudents() );
+    }
+
+    public static void outputSeason(Faculty fc) {
+        switch (fc.getSeason()) {
+            case "Summer", "Літо" -> System.out.println("This is beautiful hot summer");
+            case "Spring", "Весна" -> System.out.println("This is blooming spring");
+            case "Winter", "Зима" -> System.out.println("This is frozen winter");
+            case "Autumn", "Осінь" -> System.out.println("This is mystery autumn");
             default -> System.out.println("No such season");
         }
     }
