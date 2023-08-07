@@ -22,7 +22,16 @@ public class DayOfWeek {
         return getEn() + " " + getUa();
     }
 
-    private final String ua;
+
+//            @Override
+//            public String toString() {
+//                return "Day{" +
+//                        "ua='" + ua + '\'' +
+//                        ", en='" + en + '\'' +
+//                        '}';
+//            }
+
+            private final String ua;
             private final String en;
             Day(String ua, String en){
                 this.ua = ua;

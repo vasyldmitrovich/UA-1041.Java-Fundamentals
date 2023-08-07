@@ -2,7 +2,7 @@ package com.softserve.edu04.hm;
 
 import java.util.Scanner;
 
-public class Enum {
+public class Error {
 
     //Move mein method to file like App.java
 
