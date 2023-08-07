@@ -3,8 +3,6 @@ package com.softserve.edu04.pr;
 import java.util.Scanner;
 
 public class DayOfWeek {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
         //This is not good Enum should be in another file like Day.java
         //And there you use this enum
@@ -31,17 +29,5 @@ public class DayOfWeek {
                 this.en = en;
             }
         }
-        System.out.println("Enter the number of day in week:");
-        int numberOfDay = sc.nextInt();
-        switch (numberOfDay){
-            case 1 -> System.out.println(Day.Mon.getGeneralInfo());
-            case 2 -> System.out.println(Day.Tue.getGeneralInfo());
-            case 3 -> System.out.println(Day.Wed.getGeneralInfo());
-            case 4 -> System.out.println(Day.Thu.getGeneralInfo());
-            case 5 -> System.out.println(Day.Fri.getGeneralInfo());
-            case 6 -> System.out.println(Day.Sat.getGeneralInfo());
-            case 7 -> System.out.println(Day.Sun.getGeneralInfo());
-        }
 
-    }
 }

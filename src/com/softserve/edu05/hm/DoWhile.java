@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class DoWhile {
     public static void main(String[] args) {
+        doLoop();
 
+    }
+    public static void doLoop(){
         Scanner sc = new Scanner(System.in);
         String response;
         //Logic like that write in some method and there call this method

@@ -13,6 +13,9 @@ public class Odd {
         int num2 = sc.nextInt();
         System.out.println("enter third number:");
         int num3 = sc.nextInt();
+        System.out.println(count(num1, num2, num3));
+    }
+    public static int count(int num1, int num2, int num3) {
         int count = 0;
         if (num1 % 2 != 0) {
             count++;
@@ -20,9 +23,9 @@ public class Odd {
         if (num2 % 2 != 0) {
             count++;
         }
-        if (num3 % 2 != 0){
+        if (num3 % 2 != 0) {
             count++;
         }
-        System.out.println(count);
+        return count;
     }
 }

@@ -6,19 +6,6 @@ abstract class Bird {
     private String feathers;
     private boolean layEggs;
 
-    public static void main(String[] args) {
-        Bird[] Bird = {
-                new Eagle("white", true),
-                new Sparrow("brown", true),
-                new Penguin("black/white", true),
-                new Kiwi("brown", true)
-        };
-        for (var bird : Bird) {
-            System.out.println(bird);
-            bird.fly();
-        }
-    }
-
     public Bird(String feathers, boolean layEggs) {
         this.feathers = feathers;
         this.layEggs = layEggs;
