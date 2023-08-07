@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Numbers {
     public static void main(String[] args) {
+        //In main method you should call another methods
+        //And in this another methods should be all logic
         var scanner = new Scanner(System.in);
         System.out.print("Input number 1: ");
         int num1 = scanner.nextInt();

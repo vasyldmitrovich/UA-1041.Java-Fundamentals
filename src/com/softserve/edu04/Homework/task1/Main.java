@@ -16,7 +16,7 @@ public class Main {
 
 
 
-
+//Write this logic in some method and there call this method
         if  (number1 <= 5 && number2 <= 5 && number3 <= 5 && number1 >= -5 && number2 >=-5 && number3 >=-5) {
             System.out.println("All numbers belong the range");
 
