@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class ArrayPractice {
     public static void main(String[] args){
+        //Separate different logic to different method and call this methods there
+
 //        sorting array of strings
         String[] Arr1 = {"apple", "cherry", "banana"};
         Arrays.sort(Arr1);

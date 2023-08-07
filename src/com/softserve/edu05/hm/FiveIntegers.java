@@ -8,6 +8,9 @@ public class FiveIntegers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter five numbers:");
+
+
+        //Divide logic in separate method and there call this methods
         int[] numArray = new int[5];
         for (int i = 0; i < numArray.length; i++) {
             numArray[i] = sc.nextInt();
