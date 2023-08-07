@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task2 {
 
-    private static Scanner SCANNER = new Scanner(System.in);
+    private final static Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.print("Enter a day:");

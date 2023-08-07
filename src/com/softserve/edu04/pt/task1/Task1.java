@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Task1 {
 
 
-    private static Scanner SCANNER = new Scanner(System.in);
+    private final static Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
-//Ok
+
         int countOdd = 0;
 
         int num1 = getNum("Enter your first number: ");

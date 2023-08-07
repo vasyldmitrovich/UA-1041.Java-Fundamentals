@@ -3,10 +3,9 @@ package com.softserve.edu04.hw.task2;
 import java.util.Scanner;
 
 public class Task2 {
-    private static Scanner SCANNER = new Scanner(System.in);
+    private final static Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
-//Nice very nice
 
         int a = getNum("Enter your first number: ");
 

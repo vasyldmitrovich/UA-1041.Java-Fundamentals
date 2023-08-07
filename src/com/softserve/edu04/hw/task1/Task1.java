@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Task1 {
 
-    private static Scanner SCANNER = new Scanner(System.in);//name field write Uppercase only if field is final, if not use CamelCase style
+    private final static Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
-//main method is good and that you call another methods there is perfect
+
         double num1 = getNum("Enter your first number: ");
 
         if (isBelongs(num1)) System.out.println("Number " + num1 + " belongs to range [-5;5]");

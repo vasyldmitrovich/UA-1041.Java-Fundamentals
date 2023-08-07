@@ -1,5 +1,7 @@
 package com.softserve.edu04.hw.task4;
 
+import java.util.Objects;
+
 public class Faculty {
     private int numberOfStudents;
     private Season currentSeason;
@@ -28,4 +30,25 @@ public class Faculty {
     }
 
     //Add toString equals and hash code
+
+    @Override
+    public String toString() {
+        return "Faculty{" +
+                "numberOfStudents=" + numberOfStudents +
+                ", currentSeason=" + currentSeason +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Faculty faculty = (Faculty) o;
+        return numberOfStudents == faculty.numberOfStudents && currentSeason == faculty.currentSeason;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(numberOfStudents, currentSeason);
+    }
 }

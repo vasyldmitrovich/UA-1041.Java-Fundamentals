@@ -7,7 +7,6 @@ public class Task4 {
     private static Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
-//Perfect
 
         System.out.print("Enter the number of students: ");
         int numberOfStudents = SCANNER.nextInt();
