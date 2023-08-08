@@ -3,12 +3,13 @@ package com.softserve.edu06.hw.Task1;
 public abstract class Bird {
     boolean feather;
     boolean layEggs;
-    protected abstract void fly();
 
-    protected Bird(boolean feathers,boolean layEggs){
+    protected Bird(boolean feathers, boolean layEggs) {
         this.feather = feathers;
         this.layEggs = layEggs;
     }
+
+    protected abstract void fly();
 
     protected boolean isFeather() {
         return feather;
@@ -21,6 +22,6 @@ public abstract class Bird {
     protected String getInfo() {
         return this.getClass().getSimpleName() +
                 "\nfeather=" + feather +
-                "\nlayEggs=" + layEggs ;
+                "\nlayEggs=" + layEggs;
     }
 }

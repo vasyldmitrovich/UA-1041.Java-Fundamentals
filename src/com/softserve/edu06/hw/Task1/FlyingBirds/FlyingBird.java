@@ -9,11 +9,11 @@ class FlyingBird extends Bird {
 
     @Override
     protected void fly() {
-        System.out.println(this.getClass().getSimpleName()+" flying height in the sky");
+        System.out.println(this.getClass().getSimpleName() + " flying height in the sky");
     }
 
     @Override
     protected String getInfo() {
-        return super.getInfo()+"\nCould fly:true";
+        return super.getInfo() + "\nCould fly:true";
     }
 }
