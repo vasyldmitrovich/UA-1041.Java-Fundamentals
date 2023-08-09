@@ -4,7 +4,7 @@ public class Main {
     static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
-        char choice;
+        String choice;
 
         do {
             System.out.println("Enter first number: ");
@@ -15,10 +15,11 @@ public class Main {
             int sum = num1 + num2;
             System.out.println("Sum = " + sum);
 
-            System.out.println("Do you want to perform the operation again? (y/n)");
-            choice = SCANNER.next().charAt(0);
+            System.out.println("Do you want to perform the operation again? (yes/no)");
+            SCANNER.nextLine();
+            choice = SCANNER.nextLine();
 
-        } while (choice == 'y');
+        } while (choice.equals("yes"));
 
     }
 }
