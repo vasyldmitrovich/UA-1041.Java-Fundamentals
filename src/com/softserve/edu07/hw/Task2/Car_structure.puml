@@ -1,0 +1,295 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": false,
+    "cutConstructors": false
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "com.softserve.edu07.hw.Task2.Car",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_2054010587 { 
+   	label=softserve
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_813399604 { 
+   	label=edu07
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   Boat902284245[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Boat</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   volume: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Boat(passengers: int, volume: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getVolume(): int</TD></TR>
+<TR><TD ALIGN="LEFT" ># isSailing()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setVolume(volume: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Bus902284245[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Bus</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   route: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Bus(passengers: int, route: String)</TD></TR>
+<TR><TD ALIGN="LEFT" ># drive()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getRoute(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setRoute(route: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Car902284245[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Car</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   model: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Car(passengers: int, model: String)</TD></TR>
+<TR><TD ALIGN="LEFT" ># drive()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getModel(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setModel(model: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+FlyingVehicle902284245[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FlyingVehicle</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ FlyingVehicle(passengers: int)</TD></TR>
+<TR><TD ALIGN="LEFT" ># fly()</TD></TR>
+<TR><TD ALIGN="LEFT" ># land()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+GroundVehicle902284245[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)GroundVehicle</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ GroundVehicle(passengers: int)</TD></TR>
+<TR><TD ALIGN="LEFT" ># drive()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Helicopter902284245[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Helicopter</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   maxHeight: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   weight: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Helicopter(passengers: int, weight: int, maxHeight: int)</TD></TR>
+<TR><TD ALIGN="LEFT" ># fly()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getMaxHeight(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getWeight(): int</TD></TR>
+<TR><TD ALIGN="LEFT" ># land()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setMaxHeight(maxHeight: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setWeight(weight: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Liner902284245[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Liner</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   floors: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Liner(passengers: int, floors: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getFloors(): int</TD></TR>
+<TR><TD ALIGN="LEFT" ># isSailing()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setFloors(floors: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Motorcycle902284245[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Motorcycle</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   maxSpeed: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Motorcycle(passengers: int, maxSpeed: int)</TD></TR>
+<TR><TD ALIGN="LEFT" ># drive()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getMaxSpeed(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setMaxSpeed(maxSpeed: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Passengers902284245[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Passengers</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   passengers: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Passengers(passengers: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getPassengers(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setPassengers(passengers: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Plane902284245[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Plane</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   maxDistance: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Plane(passengers: int, maxDistance: int)</TD></TR>
+<TR><TD ALIGN="LEFT" ># fly()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getMaxDistance(): int</TD></TR>
+<TR><TD ALIGN="LEFT" ># land()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setMaxDistance(maxDistance: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+WaterVehicle902284245[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)WaterVehicle</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ WaterVehicle(passengers: int)</TD></TR>
+<TR><TD ALIGN="LEFT" ># isSailing()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+FlyingVehicle902284245 -> Helicopter902284245[arrowhead=none, arrowtail=empty, dir=both];
+FlyingVehicle902284245 -> Plane902284245[arrowhead=none, arrowtail=empty, dir=both];
+GroundVehicle902284245 -> Bus902284245[arrowhead=none, arrowtail=empty, dir=both];
+GroundVehicle902284245 -> Car902284245[arrowhead=none, arrowtail=empty, dir=both];
+GroundVehicle902284245 -> FlyingVehicle902284245[arrowhead=none];
+GroundVehicle902284245 -> Motorcycle902284245[arrowhead=none, arrowtail=empty, dir=both];
+GroundVehicle902284245 -> WaterVehicle902284245[arrowhead=none];
+Passengers902284245 -> FlyingVehicle902284245[arrowhead=none, arrowtail=empty, dir=both];
+Passengers902284245 -> GroundVehicle902284245[arrowhead=none, arrowtail=empty, dir=both];
+Passengers902284245 -> WaterVehicle902284245[arrowhead=none, arrowtail=empty, dir=both];
+WaterVehicle902284245 -> Boat902284245[arrowhead=none, arrowtail=empty, dir=both];
+WaterVehicle902284245 -> Liner902284245[arrowhead=none, arrowtail=empty, dir=both];
+    
+}
+@enduml
