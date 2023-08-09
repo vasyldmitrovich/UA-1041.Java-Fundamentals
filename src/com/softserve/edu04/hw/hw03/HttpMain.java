@@ -1,12 +1,17 @@
-package com.softserve.edu04.hw;
+package com.softserve.edu04.hw.hw03;
 
 import java.util.Scanner;
 
 public class HttpMain {
+    static private final Scanner SC = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);//Move this and next two lines to some method and there call this method
+
+        //Move this and next two lines to some method and there call this method
+        //не дуже зрозумів
+
         System.out.print("Enter number HTTP error (400...405): ");
-        int numErr = scanner.nextInt();
+        int numErr = SC.nextInt();
 
         switch (numErr){
             case 400 -> System.out.println("\nValue: " + HttpEnum.ERR_400.getErr());

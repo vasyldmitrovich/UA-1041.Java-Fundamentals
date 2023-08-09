@@ -63,7 +63,5 @@ public class Employee {
     }
 
 
-    //Main method should be in class like App.java. Move this main method
-    //створив
 
 }

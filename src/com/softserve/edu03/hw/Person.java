@@ -8,8 +8,6 @@ public class Person {
     private String lastName;
     private int birthYear;
 
-    //After fields should go constructor, after getters and setters and after another methods
-
     public Person() {
     }
 

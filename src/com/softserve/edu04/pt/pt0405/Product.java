@@ -1,11 +1,14 @@
 package com.softserve.edu04.pt.pt0405;
 
+import java.util.Objects;
+
 public class Product {
     private String name;
     private double price;
     private int quantity;
 
-    //Add constructor without parameters
+    public Product() {
+    }
 
     public Product(String name, double price, int quantity) {
         this.name = name;
@@ -38,39 +41,17 @@ public class Product {
     }
 
 
-    public static void getMaxPrice(Product prod1, Product prod2, Product prod3, Product prod4) { // Method like that should be in class where is main method
-        double maxPrice = Math.max(prod1.getPrice(), Math.max(prod2.getPrice(), Math.max(prod3.getPrice(), prod4.getPrice())));
-
-        if (maxPrice == prod1.getPrice()) {
-            System.out.println("Most expensive item is " + prod1.getName() + ", " + prod1.getQuantity() + " pcs");
-        }
-        if (maxPrice == prod2.getPrice()) {
-            System.out.println("Most expensive item is " + prod2.getName() + ", " + prod2.getQuantity() + " pcs");
-        }
-        if (maxPrice == prod3.getPrice()) {
-            System.out.println("Most expensive item is " + prod3.getName() + ", " + prod3.getQuantity() + " pcs");
-        }
-        if (maxPrice == prod4.price) {
-            System.out.println("Most expensive item is " + prod4.getName() + ", " + prod4.getQuantity() + " pcs");
-        }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return Double.compare(product.price, price) == 0 && quantity == product.quantity && Objects.equals(name, product.name);
     }
 
-    public static void getMaxQuantity(Product prod1, Product prod2, Product prod3, Product prod4) {//And this method too
-
-        int maxQuantity = Math.max(prod1.getQuantity(), Math.max(prod2.getQuantity(), Math.max(prod3.getQuantity(), prod4.getQuantity())));
-
-        if (maxQuantity == prod1.getQuantity()) {
-            System.out.println("The biggest quantity item is " + prod1.getName());
-        }
-        if (maxQuantity == prod2.getQuantity()) {
-            System.out.println("The biggest quantity item is " + prod2.getName());
-        }
-        if (maxQuantity == prod3.getQuantity()) {
-            System.out.println("The biggest quantity item is " + prod3.getName());
-        }
-        if (maxQuantity == prod4.getQuantity()) {
-            System.out.println("The biggest quantity item is " + prod4.getName());
-        }
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, price, quantity);
     }
 
     @Override
@@ -82,5 +63,4 @@ public class Product {
                 '}';
     }
 
-    //Add equals and hash code
 }
