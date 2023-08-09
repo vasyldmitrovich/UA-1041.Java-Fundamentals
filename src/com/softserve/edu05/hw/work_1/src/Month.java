@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Month {
     static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -10,5 +10,5 @@ public class Main {
         int[] daysInMonth = {0, 31, 28, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         int Days = daysInMonth [index];
         System.out.println(Days + " days in the " + index + " month");
-        }
     }
+}
