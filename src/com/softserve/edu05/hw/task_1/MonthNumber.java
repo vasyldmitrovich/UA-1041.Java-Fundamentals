@@ -12,5 +12,6 @@ public class MonthNumber {
         int monthsNumber=sc.nextInt();
         System.out.println("this month contains "+daysInMonths[monthsNumber-1] +" days");
 
+
     }
 }

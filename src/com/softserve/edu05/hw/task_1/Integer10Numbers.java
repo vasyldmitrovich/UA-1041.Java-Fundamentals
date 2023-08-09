@@ -32,7 +32,7 @@ public class Integer10Numbers {
         }
     }
 
-    private static boolean isPositiveFiveElem(int[] integers) {
+     static boolean isPositiveFiveElem(int[] integers) {
         for (int i = 0; i < 5; i++) {
             if (integers[i] < 0) {
                 return false;

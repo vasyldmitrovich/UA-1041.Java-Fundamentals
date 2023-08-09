@@ -1,7 +1,5 @@
 package com.softserve.edu05.hw.task_3;
 
-import com.softserve.edu05.pt.task_4.Employee;
-
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
@@ -27,7 +25,7 @@ public class Main {
 
     }
 
-    private static void findCarToYear(Car[] cars, int year) {
+static void findCarToYear(Car[] cars, int year) {
         int count = 0;
         for (var el : cars
         ) {

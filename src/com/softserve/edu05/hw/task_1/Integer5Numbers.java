@@ -28,7 +28,7 @@ public class Integer5Numbers {
         System.out.println("the product of all entered even numbers:" + productEventNumb);
     }
 
-    private static long calculateProductEventNumb(int[] integers) {
+   static long calculateProductEventNumb(int[] integers) {
         long prod = 1;
         for (int el : integers
         ) {
@@ -40,7 +40,7 @@ public class Integer5Numbers {
         return prod;
     }
 
-    private static int findMinPosition(int[] integers) {
+    static int findMinPosition(int[] integers) {
         int minPos = 0;
         for (int i = 0; i < integers.length; i++) {
             if (integers[i] < minPos) {
@@ -50,7 +50,7 @@ public class Integer5Numbers {
         return minPos;
     }
 
-    private static int positionOfSecondPositiveNumber(int[] integers) {
+   static int positionOfSecondPositiveNumber(int[] integers) {
         int count = 0;
         for (int i = 0; i < integers.length; i++) {
             if (integers[i] > 0) {
