@@ -1,0 +1,2 @@
+public class edu7 {
+}
