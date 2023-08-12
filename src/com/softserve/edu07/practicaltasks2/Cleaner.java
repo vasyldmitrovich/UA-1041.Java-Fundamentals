@@ -4,20 +4,17 @@ public class Cleaner extends Staff {
 
     final String TYPE_PERSON = "cleaner";
 
-    public Cleaner() {
-    }
-
-    public Cleaner(String name, int salary) {
+    protected Cleaner(String name, int salary) {
         super(name, salary);
     }
 
     @Override
-    void print() {
+    protected void print() {
         System.out.format("\nI am a %s %s", TYPE_PERSON, getName());
     }
 
     @Override
-    void salary() {
+    protected void salary() {
         System.out.format("\nMy salary is %s $", getSalary());
     }
 }
