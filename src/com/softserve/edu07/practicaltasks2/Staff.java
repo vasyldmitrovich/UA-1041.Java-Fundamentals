@@ -16,5 +16,5 @@ public abstract class Staff extends Person {
         this.salary = salary;
     }
 
-    abstract void salary();
+    protected abstract void salary();
 }
