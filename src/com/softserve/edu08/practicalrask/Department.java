@@ -4,7 +4,7 @@ public class Department implements Cloneable {
     private String name;
     private Address address;
 
-    public Department(String name, Address address) {
+    protected Department(String name, Address address) {
         this.name = name;
         this.address = address;
     }
@@ -17,11 +17,11 @@ public class Department implements Cloneable {
         this.name = name;
     }
 
-    public Address getAddress() {
+    protected Address getAddress() {
         return address;
     }
 
-    public void setAddress(Address address) {
+    protected void setAddress(Address address) {
         this.address = address;
     }
 
@@ -41,7 +41,7 @@ public class Department implements Cloneable {
        return toString();
     }
 
-    static class Address implements Cloneable {
+    protected static class Address implements Cloneable {
         private String city;
         private String street;
 

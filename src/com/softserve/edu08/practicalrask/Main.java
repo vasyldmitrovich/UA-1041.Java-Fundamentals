@@ -14,7 +14,7 @@ public class Main {
             department2.getAddress().setStreet("Andersa");
             department2.getAddress().setBuilding(24);
         } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
 
         System.out.println(department.getInfo());
