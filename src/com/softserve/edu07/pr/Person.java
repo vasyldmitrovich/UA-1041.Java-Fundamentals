@@ -42,7 +42,7 @@ class Student extends Person {
 
 class Teacher extends Staff {
     static final String TYPE_PERSON = "Teacher";
-    static final int money = 30000;
+    static final int money = 30000;//If variable is final then should be in uppercase style
 
     public Teacher(String name) {
         super(name);
