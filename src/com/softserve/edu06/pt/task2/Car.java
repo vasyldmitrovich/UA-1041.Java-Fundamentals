@@ -5,6 +5,8 @@ public abstract class Car {
     private int maxSpeed;
     private int yearOfProduction;
 
+    //Add constructors without and with parameters
+    //and getters and setters
 
     public abstract void run();
     public  abstract void stop();

@@ -6,6 +6,8 @@ public class App {
                 new Truck(),
                 new Truck(),
                 new Sedan()};
+        //
+
         for (Car car : cars) {
             car.run();
             car.stop();
