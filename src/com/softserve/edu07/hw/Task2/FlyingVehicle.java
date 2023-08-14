@@ -5,7 +5,7 @@ public class FlyingVehicle extends Passengers implements Vehicle{
         super(passengers);
     }
     public void fly(){
-
+        //Why method did not have anything?
     }
     public void land(){
 

@@ -6,9 +6,11 @@ public class Main {
         people[0]=new Teachers("Alex");
         people[1]=new Cleaners("John");
         people[2]=new Students("Tom");
+
         for(Person person:people){
             person.print();
         }
+        //
         for (Person person : people) {
             if (person instanceof Teachers || person instanceof Cleaners) {
                 ((Staff) person).salary();
