@@ -3,6 +3,11 @@ package com.softserve.edu07.hm;
 
 import java.util.*;
 
+
+
+/*DO NOT WRITE ALL CLASSES IN ONE FILE
+* it is not good*/
+
 public interface Payment {
     double calculatePay();
 }
@@ -17,7 +22,7 @@ abstract class Employee {
 
 class SalariedEmployee extends Employee implements Payment {
     private int socialSecurityNumber;
-    double hoursWorked;
+    double hoursWorked;// Should private fields here and in all another classes
     double hourlyRate = 50.0;
 
     public SalariedEmployee(String employeeld, int socialSecurityNumber, double hoursWorked) {
@@ -84,6 +89,7 @@ class SortSalary implements Comparator<Employee> {
     }
 }
 
+//Write class in its own file like App.java and there write main method
 class MainPayment {
     public static void main(String[] args) {
         List<Employee> list = new ArrayList<Employee>();

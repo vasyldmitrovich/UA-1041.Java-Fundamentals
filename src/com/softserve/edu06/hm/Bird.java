@@ -1,6 +1,6 @@
 package com.softserve.edu06.hm;
 
-
+// All classes should be in its own files for example you should hava Bird.java FlyingBird.java etc...
 abstract class Bird {
 
     private String feathers;

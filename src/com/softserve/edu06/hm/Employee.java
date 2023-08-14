@@ -16,7 +16,7 @@ public class Employee {
     }
 }
 
-
+// Write class Developer in another file Developer.java
 class Developer extends Employee{
     private String position;
     public Developer(String name, int age, double salary, String position) {

@@ -1,5 +1,5 @@
 package com.softserve.edu06.pr;
-
+//All class should be in its own file like Line.java etc...
 public class Point {
     double x;
     double y;
@@ -18,7 +18,7 @@ public class Point {
     }
     public void print(){
         System.out.println(new Point(x, y).toString());
-    }
+    }//You do not use this method, if you do not use than delete this method
 }
 
 class Line {
@@ -40,6 +40,10 @@ class Line {
     public void print(){
         System.out.println(new Line(point1, point2).toString());
     }
+    /* Write something like that:
+     public void print(){
+        System.out.println("Some text " + this);
+}*/
 }
 
 class ColorLine extends Line{
