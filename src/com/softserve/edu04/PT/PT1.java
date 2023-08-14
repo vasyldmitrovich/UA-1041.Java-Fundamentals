@@ -2,7 +2,7 @@ package com.softserve.edu04.PT;
 
 import java.util.Scanner;
 
-public class PT1 {
+public class PT1 {//All good
     public static void main(String[] args) {
         System.out.println("Enter the number of digits you want to check: ");
         int oddCount = 0;

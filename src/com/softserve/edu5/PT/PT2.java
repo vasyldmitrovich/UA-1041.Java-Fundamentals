@@ -2,7 +2,7 @@ package com.softserve.edu5.PT;
 
 import java.util.Scanner;
 
-public class PT2 {
+public class PT2 {//Please give name of class where is main method like App.java
     static final Scanner SCANNER = new Scanner(System.in);
     public static void main(String[] args) {
 

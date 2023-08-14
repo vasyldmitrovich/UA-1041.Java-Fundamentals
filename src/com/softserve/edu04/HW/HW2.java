@@ -8,7 +8,7 @@ public class HW2 {
         System.out.println("Enter the number of digits to compare: ");
 
 
-        int n = SCANNER.nextInt();
+        int n = SCANNER.nextInt();//Give more informative name of field
         int smallest = Integer.MAX_VALUE;
         int largest = Integer.MIN_VALUE;
 
