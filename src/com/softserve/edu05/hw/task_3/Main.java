@@ -25,7 +25,7 @@ public class Main {
 
     }
 
-static void findCarToYear(Car[] cars, int year) {
+static void findCarToYear(Car[] cars, int year) {//Good
         int count = 0;
         for (var el : cars
         ) {

@@ -1,7 +1,7 @@
 package com.softserve.edu07.hw.task_1;
 
 public abstract class Employee implements Payment {
-    String employeeId;
+    String employeeId;//Fields should hava access modifier private
     String name;
 
     public Employee() {

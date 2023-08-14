@@ -1,6 +1,6 @@
 package com.softserve.edu07.pt.task_1;
 
-public class Main {
+public class Main {//OK
     public static void main(String[] args) {
         Animal[] animals={
                 new Cat("Murzik"),

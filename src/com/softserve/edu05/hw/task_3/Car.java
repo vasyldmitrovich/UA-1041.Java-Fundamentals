@@ -2,7 +2,7 @@ package com.softserve.edu05.hw.task_3;
 
 import java.util.Objects;
 
-public class Car {
+public class Car {//Good
     private String type;
     private  int yearOfProduction;
     private int engineCapacity;

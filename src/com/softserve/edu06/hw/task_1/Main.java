@@ -1,7 +1,7 @@
 package com.softserve.edu06.hw.task_1;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         Bird[] birds = {
                 new Eagle("Eagle1"),
                 new Eagle("Eagle2"),

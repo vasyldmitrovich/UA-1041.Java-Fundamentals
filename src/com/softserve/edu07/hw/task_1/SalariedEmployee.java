@@ -1,6 +1,6 @@
 package com.softserve.edu07.hw.task_1;
 
-public class SalariedEmployee extends Employee implements Payment {
+public class SalariedEmployee extends Employee implements Payment {//Employee already implements Payment interface, there do not need implements
     private double fixedMonthlyPayment;
     private String socialSecurityNumber;
 

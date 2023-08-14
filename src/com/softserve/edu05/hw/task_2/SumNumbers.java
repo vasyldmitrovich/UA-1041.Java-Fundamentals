@@ -32,6 +32,6 @@ public class SumNumbers {
         Scanner sc = new Scanner(System.in);
         System.out.print(prompt);
         return sc.nextLine();
-    }
+    }//Good
 
 }

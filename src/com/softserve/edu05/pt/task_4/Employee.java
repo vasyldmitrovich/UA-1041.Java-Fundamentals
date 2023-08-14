@@ -14,7 +14,7 @@ public class Employee {
     }
 
     public Employee() {
-    }
+    }//This constructor move before constructor with parameters
 
     public String getName() {
         return name;

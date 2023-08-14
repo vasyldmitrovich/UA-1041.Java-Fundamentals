@@ -6,6 +6,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //• Create a string array and sort it.
+
+        /*You can create some method, that method return for example array of strings , in this method call that method, and you code will be more readable
+        * */
         String[] strings = {
                 "Labrador",
                 "Poodle",

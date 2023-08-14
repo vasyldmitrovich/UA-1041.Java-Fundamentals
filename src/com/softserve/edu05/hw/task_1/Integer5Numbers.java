@@ -2,7 +2,7 @@ package com.softserve.edu05.hw.task_1;
 
 import java.util.Scanner;
 
-public class Integer5Numbers {
+public class Integer5Numbers {//Perfect
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] integers = new int[5];
