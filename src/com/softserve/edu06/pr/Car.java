@@ -36,34 +36,3 @@ abstract class Car {
     }
 }
 
-class Truck extends Car {
-
-    public Truck(String model, int maxSpeed, int yearOfProduction) {
-        super(model, maxSpeed, yearOfProduction);
-    }
-
-    @Override
-    void run() {
-        System.out.println("The truck is running");
-    }
-
-    void stop() {
-        System.out.println("The truck stopped");
-    }
-}
-
-class Sedan extends Car {
-
-    public Sedan(String model, int maxSpeed, int yearOfProduction) {
-        super(model, maxSpeed, yearOfProduction);
-    }
-
-    @Override
-    void run() {
-        System.out.println("The sedan is running");
-    }
-
-    void stop() {
-        System.out.println("The sedan stopped");
-    }
-}
