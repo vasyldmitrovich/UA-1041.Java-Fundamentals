@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TenInteger {
     private static final int[] arr = new int[10];
-
+//Good
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter numbers: ");

@@ -1,6 +1,6 @@
 package com.softserve.edu06.hw.hw01;
 
-public class MainBird {
+public class MainBird {//All is good
     public static void main(String[] args) {
         Bird[] birds = {
                 new Eagle("Eagle","Brown feathers", "lays 1-4 eggs"),

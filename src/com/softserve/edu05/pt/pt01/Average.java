@@ -1,6 +1,7 @@
 package com.softserve.edu05.pt.pt01;
 
-public class Average {
+public class Average {// I recommend for you create one class App.java and in this class create main method
+    //And create many method for each task, in main method call this methods
     public static void main(String[] args) {
     double[] numbers = {5.0, 12.0, 13.5, 14.9};
     double sum = 0;

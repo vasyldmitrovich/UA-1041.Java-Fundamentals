@@ -1,6 +1,6 @@
 package com.softserve.edu06.pt.pt02;
 
-public class CarMain {
+public class CarMain {//All good
     public static void main(String[] args) {
         Car[] cars = {
                 new Sedan("Scoda Rapid", 240, 2019),

@@ -38,5 +38,5 @@ public class Point {
 
     public void print(){
         System.out.format("Point coordinate: x= %s, y= %s", getX(), getY());
-    }
+    }//Good
 }

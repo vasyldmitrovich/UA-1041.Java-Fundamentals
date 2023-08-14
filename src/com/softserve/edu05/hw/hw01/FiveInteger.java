@@ -15,6 +15,7 @@ public class FiveInteger {
         System.out.println("\nYour array is: " + Arrays.toString(arr));
         System.out.println("======================");
 
+        //For next 10 lines create some method and there in main method call this method
         int ix = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] >= 0) {

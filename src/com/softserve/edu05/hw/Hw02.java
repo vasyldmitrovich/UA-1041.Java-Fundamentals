@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Hw02 {
     static private final Scanner SC = new Scanner(System.in);
     public static void main(String[] args) {
-        int c;
+        int c;//Give correct name of variable more informative
         do {
             System.out.print("Enter first number: ");
             int a = SC.nextInt();

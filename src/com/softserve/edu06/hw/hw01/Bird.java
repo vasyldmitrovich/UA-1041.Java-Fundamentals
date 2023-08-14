@@ -1,6 +1,6 @@
 package com.softserve.edu06.hw.hw01;
 
-abstract class Bird {
+abstract class Bird {//Good
     private String name;
     private String feathers;
     private String layEggs;
