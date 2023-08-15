@@ -10,7 +10,7 @@ public class FlyingBird extends Bird {
 
     @Override
     public void fly() {
-        super.fly();
+        super.fly();//If in parent this method do not do anything than why you use this method there?
         if (isFLy) {
             System.out.println("This bird can fly");
         } else {

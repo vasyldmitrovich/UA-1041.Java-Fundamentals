@@ -1,6 +1,6 @@
 package com.softserve.edu06.practicaltask1;
 
-abstract class Car {
+abstract class Car {//This class is nice
     private String model;
     private int maxSpeed;
     private int yearOfProduction;

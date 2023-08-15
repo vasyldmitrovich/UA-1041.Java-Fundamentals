@@ -4,6 +4,8 @@ public class Department implements Cloneable {
     private String name;
     private Address address;
 
+    //Add constructor without parameters
+
     protected Department(String name, Address address) {
         this.name = name;
         this.address = address;
@@ -26,7 +28,7 @@ public class Department implements Cloneable {
     }
 
     @Override
-    protected Department clone() throws CloneNotSupportedException {
+    protected Department clone() throws CloneNotSupportedException {//Nice
         Department copyOfDepartment = (Department) super.clone();
         copyOfDepartment.address = (Address) address.clone();
         return copyOfDepartment;
@@ -46,7 +48,7 @@ public class Department implements Cloneable {
         private String street;
 
         @Override
-        public String toString() {
+        public String toString() {//write after getters and setters
             return "Address{" +
                     "city='" + city + '\'' +
                     ", street='" + street + '\'' +

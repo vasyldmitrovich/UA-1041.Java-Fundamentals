@@ -1,6 +1,6 @@
 package com.softserve.edu07.homework1;
 
-public class ContractEmployee extends Employee implements Payroll {
+public class ContractEmployee extends Employee implements Payroll {//Do not need here write implements Payroll
     private final int federalTaxId;
     private final double hourlyRate;
     private final double hoursWorked;

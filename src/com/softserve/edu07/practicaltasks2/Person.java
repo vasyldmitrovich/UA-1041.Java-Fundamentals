@@ -18,5 +18,5 @@ public abstract class Person {
         this.name = name;
     }
 
-    abstract void print();
+    abstract void print();//Do not need to write word abstract, method will be abstract by default
 }

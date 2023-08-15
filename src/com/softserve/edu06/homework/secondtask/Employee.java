@@ -1,7 +1,7 @@
 package com.softserve.edu06.homework.secondtask;
 
 public class Employee {
-    protected String name;
+    protected String name;//Make this fields private
     protected int age;
     protected double salary;
 

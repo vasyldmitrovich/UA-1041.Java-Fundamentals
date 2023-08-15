@@ -37,5 +37,5 @@ public class Line{
     }
     public void print(){
         System.out.println(toString());
-    }
+    }//tostring do not need, use this
 }

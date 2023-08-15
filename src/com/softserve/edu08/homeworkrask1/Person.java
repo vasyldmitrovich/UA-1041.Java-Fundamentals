@@ -4,6 +4,8 @@ abstract class Person {
     private FullName fullName;
     private int age;
 
+    //Add constructor without parameters
+
     public Person(FullName fullName, int age) {
         this.fullName = fullName;
         this.age = age;
@@ -29,5 +31,5 @@ abstract class Person {
         return "First name: " + fullName.getFirstName() + ", Last name: " + fullName.getLastName() + ", Age: " + age;
     }
 
-    public abstract String activity();
+    public abstract String activity();//Do not need to write public abstract
 }

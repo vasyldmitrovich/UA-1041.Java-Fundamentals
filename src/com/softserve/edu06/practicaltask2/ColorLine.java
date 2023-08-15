@@ -26,5 +26,5 @@ public class ColorLine extends Line{
 
     public void print(){
         System.out.println(toString());
-    }
+    }//The same there
 }

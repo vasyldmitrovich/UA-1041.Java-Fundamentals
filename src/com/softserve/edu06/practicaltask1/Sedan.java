@@ -16,7 +16,7 @@ public class Sedan extends Car {
     @Override
     public void run() {
         super.run();
-    }
+    }//If logic there do not change than do not override this method here
 
     @Override
     public void stop() {

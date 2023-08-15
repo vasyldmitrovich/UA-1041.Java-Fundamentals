@@ -11,7 +11,7 @@ public class Main {
         for(var people : persons){
             people.print();
 
-            if(people instanceof Staff){
+            if(people instanceof Staff){//Good
                 ((Staff) people).salary();
             }
         }
