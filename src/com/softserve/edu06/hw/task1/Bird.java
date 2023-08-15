@@ -12,5 +12,7 @@ public abstract class Bird {
         this.layEggs = layEggs;
     }
 
-    public abstract void fly();
+    //Add getters and setters for manipulate fields
+
+    public abstract void fly();//Do not need to write public abstract, this method will be public abstract by default
 }

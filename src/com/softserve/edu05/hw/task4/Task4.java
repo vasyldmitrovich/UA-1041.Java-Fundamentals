@@ -3,7 +3,7 @@ package com.softserve.edu05.hw.task4;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Task4 {
+public class Task4 {//Good
 
     private static final Scanner SCANNER = new Scanner(System.in);
 

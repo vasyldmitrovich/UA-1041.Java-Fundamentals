@@ -3,7 +3,7 @@ package com.softserve.edu05.hw.task2;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Task2 {
+public class Task2 {//Ok, but to mach spaces, make code more compact
 
 
     private static final Scanner SCANNER = new Scanner(System.in);

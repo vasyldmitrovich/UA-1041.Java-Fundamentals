@@ -1,6 +1,6 @@
 package com.softserve.edu06.hw.task1;
 
-public class Task1 {
+public class Task1 {//Good
 
     public static void main(String[] args) {
         Bird[] birds = {

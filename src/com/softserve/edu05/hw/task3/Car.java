@@ -1,6 +1,6 @@
 package com.softserve.edu05.hw.task3;
 
-public class Car {
+public class Car {//This class is ok
 
     private String type;
 

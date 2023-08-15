@@ -12,7 +12,7 @@ public abstract class Car {
         this.yearOfProduction = yearOfProduction;
     }
 
-    public abstract void run();
+    public abstract void run();//This two method write in the end of class and without words public abstract
     public abstract void stop();
 
     public String getModel() {

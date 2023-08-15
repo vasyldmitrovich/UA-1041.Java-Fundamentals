@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class Task3 {
-
+//Nice
 
     private static final Scanner SCANNER = new Scanner(System.in);
 

@@ -1,6 +1,6 @@
 package com.softserve.edu06.hw.task2;
 
-public class Task2 {
+public class Task2 {//Ok
 
     public static void main(String[] args) {
 

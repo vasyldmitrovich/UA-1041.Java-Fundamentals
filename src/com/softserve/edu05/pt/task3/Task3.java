@@ -3,7 +3,7 @@ package com.softserve.edu05.pt.task3;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Task3 {
+public class Task3 {//Good
 
 
     private static final Random RANDOM = new Random();
