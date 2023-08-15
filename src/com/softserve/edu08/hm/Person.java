@@ -1,7 +1,7 @@
 package com.softserve.edu08.hm;
 
 abstract class Person {
-    FullName fullName;
+    FullName fullName;//Make always field with access modifier private
     int age;
 
     public Person(FullName fullName, int age) {
@@ -13,7 +13,7 @@ abstract class Person {
         return "First name:" + fullName.getFirstName() + ", Last name: " + fullName.getLastName() + ", Age: " + age;
     }
 
-    abstract public String activity();
+    abstract public String activity();//Do not need to write word abstract, this method will be abstract by default
 
     static class FullName {
         private String firstName;

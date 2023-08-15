@@ -1,7 +1,7 @@
 package com.softserve.edu08.hm;
 
 class Student extends Person implements Cloneable {
-    int course;
+    int course;//Write access modifier private for fields
 
     public Student(FullName fullName, int age, int course) {
         super(fullName, age);

@@ -2,7 +2,9 @@ package com.softserve.edu08.pr;
 
 public class Department implements Cloneable {
     private String name;
-     Address address;
+     Address address;//Address should be private too
+
+    //Add constructor without parameters
 
     public Department(String name, Address address) {
         this.name = name;

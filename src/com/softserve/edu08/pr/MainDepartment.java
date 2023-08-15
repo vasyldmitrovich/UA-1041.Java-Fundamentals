@@ -5,8 +5,10 @@ class MainDepartment {
         Department department = new Department(
                 "IT", new Department.Address("Lviv", "T. Shevchenka", 125)
         );
+
         Department department2 = department.clone();
         department2.address.setCity("Kyiv");
+
         System.out.println(department);
         System.out.println(department2);
     }
