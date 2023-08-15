@@ -1,8 +1,9 @@
-package edu3;
+package com.softserve.edu03.pt;
 
 import java.util.Scanner;
 
-public class Ptask1 {
+public class App {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

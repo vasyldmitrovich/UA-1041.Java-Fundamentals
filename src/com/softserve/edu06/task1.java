@@ -1,15 +1,18 @@
-package edu6;
-import java.util.Scanner;
-import java.util.Arrays;
+package com.softserve.edu06;
 
+
+/*ALL CLASS SHOULD BE IN UNIQUE FILE,
+* Do not write all classes in one file, this practice is not good*/
 abstract class Bird{
-    boolean feathers;
+    boolean feathers;//Make fields private
     boolean layEggs;
 
     public Bird(boolean feathers, boolean layEggs){
         this.feathers = feathers;
         this.layEggs = layEggs;
     }
+
+    //Write getters and setters for manipulation fields
 
     public abstract void fly();
 
@@ -92,7 +95,7 @@ class Kiwi extends NonFlyingBird{
         System.out.println("Kiwi cannot fly");
     }
 }
-public class task1 {
+public class task1 {//This class should have name like App.java
     public static void main(String[] args){
         Bird[] birds = new Bird[4];
         birds[0] =  new Eagle(true, true);

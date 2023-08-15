@@ -1,8 +1,8 @@
-package edu5;
+package com.softserve.edu05.hw;
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class task1 {
+public class task1 {//Do not correct name of class, should be Task1
    public static void main(String[] args) {
        int[] daysInMonths = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
        Scanner scanner = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package edu5;
+package com.softserve.edu05.pt;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -8,6 +8,8 @@ public class Ptask1 {
         String[] arr1 = {"Andrew", "Tom", "Cilian"};
         Arrays.sort(arr1);
         System.out.println("Sorted array:");
+
+        //Divide logic to some methods and here call that methods
         for (String str : arr1) {
             System.out.print(str + " ");
         }
@@ -16,6 +18,8 @@ public class Ptask1 {
         for(int num: arr2){
             sum += num;
         }
+
+        //Divide to some method
         int avVal = sum/arr2.length;
         System.out.println("\nAvarage value:" + avVal);
         System.out.println("Enter a number: ");

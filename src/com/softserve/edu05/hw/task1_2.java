@@ -1,7 +1,7 @@
-package edu5;
+package com.softserve.edu05.hw;
 import java.util.Scanner;
 
-public class task1_2 {
+public class task1_2 {//Rename class to Task1_2.java
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int maxNumber = 10;

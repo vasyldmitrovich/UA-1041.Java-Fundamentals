@@ -1,6 +1,6 @@
-package edu4;
-import java.util.Scanner;
-enum Breed{
+package com.softserve.edu04;
+
+enum Breed{//Should be in file Breed.java
     French_Bulldog("French Bulldog"),
     Labrador_Retriever("Labrador Retriever"),
     German_Shepherd("German Shepherd"),
@@ -10,10 +10,12 @@ enum Breed{
 
     Breed(String name){ this.name = name;}
 }
-class Dog{
-    String nameOfDog;
+class Dog{//Should be in file Dob.java
+    String nameOfDog;//Fields should have access modifier private
     Breed breed;
     int age;
+
+    //Add constructor without parameters
 
     public Dog(String name, Breed breed, int age) {
         this.nameOfDog = name; // Corrected variable name here
@@ -33,8 +35,9 @@ class Dog{
         return age;
     }
 
+    //Add setters equals hashcode and toString
 }
-public class task5 {
+public class task5 {//Rename to Task5 and move in file Task5.java
     public static void main(String[] args){
         Dog dog1 = new Dog("Chudo", Breed.Poodle, 1);
         Dog dog2 =  new Dog("Tokio", Breed.German_Shepherd, 3);
