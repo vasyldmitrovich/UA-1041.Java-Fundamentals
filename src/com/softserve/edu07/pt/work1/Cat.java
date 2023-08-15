@@ -1,3 +1,5 @@
+package com.softserve.edu07.pt.work1;
+
 public class Cat implements Animal {
     @Override
     public void voice() {

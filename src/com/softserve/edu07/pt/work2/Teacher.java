@@ -1,5 +1,7 @@
-public class Cleaner extends Staff {
-    final String TYPE_PERSON = "cleaner ";
+package com.softserve.edu07.pt.work2;
+
+public class Teacher extends Staff {
+    final String TYPE_PERSON = "teacher ";
 
     @Override
     void print() {
@@ -11,7 +13,8 @@ public class Cleaner extends Staff {
         System.out.println("My salary is $" + getSalary());
     }
 
-    public Cleaner(String name, int salary) {
+    //Constructor should go after fields
+    public Teacher(String name, int salary) {
         super(name, salary);
     }
 }

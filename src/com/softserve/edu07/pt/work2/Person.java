@@ -1,6 +1,8 @@
+package com.softserve.edu07.pt.work2;
+
 public abstract class Person {
     public String name;
-    abstract void print();
+    abstract void print();//Move at the end of class
 
     public Person(String name) {
         this.name = name;

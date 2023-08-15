@@ -1,3 +1,5 @@
+package com.softserve.edu07.pt.work2;
+
 public abstract class Staff extends Person {
     private int salary;
 
@@ -6,7 +8,7 @@ public abstract class Staff extends Person {
         this.salary = salary;
     }
 
-    public abstract void salary();
+    public abstract void salary();//This method should go after getters and setters and do not need to write public abstract
 
     public int getSalary() {
         return salary;

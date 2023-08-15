@@ -1,3 +1,5 @@
+package com.softserve.edu07.hw.work1;
+
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -13,6 +15,7 @@ public class Main {
             System.out.println(employee.getEmployeeID() + " " + employee.getName() + " " + employee.calculatePay());
         }
 
+        //Move this logic to some method and call this method here
         Arrays.sort(employees, new Comparator<Employee>() {
             @Override
             public int compare(Employee p1, Employee p2) {

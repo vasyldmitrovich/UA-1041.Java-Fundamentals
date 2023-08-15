@@ -1,4 +1,6 @@
-public class ContractEmployee extends Employee implements Payable {
+package com.softserve.edu07.hw.work1;
+
+public class ContractEmployee extends Employee implements Payable {//Interphase Payable should implement class Employee, not this class
     private int federalTaxId;
     private double hourlyRate;
     private double hoursWorked;
