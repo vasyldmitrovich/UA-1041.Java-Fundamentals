@@ -1,7 +1,7 @@
 package com.softserve.edu07.pt.Task2;
 
 abstract class   Person {
-    String name;
+    String name;//Make private
 
     public Person(String name) {
         this.name = name;
