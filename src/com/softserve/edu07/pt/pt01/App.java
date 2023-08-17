@@ -1,6 +1,6 @@
 package com.softserve.edu07.pt.pt01;
 
-public class App {
+public class App {//Ok
     public static void main(String[] args) {
         Animal[] arr = {
                 new Dog("Lucky"),

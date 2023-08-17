@@ -1,6 +1,6 @@
 package com.softserve.edu07.pt.pt02;
 
-public class App {
+public class App {//Ok
     public static void main(String[] args) {
         Person[] rank = {
                 new Cleaner("Igor"),

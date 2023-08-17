@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Ok
         Employee[] employees = new Employee[] {
                 new ContractEmployee("A-235", "John", "DS-789", 8.75, 160),
                 new ContractEmployee("A-122", "Patrick", "DC-369", 12.2, 172),
