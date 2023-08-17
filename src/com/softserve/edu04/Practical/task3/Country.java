@@ -15,7 +15,7 @@ public class Country {
 
 
 
-        switch (country) {
+        switch (country) {//Do the same with this switch
             case "China": case "Japan": case "India":
                 continents = Continents.ASIA;break;
             case "Africa": case  "Morocco": case  "Kenya":

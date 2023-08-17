@@ -24,7 +24,7 @@ public class Main {
 
         }
 
-        switch (days) {
+        switch (days) {//Move this switch to some method like public static void day(String s)
             case MONDAY:
                 System.out.println("Monday,Понеділок");break;
             case TUESDAY:

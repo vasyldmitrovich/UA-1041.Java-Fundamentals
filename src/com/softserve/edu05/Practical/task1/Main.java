@@ -5,12 +5,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         //first
         String[] flowers = {"Rose","Tulip","Sunflower"};
         System.out.println(Arrays.toString(flowers));
         Arrays.sort(flowers);
         System.out.println(Arrays.toString(flowers));
-//second
+
+        //second
+
+        //Use method, do not write all logic in main method
         double[] numbers = {3.5,2.7,5,11.8,15,6};
         double sum = 0;
         for (var d : numbers) {
