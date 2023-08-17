@@ -1,5 +1,7 @@
-public class Teacher extends Staff {
-    final String TYPE_PERSON = "teacher ";
+package com.softserve.edu07.pt.work2;
+
+public class Cleaner extends Staff {
+    final String TYPE_PERSON = "cleaner ";
 
     @Override
     void print() {
@@ -11,7 +13,7 @@ public class Teacher extends Staff {
         System.out.println("My salary is $" + getSalary());
     }
 
-    public Teacher(String name, int salary) {
+    public Cleaner(String name, int salary) {
         super(name, salary);
     }
 }
