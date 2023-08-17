@@ -7,7 +7,7 @@ public class Product {
     private double price;
     private int quantity;
 
-
+    //Add constructor without parameters
 
     public Product(String name, double price, int quantity) {
         this.name = name;
@@ -16,7 +16,7 @@ public class Product {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) {//This method should be after getters and setters
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
@@ -52,6 +52,6 @@ public class Product {
         this.quantity = quantity;
     }
 
-
+    //Override hashCode and toString
 }
 

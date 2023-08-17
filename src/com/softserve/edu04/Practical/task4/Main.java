@@ -16,8 +16,10 @@ public class Main {
         System.out.println("You buy :" + pr1.getName()+ "\t" +"by\t"+ pr1.getPrice()+"\t"+"grn"+ "\t=" + pr1.getQuantity()+
                 "\t" + "\n" +pr2.getName()+ "\t" +"by\t"+ pr2.getPrice()+"grn"+"\t=" + pr2.getQuantity() +
                 "\n" +pr3.getName()+ "\t" +"by\t"+ pr3.getPrice()+"grn"+"\t"+"\t=" + pr3.getQuantity() +
-                "\n" +pr4.getName()+ "\t" +"by\t"+ pr4.getPrice()+"grn"+"\t"+"\t=" + pr4.getQuantity());
+                "\n" +pr4.getName()+ "\t" +"by\t"+ pr4.getPrice()+"grn"+"\t"+"\t=" + pr4.getQuantity());//Instead all this methods use toString
 
+
+        //All this if move to some method and here call this method
         if (pr1.getPrice()>pr2.getPrice() && pr1.getPrice()>pr3.getPrice() && pr1.getPrice()>pr4.getPrice())
             System.out.println("Most expensive product is: " + pr1.getName()+"\t"+"\t" + pr1.getQuantity());
         if (pr2.getPrice()>pr1.getPrice() && pr2.getPrice()>pr3.getPrice() && pr2.getPrice()>pr4.getPrice())
