@@ -6,7 +6,7 @@ public class PT3 {
     public static void main(String[] args) {
         enum continents {
             AFRICA, ASIA, EUROPE, NORTH_AMERICA, SOUTH_AMERICA, AUSTRALIA
-        }
+        }//This enum should be in file like Continents.java, not there, there is bad decision
         System.out.println("Enter the country");
         Scanner sc = new Scanner(System.in);
         String country = sc.nextLine();

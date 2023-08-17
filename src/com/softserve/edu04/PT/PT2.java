@@ -2,7 +2,7 @@ package com.softserve.edu04.PT;
 
 import java.util.Scanner;
 
-public class PT2 {
+public class PT2 {//Ok
     public static void main(String[] args) {
         System.out.println("Enter the number of hte day of week");
         Scanner sc = new Scanner(System.in);
