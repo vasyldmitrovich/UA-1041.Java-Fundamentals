@@ -29,8 +29,8 @@ public class RemoveDuplicate {
     }
     public void removeDup() {
         List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < numbers.length; i++) {
-            int el = Integer.parseInt(numbers[i]);
+        for (String number : numbers) {
+            int el = Integer.parseInt(number);
             if (!(list.contains(el))) {
                 list.add(el);
             }
