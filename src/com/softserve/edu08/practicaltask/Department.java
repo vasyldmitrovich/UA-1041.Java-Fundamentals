@@ -1,10 +1,11 @@
-package com.softserve.edu08.practicalrask;
+package com.softserve.edu08.practicaltask;
 
 public class Department implements Cloneable {
     private String name;
     private Address address;
 
-    //Add constructor without parameters
+    public Department() {
+    }
 
     protected Department(String name, Address address) {
         this.name = name;
@@ -40,22 +41,12 @@ public class Department implements Cloneable {
     }
 
     public String getInfo() {
-       return toString();
+        return toString();
     }
 
     protected static class Address implements Cloneable {
         private String city;
         private String street;
-
-        @Override
-        public String toString() {//write after getters and setters
-            return "Address{" +
-                    "city='" + city + '\'' +
-                    ", street='" + street + '\'' +
-                    ", building=" + building +
-                    '}';
-        }
-
         private int building;
 
         public Address(String city, String street, int building) {
@@ -65,11 +56,17 @@ public class Department implements Cloneable {
         }
 
         @Override
+        public String toString() {//write after getters and setters
+            return "Address{" + "city='" + city + '\'' + ", street='" + street + '\'' + ", building=" + building + '}';
+        }
+
+        @Override
         protected Object clone() throws CloneNotSupportedException {
             return super.clone();
         }
-        public String getInfo(){
-           return toString();
+
+        public String getInfo() {
+            return toString();
         }
 
         public String getCity() {

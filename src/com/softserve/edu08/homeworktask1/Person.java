@@ -1,10 +1,11 @@
-package com.softserve.edu08.homeworkrask1;
+package com.softserve.edu08.homeworktask1;
 
 abstract class Person {
     private FullName fullName;
     private int age;
 
-    //Add constructor without parameters
+    public Person() {
+    }
 
     public Person(FullName fullName, int age) {
         this.fullName = fullName;

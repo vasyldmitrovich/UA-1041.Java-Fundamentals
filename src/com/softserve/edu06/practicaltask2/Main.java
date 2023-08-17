@@ -14,7 +14,7 @@ public class Main {
                 new ColorLine(points[1], points[3], "Green"),
         };
         for (var line : lines){
-            line.print();
+            System.out.println(line);
         }
     }
 }

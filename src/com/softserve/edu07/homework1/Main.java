@@ -6,8 +6,7 @@ import java.util.Comparator;
 public class Main {
     public static void main(String[] args) {
 
-        //Write some method and this method should return array employee, here call this method
-        Employee[] employees = new Employee[]{new SalariedEmployee(1000, "Bob", 123535543, 3000), new SalariedEmployee(1001, "Alice", 272885291, 2500), new ContractEmployee(1002, "John", 1325371, 25, 100), new ContractEmployee(1003, "Nick", 5392452, 20, 140)};
+        Employee[] employees = getEmployees();
 
         for (var employee : employees) {
             System.out.println(employee.employeeId + " " + employee.name + " " + employee.calculatePay());
@@ -25,4 +24,9 @@ public class Main {
             System.out.println(employee.employeeId + " " + employee.name + " " + employee.calculatePay());
         }
     }
+
+    public static Employee[] getEmployees() {
+        return new Employee[]{new SalariedEmployee(1000, "Bob", 123535543, 3000), new SalariedEmployee(1001, "Alice", 272885291, 2500), new ContractEmployee(1002, "John", 1325371, 25, 100), new ContractEmployee(1003, "Nick", 5392452, 20, 140)};
+    }
+
 }

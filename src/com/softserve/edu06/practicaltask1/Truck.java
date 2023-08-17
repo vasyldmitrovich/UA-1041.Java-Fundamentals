@@ -8,13 +8,4 @@ public class Truck extends Car {
         super(model, maxSpeed, yearOfProduction);
     }
 
-    @Override
-    public void run() {
-        super.run();
-    }
-
-    @Override
-    public void stop() {
-        super.stop();
-    }
 }

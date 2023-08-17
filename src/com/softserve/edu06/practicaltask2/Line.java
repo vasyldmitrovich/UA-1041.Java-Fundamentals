@@ -35,7 +35,4 @@ public class Line{
                 ", end=" + end +
                 '}';
     }
-    public void print(){
-        System.out.println(toString());
-    }//tostring do not need, use this
 }

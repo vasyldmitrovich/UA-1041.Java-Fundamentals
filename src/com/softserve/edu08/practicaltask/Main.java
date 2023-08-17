@@ -1,4 +1,4 @@
-package com.softserve.edu08.practicalrask;
+package com.softserve.edu08.practicaltask;
 
 public class Main {
     public static void main(String[] args) {

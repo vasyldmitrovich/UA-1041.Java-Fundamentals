@@ -1,4 +1,4 @@
-package com.softserve.edu08.homeworkrask1;
+package com.softserve.edu08.homeworktask1;
 
 
 public class Main {

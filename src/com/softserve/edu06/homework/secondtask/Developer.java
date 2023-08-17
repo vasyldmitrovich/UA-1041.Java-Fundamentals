@@ -18,6 +18,6 @@ public class Developer extends Employee {
 
     @Override
     public String report() {
-        return String.format("Name: %s, Age: %d, Position: %s, Salary: ₴ %.2f", name, age, position, salary);
+        return String.format("Name: %s, Age: %d, Position: %s, Salary: ₴ %.2f", getName(), getAge(), getPosition(), getSalary());
     }
 }

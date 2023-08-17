@@ -23,8 +23,4 @@ public class ColorLine extends Line{
                 ", color='" + color + '\'' +
                 '}';
     }
-
-    public void print(){
-        System.out.println(toString());
-    }//The same there
 }
