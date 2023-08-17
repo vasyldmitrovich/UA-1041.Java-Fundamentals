@@ -15,17 +15,7 @@ public class FiveInteger {
         System.out.println("\nYour array is: " + Arrays.toString(arr));
         System.out.println("======================");
 
-        //For next 10 lines create some method and there in main method call this method
-        int ix = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] >= 0) {
-                ix += 1;
-                if (ix == 2) {
-                    System.out.println("Position of second positive number - " + i);
-                }
-            }
-        }
-        System.out.println("======================");
+        FiveInteger.secondPositive(arr);
 
         int min = arr[0];
         int ixMin = 0;
@@ -45,6 +35,18 @@ public class FiveInteger {
             }
         }
         System.out.println("Product of even numbers: " + product);
+    }
+   static void secondPositive(int[]arr) {
+        int ix = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] >= 0) {
+                ix += 1;
+                if (ix == 2) {
+                    System.out.println("Position of second positive number - " + i);
+                }
+            }
+        }
+        System.out.println("======================");
     }
 }
 

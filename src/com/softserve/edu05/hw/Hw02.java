@@ -4,18 +4,19 @@ import java.util.Scanner;
 
 public class Hw02 {
     static private final Scanner SC = new Scanner(System.in);
+
     public static void main(String[] args) {
-        int c;//Give correct name of variable more informative
+        int response;
         do {
             System.out.print("Enter first number: ");
-            int a = SC.nextInt();
+            int num1 = SC.nextInt();
             System.out.print("Enter second number: ");
-            int b = SC.nextInt();
-            System.out.println(a + " + " + b + " = " + (a + b));
+            int num2 = SC.nextInt();
+            System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
             System.out.print("Do yo wont want to perform the operation again (1- yes, 2- no)? ");
-            c = SC.nextInt();
+            response = SC.nextInt();
             System.out.println("===============================");
-        } while (c == 1);
+        } while (response == 1);
     }
 
 }

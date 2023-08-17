@@ -1,9 +1,9 @@
 package com.softserve.edu04.pt.pt03;
 
 public enum Continent {
-    EUROPE ("Europe"),
-    AUSTRALIA ("Australia"),
-    NORTH_AMERICA ("North America");
+    EUROPE("Europe"),
+    AUSTRALIA("Australia"),
+    NORTH_AMERICA("North America");
 
     private final String contName;
 
@@ -12,6 +12,6 @@ public enum Continent {
     }
 
     public void getContName() {
-        System.out.print("This is " + contName );
+        System.out.print("This is " + contName);
     }
 }
