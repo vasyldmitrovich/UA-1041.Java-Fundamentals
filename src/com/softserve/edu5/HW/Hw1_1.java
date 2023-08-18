@@ -12,11 +12,13 @@ public class Hw1_1 {
             System.out.println("Please enter number");
             arr[i] = SCANNER.nextInt();
         }
+
         for (int i = 0; i < 5; i++) {
             if (arr[i] >= 0) {
                 count++;
             }
         }
+
         if (count < 5) {
             System.out.println(arr[5] * arr[6] * arr[7] * arr[8] * arr[9]);
         } else {

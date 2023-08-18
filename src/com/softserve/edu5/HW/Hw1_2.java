@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Hw1_2 {
     static final Scanner SCANNER = new Scanner(System.in);
+
     public static void main(String[] args) {
         int[] intNum = new int[5];
         int count = 0;
@@ -15,6 +16,9 @@ public class Hw1_2 {
             System.out.println("Please enter number");
             intNum[i] = SCANNER.nextInt();
         }
+
+        //This for put in method which take like parameter array for example public static void myMethod (int[] arr) {...
+        //And do the same logic with another part
         for (int i = 0; i < intNum.length; i++) {
 
             if(intNum[i] > 0) {
