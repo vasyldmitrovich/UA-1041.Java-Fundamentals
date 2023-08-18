@@ -25,12 +25,5 @@ public class Task1 {
 
         System.out.println(student3.info());
         System.out.println(student3.activity());
-
-/*
-        Programmer programmer = new Programmer(new FullName("John", "Smith"), 25);
-
-        System.out.println(programmer.info());
-        programmer.activity();
-*/
     }
 }
