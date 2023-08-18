@@ -17,7 +17,7 @@ public class GeometricApp {
 
     public static void main(String[] args) {
         printLines();
-    }
+    }//Good
 
     public static void printLines() {
         for (var line : lines) {

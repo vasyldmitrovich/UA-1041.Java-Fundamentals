@@ -1,7 +1,7 @@
 package com.softserve.edu06.hw.Task1;
 
 public abstract class Bird {
-    boolean feather;
+    boolean feather;//Make private and add getters and setters
     boolean layEggs;
 
     protected Bird(boolean feathers, boolean layEggs) {
@@ -9,7 +9,7 @@ public abstract class Bird {
         this.layEggs = layEggs;
     }
 
-    protected abstract void fly();
+    protected abstract void fly();//Without protected
 
     protected boolean isFeather() {
         return feather;

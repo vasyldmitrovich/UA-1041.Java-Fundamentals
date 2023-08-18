@@ -4,6 +4,7 @@ public class Car {
     private String type;
     private int year;
     private int engineCapacity;
+
     public Car(){}
 
     public Car(String type, int year, int engineCapacity) {
@@ -44,4 +45,6 @@ public class Car {
                 ", engineCapacity=" + engineCapacity +
                 '}';
     }
+
+    //Add equals and hashCode
 }

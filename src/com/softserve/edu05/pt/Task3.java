@@ -27,7 +27,7 @@ public class Task3 {
 
     //This method will loop through arrrayOfNums and get biggestNum,sum,countOfNegative and countOfPositive
     //and assign this values to fields of object
-    public void loopThroughArray() {
+    public void loopThroughArray() {//Good
         int biggestNum = arrayOfNums[0];
         int sum = 0;
         int countOfNegative = 0;

@@ -1,6 +1,6 @@
 package com.softserve.edu06.pt.Cars;
 
-public class CarsApp {
+public class CarsApp {//Ok
     static Car[] garage = {
             new Truck("Ford F-150", 140, 2001),
             new Sedan("Hyundai Verna", 135, 2017),

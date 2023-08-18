@@ -3,7 +3,7 @@ package com.softserve.edu07.hw.Task1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmpMain {
+public class EmpMain {//Ok
     static List<Employee> office = new ArrayList<Employee>();
     private static final int lengthOfLine = 40;
 

@@ -6,7 +6,7 @@ class NonFlyingBird extends Bird {
 
     protected NonFlyingBird(boolean feathers, boolean layEggs) {
         super(feathers, layEggs);
-    }
+    }//Make public
 
     @Override
     protected void fly() {

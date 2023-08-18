@@ -14,7 +14,7 @@ public class App {
     public static void main(String[] args) {
         runProgram();
     }
-//In this and anotreh class all good
+    //In this and another class all good
     private static void runProgram() {
         int numOfTask = -1;
         do {
@@ -47,7 +47,7 @@ public class App {
                 "\n\t0 - Exit\n");
     }
 
-    static void runTask1_1() {
+    static void runTask1_1() {//Perfect decision use methods
         MonthsDays md = new MonthsDays();
         md.setNumOfMonth();
         md.howMuchDaysInMonth();

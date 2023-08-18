@@ -5,7 +5,7 @@ import com.softserve.edu06.hw.Task1.Bird;
 class FlyingBird extends Bird {
     protected FlyingBird(boolean feathers, boolean layEggs) {
         super(feathers, layEggs);
-    }
+    }//Make public
 
     @Override
     protected void fly() {

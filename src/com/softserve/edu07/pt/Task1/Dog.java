@@ -1,7 +1,7 @@
 package com.softserve.edu07.pt.Task1;
 
 public class Dog implements Animal {
-    private final int age;
+    private final int age;//The same is here
     private final String name;
 
     public Dog(int age, String name) {

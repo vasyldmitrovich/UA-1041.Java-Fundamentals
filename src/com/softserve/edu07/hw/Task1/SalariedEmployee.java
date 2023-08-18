@@ -2,7 +2,6 @@ package com.softserve.edu07.hw.Task1;
 
 public class SalariedEmployee extends Employee implements Payment {
     private int fixedMonthlyPayment;
-
     private String socialSecurityNumber;
 
     public SalariedEmployee(String employeeId, String name, int fixedMonthlyPayment, String socialSecurityNumber) {
