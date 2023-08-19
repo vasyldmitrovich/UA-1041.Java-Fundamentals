@@ -18,9 +18,9 @@ public class Main {
         System.out.println(newCollection);
 
         //• Insert elements 1, -3, -4 in positions 2, 8, 5.
-        myCollection.add(2, 1);
-        myCollection.add(5, -4);
-        myCollection.add(8, -3);
+        myCollection.set(2, 1);
+        myCollection.set(5, -4);
+        myCollection.set(8, -3);
         for (int i = 0; i < myCollection.size(); i++) {
             System.out.println("position – " + i + ", value of element – " + myCollection.get(i));
         }
