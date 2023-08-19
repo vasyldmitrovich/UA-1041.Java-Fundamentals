@@ -2,7 +2,7 @@ package com.softserve.edu08.pt;
 
 public class Department implements Cloneable {
     private String field;
-    private Address address = new Address();
+    private Address address;
 
     public Department() {
     }
@@ -50,7 +50,7 @@ public class Department implements Cloneable {
         }
     }
 
-    public class Address implements Cloneable {
+    public static class Address implements Cloneable {
         private String city;
         private String street;
         private int building;
