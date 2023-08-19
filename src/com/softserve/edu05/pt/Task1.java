@@ -6,7 +6,7 @@ import static com.softserve.edu05.util.CollectInputs.inputString;
 import static com.softserve.edu05.util.RandNums.getArrOfRandInts;
 
 
-public class Task1 {//Ok
+public class Task1 {
     final static String[] strArr = {"Ivan", "Misha", "Grisha", "Ann", "Dasha"};
     final static int[] intArr = getArrOfRandInts(5, 0, 11);
 

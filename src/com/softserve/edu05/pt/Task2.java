@@ -13,7 +13,7 @@ public class Task2 {
         }
     }
 
-    private static boolean isPrime(int num) {//Good
+    private static boolean isPrime(int num) {
         int max = num / 2 + 1;
         for (int i = 2; i < max; i++) {
             if (num % i == 0) return false;
