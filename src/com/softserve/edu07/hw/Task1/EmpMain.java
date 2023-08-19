@@ -36,7 +36,7 @@ public class EmpMain {
         for (var emp : office
         ) {
             System.out.println("-".repeat(lengthOfLine));
-            System.out.println(emp.employeeId + "\t\t" + emp.name + "\t\t" + emp.calculatePay());
+            System.out.println(emp.getEmployeeId() + "\t\t" + emp.getName() + "\t\t" + emp.calculatePay());
             System.out.println("-".repeat(lengthOfLine));
         }
     }
