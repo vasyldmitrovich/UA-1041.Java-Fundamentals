@@ -1,4 +1,4 @@
-package com.softserve.edu08.hw.task_1;
+package com.softserve.edu08.hw.task_1_2;
 
 public class FullName implements Cloneable {
     private String firstName;
