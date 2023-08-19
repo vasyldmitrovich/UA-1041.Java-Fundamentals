@@ -1,12 +1,13 @@
 package com.softserve.edu06.hw.Task2;
 
 public class Employee {
-    protected String name;//All field make private
-    protected int age;
-    protected double salary;
+    private String name;//All field make private
+    private int age;
+    private double salary;
 
     //Add constructor without parameters
-
+    public Employee() {
+    }
     public Employee(String name, int age, double salary) {
         this.name = name;
         this.age = age;

@@ -11,7 +11,7 @@ public class BirdApp {
 
     public static void main(String[] args) {
         printBirdsInfo();
-    }//Nice
+    }
 
     public static void printBirdsInfo() {
         for (Bird bird : birds

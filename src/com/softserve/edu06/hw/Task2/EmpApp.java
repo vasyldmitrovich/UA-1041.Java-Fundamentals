@@ -1,6 +1,6 @@
 package com.softserve.edu06.hw.Task2;
 
-public class EmpApp {//Good
+public class EmpApp {
     static Employee[] emps = {
             new Employee("Ivan", 19, 20000),
             new Developer("Misha", 21, 25000, "Frontend React Developer"),

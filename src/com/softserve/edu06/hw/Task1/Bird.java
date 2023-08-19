@@ -1,22 +1,30 @@
 package com.softserve.edu06.hw.Task1;
 
 public abstract class Bird {
-    boolean feather;//Make private and add getters and setters
-    boolean layEggs;
+    private boolean feather;
+    private boolean layEggs;
 
     protected Bird(boolean feathers, boolean layEggs) {
         this.feather = feathers;
         this.layEggs = layEggs;
     }
 
-    protected abstract void fly();//Without protected
+    public abstract void fly();
 
-    protected boolean isFeather() {
+    public boolean isFeather() {
         return feather;
     }
 
-    protected boolean isLayEggs() {
+    public boolean isLayEggs() {
         return layEggs;
+    }
+
+    public void setFeather(boolean feather) {
+        this.feather = feather;
+    }
+
+    public void setLayEggs(boolean layEggs) {
+        this.layEggs = layEggs;
     }
 
     protected String getInfo() {
