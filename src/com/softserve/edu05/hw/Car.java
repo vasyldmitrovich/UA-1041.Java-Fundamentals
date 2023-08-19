@@ -1,5 +1,7 @@
 package com.softserve.edu05.hw;
 
+import java.util.Objects;
+
 public class Car {
     private String type;
     private int year;
@@ -46,5 +48,16 @@ public class Car {
                 '}';
     }
 
-    //Add equals and hashCode
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Car car = (Car) o;
+        return year == car.year && engineCapacity == car.engineCapacity && Objects.equals(type, car.type);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(type, year, engineCapacity);
+    }
 }
