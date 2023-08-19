@@ -1,6 +1,6 @@
 package com.softserve.edu07.hw.Task1;
 
-public class ContractEmployee extends Employee implements Payment {//Without implements Payment this class will have this method by default
+public class ContractEmployee extends Employee  {
     private final int federalTaxId;
     private final int hourlyRate;
     private final int numOfHoursWorked;

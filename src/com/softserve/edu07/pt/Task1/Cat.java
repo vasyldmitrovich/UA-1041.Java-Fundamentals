@@ -2,11 +2,28 @@ package com.softserve.edu07.pt.Task1;
 
 public class Cat implements Animal {
 
-    private final int age;//Why fields final???? If you do field final naming should be uppercase
-    private final String name;//But this fields should not be final
+    private int age;
+    private String name;
+
 
     public Cat(int age, String name) {
         this.age = age;
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
