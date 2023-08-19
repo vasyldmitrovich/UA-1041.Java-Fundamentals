@@ -19,6 +19,6 @@ public class Developer extends Employee {
     @Override
     public String report() {
         return String.format("Name: %s, Age: %d, Position: %s, " +
-                "Salary: \u20B4 %.2f. ", this.name, age, position, salary);
+                "Salary: \u20B4 %.2f. ", getName(), getAge(), getPosition(), getSalary());
     }
 }
