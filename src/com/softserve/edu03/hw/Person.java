@@ -1,9 +1,6 @@
 package com.softserve.edu03.hw;
 
-import com.softserve.edu03.example.Main;
-
 import java.time.Year;
-import java.util.Date;
 
 import static com.softserve.edu03.hw.App.SCANNER;
 
@@ -42,8 +39,8 @@ public class Person {
         int birthYear1 = person.getBirthYear();
         String firstName1 = person.getFirstName();
         String lastName1 = person.getLastName();
-        if (person.getAge(birthYear1)==Year.now().getValue()) {
-            System.out.println("The year of birth is entered incorrectly, so it is impossible to determine the age.");
+        if (person.getAge(birthYear1) == Year.now().getValue()) {
+            System.out.println(firstName1 + " " + lastName1 + "(The year of birth is entered incorrectly, so it is impossible to determine the age.)");
         } else {
             System.out.println(firstName1 + " " + lastName1 + " (age is " + person.getAge(birthYear1) + ").");
         }
