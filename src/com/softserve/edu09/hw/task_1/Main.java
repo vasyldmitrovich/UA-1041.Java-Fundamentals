@@ -68,17 +68,13 @@ public class Main {
 
 
     private static List<Integer> copyFirstElem(int k, List<Integer> myCollection) {
-        List<Integer> list1 = new ArrayList<>(
-                List.copyOf(myCollection.subList(0, k))
-        );
+        List<Integer> list1 = new ArrayList<>(myCollection.subList(0, k));
         return list1;
     }
 
 
     private static List<Integer> copyLastElem(int k, List<Integer> myCollection) {
-        List<Integer> list2 = new ArrayList<>(
-                List.copyOf(myCollection.subList(k, myCollection.size()))
-        );
+        List<Integer> list2 = new ArrayList<>(myCollection.subList(k, myCollection.size()));
         Collections.reverse(list2);
         return list2;
     }
