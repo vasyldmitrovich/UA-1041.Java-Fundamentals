@@ -68,13 +68,13 @@ public class Main {
         System.out.println("there is no such element!!!");
     }
 
+
     private static List<Integer> copyFirstElem(int k, List<Integer> myCollection) {
-        List<Integer> list1 = new ArrayList<>();
-        for (int i = 0; i < k; i++) {
-            list1.add(i, myCollection.get(i));
-        }
+        List<Integer> list1 = Arrays.asList(new Integer[k]);
+        Collections.copy(list1.subList(0, k), myCollection.subList(0, k));
         return list1;
     }
+
 
     private static List<Integer> copyLastElem(int k, List<Integer> myCollection) {
         List<Integer> list2 = new ArrayList<>();
