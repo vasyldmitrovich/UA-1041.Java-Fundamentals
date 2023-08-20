@@ -1,6 +1,6 @@
 package com.softserve.edu07.hw.hw01;
 
-public abstract class Employee {
+public abstract class Employee implements Payment {
     private String employeeId;
     private String name;
 
@@ -36,7 +36,5 @@ public abstract class Employee {
                 '}';
     }
 
-    public double calculatePay() {
-        return 0;
-    }//Make this method abstract
+    abstract public double calculatePay();
 }

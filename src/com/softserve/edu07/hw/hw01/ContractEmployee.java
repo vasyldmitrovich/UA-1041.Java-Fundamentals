@@ -1,6 +1,6 @@
 package com.softserve.edu07.hw.hw01;
 
-public class ContractEmployee extends Employee implements Payment {//Implement Payment should class Employee not this class
+public class ContractEmployee extends Employee {
     private String federalTaxIdMember;
     private double hourlyRate;
     private int hoursWorked;
