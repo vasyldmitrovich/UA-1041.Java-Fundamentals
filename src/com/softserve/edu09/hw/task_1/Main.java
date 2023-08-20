@@ -61,26 +61,25 @@ public class Main {
                 it.remove();
                 Collections.reverse(myCollection);
                 return;
-
             }
-
         }
         System.out.println("there is no such element!!!");
     }
 
 
     private static List<Integer> copyFirstElem(int k, List<Integer> myCollection) {
-        List<Integer> list1 = Arrays.asList(new Integer[k]);
-        Collections.copy(list1.subList(0, k), myCollection.subList(0, k));
+        List<Integer> list1 = new ArrayList<>(
+                List.copyOf(myCollection.subList(0, k))
+        );
         return list1;
     }
 
 
     private static List<Integer> copyLastElem(int k, List<Integer> myCollection) {
-        List<Integer> list2 = new ArrayList<>();
-        for (int i = 0; i < myCollection.size() - k; i++) {
-            list2.add(i, myCollection.get(myCollection.size() - 1 - i));
-        }
+        List<Integer> list2 = new ArrayList<>(
+                List.copyOf(myCollection.subList(k, myCollection.size()))
+        );
+        Collections.reverse(list2);
         return list2;
     }
 
