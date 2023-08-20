@@ -20,7 +20,7 @@ public class Task3 {
         List<Integer> newCollection = filterNumbers(myCollection, 5);
 
 
-        System.out.println("Numbers what bigger 5");
+        System.out.println("Numbers what bigger than 5");
 
         System.out.println(newCollection);
 

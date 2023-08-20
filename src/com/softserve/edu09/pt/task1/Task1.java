@@ -9,8 +9,8 @@ public class Task1 {
         List<HeavyBox> boxes = new ArrayList<>();
 
         boxes.add(new HeavyBox(10, "tools"));
-        boxes.add(new HeavyBox(90, "furniture"));
-        boxes.add(new HeavyBox(15, "electronics"));
+        boxes.add(new HeavyBox(60, "table"));
+        boxes.add(new HeavyBox(25, "electronics"));
 
 
         System.out.println(boxes);

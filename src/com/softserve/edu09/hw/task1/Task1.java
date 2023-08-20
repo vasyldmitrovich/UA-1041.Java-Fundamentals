@@ -14,10 +14,10 @@ public class Task1 {
 
         System.out.println(myCollection);
 
-        List<Integer> swaped = swapMaxAndMin(myCollection);
+        List<Integer> swapped = swapMaxAndMin(myCollection);
 
         System.out.println("After swapping max and min");
-        System.out.println(swaped);
+        System.out.println(swapped);
 
         List<Integer> addedNumber = addThreeDigitNumber(myCollection);
 
@@ -44,8 +44,7 @@ public class Task1 {
         System.out.println(removedNumber);
 
 
-
-        List<Integer> removedFollowingFirst = removeMinimumNext(new ArrayList<>(List.of(9, 8, 7, 6, 5)));
+        List<Integer> removedFollowingFirst = removeMinimumNext(myCollection);
 
         System.out.println("After removing following the first minimum");
         System.out.println(removedFollowingFirst);
@@ -114,6 +113,7 @@ public class Task1 {
         for (int i = 0; i < list.size() - 1; i++) {
             if ((newList.get(i) > 0 && newList.get(i + 1) < 0) ||
                     (newList.get(i) < 0 && newList.get(i + 1) > 0)) {
+
                 newList.add(i + 1, 0);
             }
         }
@@ -122,14 +122,14 @@ public class Task1 {
     }
 
     private static List<Integer> copyElements(List<Integer> list, int k) {
-        List<Integer> result = new ArrayList<>();
-
         List<Integer> source = new ArrayList<>(list);
 
         if (k < 0) {
             k = Math.abs(k);
             Collections.reverse(source);
         }
+
+        List<Integer> result = new ArrayList<>();
 
         for (int i = 0; i < k; i++) result.add(source.get(i));
         return result;
@@ -150,33 +150,10 @@ public class Task1 {
     private static List<Integer> removeMinimumNext(List<Integer> list) {
         List<Integer> newList = new ArrayList<>(list);
 
-
         int minIndex = newList.indexOf(min(newList));
 
-        if (minIndex > 0 && minIndex < newList.size() - 1) newList.remove(minIndex + 1);
+        if (minIndex >= 0 && minIndex < newList.size() - 1) newList.remove(minIndex + 1);
 
         return newList;
     }
-
-    public static void splitCollection(List<Integer> source, List<Integer> list1, List<Integer> list2, int k) {
-        if (k >= 0) {
-            for (int i = 0; i < source.size(); i++) {
-                if (i < k) {
-                    list1.add(source.get(i));
-                } else {
-                    list2.add(0, source.get(i));
-                }
-            }
-        } else {
-            k = Math.abs(k);
-            for (int i = 0; i < source.size(); i++) {
-                if (i < k) {
-                    list2.add(0, source.get(i));
-                } else {
-                    list1.add(source.get(i));
-                }
-            }
-        }
-    }
-
 }
