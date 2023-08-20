@@ -30,9 +30,6 @@ public class HeavyBox {
 
     @Override
     public String toString() {
-        return "HeavyBox{" +
-                "weight=" + weight +
-                ", content='" + content + '\'' +
-                '}';
+        return "HeavyBox{" + "weight=" + weight + ", content='" + content + '\'' + '}';
     }
 }

@@ -12,18 +12,18 @@ public class Main {
         boxes.add(new HeavyBox(15, "Wheel"));
         boxes.add(new HeavyBox(12, "Computer"));
 
-        for (var boxList : boxes){
+        for (var boxList : boxes) {
             System.out.println(boxList);
         }
 
         System.out.println("Added \"1\" to first box");
 
-        if(!(boxes.isEmpty())){
+        if (!(boxes.isEmpty())) {
             HeavyBox boxOne = boxes.get(0);
             boxOne.setWeight(boxOne.getWeight() + 1);
         }
 
-        for (var boxList : boxes){
+        for (var boxList : boxes) {
             System.out.println(boxList);
         }
 
@@ -31,7 +31,7 @@ public class Main {
 
         boxes.remove(boxes.size() - 1);
 
-        for (var boxList : boxes){
+        for (var boxList : boxes) {
             System.out.println(boxList);
         }
 
@@ -39,7 +39,7 @@ public class Main {
 
         boxes.removeAll(boxes);
 
-        for (var boxList : boxes){
+        for (var boxList : boxes) {
             System.out.println(boxList);
         }
     }

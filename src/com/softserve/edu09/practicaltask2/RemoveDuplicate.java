@@ -22,11 +22,13 @@ public class RemoveDuplicate {
     public void setNumbers(String[] numbers) {
         this.numbers = numbers;
     }
-    public void promptNumbers(){
+
+    public void promptNumbers() {
         System.out.println("Please provide an array of numbers");
         String line = SCANNER.nextLine();
         setNumbers(line.split(",\\s*"));
     }
+
     public void removeDup() {
         List<Integer> list = new ArrayList<>();
         for (String number : numbers) {

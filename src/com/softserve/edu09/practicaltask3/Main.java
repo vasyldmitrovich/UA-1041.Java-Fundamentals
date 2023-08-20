@@ -15,16 +15,16 @@ public class Main {
 
         List<Integer> newCollection = new ArrayList<>();
         for (int i = 0; i < myCollection.size(); i++) {
-            if(myCollection.get(i) > 5){
+            if (myCollection.get(i) > 5) {
                 newCollection.add(myCollection.get(i));
             }
         }
         System.out.println(newCollection);
 
         var iterator = newCollection.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             var element = iterator.next();
-            if(element > 20){
+            if (element > 20) {
                 iterator.remove();
             }
         }

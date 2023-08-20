@@ -35,7 +35,8 @@ public class Main {
         result.addAll(set2);
         return result;
     }
-    private static Set<Integer> intersect(Set<Integer>set1, Set<Integer> set2) {
+
+    private static Set<Integer> intersect(Set<Integer> set1, Set<Integer> set2) {
         var result = new HashSet<>(set1);
         result.retainAll(set2);
         return result;

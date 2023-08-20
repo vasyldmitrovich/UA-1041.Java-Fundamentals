@@ -39,11 +39,12 @@ public class Main {
         }
         printLine();
     }
+
     private static boolean isTheSameName(Map<String, String> personMap) {
         for (var firstName : personMap.values()) {
             int count = 0;
-            for (var dupName : personMap.values()){
-                if (firstName.equals(dupName)){
+            for (var dupName : personMap.values()) {
+                if (firstName.equals(dupName)) {
                     count++;
                 }
                 if (count >= 2) {
@@ -53,6 +54,7 @@ public class Main {
         }
         return false;
     }
+
     private static void removeByName(Map<String, String> personMap) {
         printLine();
         System.out.print("Enter the name which you want to remove from the list:");
@@ -61,7 +63,7 @@ public class Main {
         Iterator<Map.Entry<String, String>> iterator = personMap.entrySet().iterator();
         while (iterator.hasNext()) {
             var element = iterator.next().getValue();
-            if(element.equals(name)) {
+            if (element.equals(name)) {
                 iterator.remove();
             }
         }

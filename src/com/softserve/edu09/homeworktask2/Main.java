@@ -18,10 +18,10 @@ public class Main {
         listOfStudents.add(new Student("Alice", 5, 3, List.of(3, 2, 2, 2, 3)));
         listOfStudents.add(new Student("John", 2, 1, List.of(3, 5, 5, 5, 4)));
 
-       printListOfStudents(listOfStudents);
-       removeStudents(listOfStudents);
-       printListOfStudents(listOfStudents);
-       printStudents(listOfStudents, 11);
-       printStudents(listOfStudents, 12);
+        printListOfStudents(listOfStudents);
+        removeStudents(listOfStudents);
+        printListOfStudents(listOfStudents);
+        printStudents(listOfStudents, 11);
+        printStudents(listOfStudents, 12);
     }
 }

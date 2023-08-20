@@ -33,7 +33,7 @@ public class Main {
             }
         }
 
-        if(negativeIndex != -1) {
+        if (negativeIndex != -1) {
             myCollection.add(negativeIndex, threeDigitNumber);
         }
         System.out.println(myCollection);
@@ -68,8 +68,8 @@ public class Main {
 
         for (int i = k; i <= myCollection.size() - 1; i++) {
             int j = 0;
-                list2.add(j, myCollection.get(i));
-                j++;
+            list2.add(j, myCollection.get(i));
+            j++;
         }
         System.out.println(list2);
 

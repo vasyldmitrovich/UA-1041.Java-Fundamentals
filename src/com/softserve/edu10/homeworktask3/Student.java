@@ -16,46 +16,33 @@ public class Student {
         this.course = course;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getCourse() {
-        return course;
-    }
-
-    public void setCourse(int course) {
-        this.course = course;
-    }
     public static void printStudents(List<Student> students, int course) {
         printLine();
         System.out.println("Students from to the Course: " + course);
         Iterator<Student> iterator = students.iterator();
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             Student studentIt = iterator.next();
             if (studentIt.getCourse() == course) {
                 System.out.println("\t" + studentIt.getName());
             }
         }
     }
+
     public static void printStudents(List<Student> students) {
         printLine();
         Iterator<Student> iterator = students.iterator();
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             Student studentIt = iterator.next();
             System.out.println(studentIt.getName() + ", Course: " + studentIt.getCourse());
         }
     }
+
     public static void enrolledStudents(List<Student> students) {
         printLine();
         Iterator<Student> iterator = students.iterator();
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             Student studentIt = iterator.next();
-            if(studentIt.getCourse() == 2) {
+            if (studentIt.getCourse() == 2) {
                 System.out.println("Congratulations!!! " + studentIt.getName() + " you were enrolled to the specified course");
             }
         }
@@ -73,6 +60,7 @@ public class Student {
         listOfStudents.add(8, new Student("William", 1));
         listOfStudents.add(9, new Student("Elizabeth", 1));
     }
+
     public static void printLine() {
         for (int i = 0; i < 30; i++) {
             System.out.print("---");
@@ -88,5 +76,21 @@ public class Student {
     public static void compareStudentsByCourse(List<Student> student) {
         student.sort(Comparator.comparing(Student::getCourse));
         printStudents(student);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCourse() {
+        return course;
+    }
+
+    public void setCourse(int course) {
+        this.course = course;
     }
 }

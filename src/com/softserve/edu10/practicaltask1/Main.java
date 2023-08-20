@@ -19,6 +19,7 @@ public class Main {
         findIdByName(name, employeeMap);
 
     }
+
     private static int getId() {
         System.out.print("Enter an ID: ");
         int id = SCANNER.nextInt();
@@ -26,7 +27,7 @@ public class Main {
         return id;
     }
 
-    private static void findNameById(int id, Map<Integer, String> employeeMap){
+    private static void findNameById(int id, Map<Integer, String> employeeMap) {
         if (employeeMap.containsKey(id)) {
             System.out.println("Name is " + employeeMap.get(id));
         } else {
