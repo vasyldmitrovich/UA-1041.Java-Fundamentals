@@ -3,8 +3,7 @@ package com.softserve.edu05.hw.task2;
 import java.util.Scanner;
 
 public class Task2 {
-    static final Scanner SC = new Scanner(System.in);//Make field final only if you initial this field once
-    //I understand that there you use only once, but maybe in future you will use this field if you write new functionality in this class
+    static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         getSum();
@@ -12,7 +11,7 @@ public class Task2 {
 
     public static double getNumber(String prompt) {
         System.out.print(prompt);
-        return SC.nextDouble();
+        return sc.nextDouble();
     }
 
     public static void getSum() {
@@ -23,8 +22,8 @@ public class Task2 {
             double sum = num1 + num2;
             System.out.println("The sum of two numbers is: " + sum);
             System.out.println("Do you want to repeat the operation? (Yes / No)");
-            SC.nextLine();
-            answer = SC.nextLine();
+            sc.nextLine();
+            answer = sc.nextLine();
         } while (answer.toLowerCase().equals("yes"));
     }
 }

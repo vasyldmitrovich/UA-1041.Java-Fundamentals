@@ -5,8 +5,32 @@ public abstract class Car {
     private int maxSpeed;
     private int yearOfProduction;
 
-    //Add constructors without and with parameters
-    //and getters and setters
+    public Car() {
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public int getYearOfProduction() {
+        return yearOfProduction;
+    }
+
+    public void setYearOfProduction(int yearOfProduction) {
+        this.yearOfProduction = yearOfProduction;
+    }
 
     public abstract void run();
     public  abstract void stop();
