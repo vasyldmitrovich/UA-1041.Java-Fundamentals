@@ -30,7 +30,7 @@ public abstract class Person {
     }
 
     public String info() {
-        return "First name: " + fullName.getFirstName() + ", Last name: " + fullName.getLastName() + ", Age: " + age;
+        return "First name: " + fullName.getFirstName() + ", Last name: " + fullName.getLastName() + ", Age: " + getAge();
     }
 
     abstract public String activity();
