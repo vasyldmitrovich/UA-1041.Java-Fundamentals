@@ -3,10 +3,14 @@ package com.softserve.edu08.pt.Task1;
 public class Department implements Cloneable {
     private String name;
     private Address address;
+
     public static class Address implements Cloneable{
         private String city;
         private String street ;
         private int  building;
+
+        //Constructors should be here
+
         public String getCity() {
             return city;
         }

@@ -5,6 +5,10 @@ public class FullName {
     private String firstName;
     private String lastName;
 
+    //Add constructor without parameters
+
+    //And move constructor with parameters here
+
     public  String getFirstName() {
         return firstName;
     }
@@ -25,4 +29,6 @@ public class FullName {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
+    //Add equals hashCode and toString here
 }
