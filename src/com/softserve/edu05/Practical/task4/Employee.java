@@ -6,14 +6,13 @@ import java.util.*;
 public class Employee {
 
     public static void main(String[] args) {
-        Employee[] employees = new Employee[] {
+        Employee[] employees = new Employee[]{
                 new Employee("Kevin", 11, 12000),
                 new Employee("Sten", 32, 15000),
                 new Employee("Olga", 18, 10500),
                 new Employee("Alona", 1, 16000),
                 new Employee("Serge", 15, 17000),
         };
-
 
 
         System.out.println("Enter department number of employee: ");
@@ -28,14 +27,15 @@ public class Employee {
 
         System.out.println("Your employees sort:");
 
-            Arrays.sort(employees, Comparator.comparing(
-                    Employee::getSalary
-            ));
-            System.out.println(Arrays.toString(employees));
-
+        Arrays.sort(employees, Comparator.comparing(
+                Employee::getSalary
+        ));
+        for (var employee : employees) {
+            System.out.println((employee));
 
 
         }
+    }
 
 
     private String name;
