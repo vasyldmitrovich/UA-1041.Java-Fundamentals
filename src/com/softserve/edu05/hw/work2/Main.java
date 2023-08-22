@@ -1,3 +1,5 @@
+package com.softserve.edu05.hw.work2;
+
 import java.util.Scanner;
 
 public class Main {
