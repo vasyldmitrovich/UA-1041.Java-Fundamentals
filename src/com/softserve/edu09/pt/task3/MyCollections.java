@@ -17,6 +17,9 @@ public class MyCollections {
 
         insertElements(myCollection, 1, -3, -4);
         printCollection(myCollection);
+
+        Collections.sort(myCollection);
+        System.out.println(myCollection);
     }
 
     public static List<Integer> createNewCollection(List<Integer> list){
