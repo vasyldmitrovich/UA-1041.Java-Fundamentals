@@ -21,7 +21,6 @@ public class Main {
             printList();
             System.out.print("\nPlease input the number of the task: ");
             numOfTask = SCANNER.nextInt();
-            System.out.println("\nWelcome to " + numOfTask + " task");
             SCANNER.nextLine();
             switch (numOfTask) {
                 case 1 -> dispalyEmps(employeeMap);
