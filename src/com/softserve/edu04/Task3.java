@@ -1,7 +1,7 @@
-package edu4;
+package com.softserve.edu04;
 import java.util.Scanner;
 
-public class task3 {
+public class Task3 {
     enum Errors{
         BAD_REQUEST(400),
         UNAUTHORIZED(401),

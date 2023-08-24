@@ -1,7 +1,4 @@
-package edu6;
-import javax.xml.namespace.QName;
-import java.util.Arrays;
-import java.util.Scanner;
+package com.softserve.edu06;
 
 class Employee{
     private String name;
@@ -30,12 +27,17 @@ class Employee{
         return String.format("Name: %s, Age: %d," + "Salary: \u20B4 %.2f", name, age, salary);
     }
 }
-class Developer extends Employee{
+class Developer extends Employee{//Move to another file like Developer.java
     private String position;
+
+    //Add constructor without parameters
+
     public Developer(String name, int age, double salary, String position){
         super(name, age, salary);
         this.position = position;
     }
+
+    //Add getters and setters
 
     public String report(){
         return  String.format("Name: %s, Age: %d, Position: %s, " + "Salary: \u20B4 %.2f", getName(), getAge(), position, getSalary());
@@ -45,7 +47,7 @@ class Developer extends Employee{
 
 }
 
-public class task2 {
+public class task2 {//Move to App.java
     public static void main(String[] args){
         Employee employee = new Employee("Petro", 30, 59000.00);
         Developer developer = new Developer("Andriy", 22, 60000.00, "Java developer");

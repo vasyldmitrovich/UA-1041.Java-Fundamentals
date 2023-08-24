@@ -1,9 +1,9 @@
-package edu5;
+package com.softserve.edu05.hw;
 import java.util.Scanner;
 import java.util.Arrays;
 
 
-public class task2 {
+public class task2 {//Rename please
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         char choice;

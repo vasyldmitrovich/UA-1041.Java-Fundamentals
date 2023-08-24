@@ -1,4 +1,4 @@
-package edu3;
+package com.softserve.edu03.hw;
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ class Person {
         this.lastName = lastName;
     }
 
-    // Properties
+    // Getters and setters
     public String getFirstName() {
         return firstName;
     }
@@ -69,24 +69,6 @@ class Person {
         }
         if (ln != null && !ln.isEmpty()) {
             lastName = ln;
-        }
-    }
-}
-
-public class task3 {
-    public static void main(String[] args) {
-        Person[] people = new Person[5];
-
-        for (int i = 0; i < people.length; i++) {
-            people[i] = new Person();
-            System.out.println("Enter information for person #" + (i + 1));
-            people[i].input();
-        }
-
-        System.out.println("\nInformation about people:");
-        for (Person person : people) {
-            person.output();
-            System.out.println();
         }
     }
 }
