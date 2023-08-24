@@ -2,7 +2,7 @@ package com.softserve.edu10.pt;
 
 import java.util.Objects;
 
-public class Employee implements Cloneable{
+public class Employee implements Cloneable {
     private String name;
     private String position;
     private double salary;
@@ -51,9 +51,9 @@ public class Employee implements Cloneable{
     @Override
     public String toString() {
         return "Name='" + name + '\'' +
-                        ", Position='" + position + '\'' +
-                        ", Salary=" + salary +
-                        ", DOB=" + dob
+                ", Position='" + position + '\'' +
+                ", Salary=" + salary +
+                ", DOB=" + dob
                 ;
     }
 

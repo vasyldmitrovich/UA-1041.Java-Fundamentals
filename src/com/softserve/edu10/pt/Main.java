@@ -27,11 +27,11 @@ public class Main {
                 case 2 -> displayEmpById(employeeMap);
                 case 3 -> dispalyEmpByName(employeeMap);
                 case 4 -> {
-                    addingWithoutDuplicates(employeeMap,3,new Employee("Ivan","TikTok manager",300,"09/11/2011"));
-                    addingWithoutDuplicates(employeeMap,11,new Employee("Maria", "Product manager", 2500, "07/06/2000"));
-                    addingWithoutDuplicates(employeeMap,14,new Employee("Viktor", "Content maker", 2550, "09/11/2001"));
+                    addingWithoutDuplicates(employeeMap, 3, new Employee("Ivan", "TikTok manager", 300, "09/11/2011"));
+                    addingWithoutDuplicates(employeeMap, 11, new Employee("Maria", "Product manager", 2500, "07/06/2000"));
+                    addingWithoutDuplicates(employeeMap, 14, new Employee("Viktor", "Content maker", 2550, "09/11/2001"));
                 }
-                case 5 -> updateEmps(employeeMap,1,"Ioan","Java developer","12/21/2004");
+                case 5 -> updateEmps(employeeMap, 1, "Ioan", "Java developer", "12/21/2004");
                 case 6 -> {
                     printSortedById(employeeMap);
                     printSortedBySalary(employeeMap);
@@ -93,24 +93,24 @@ public class Main {
         if (!empMap.containsKey(key) && !Objects.equals(null, key)) {
             Set<Employee> uniqueEmps = new HashSet<Employee>(empMap.values());
             if (!uniqueEmps.contains(value) && !Objects.equals(null, value)) {
-                System.out.println("Add emp: %s with %d ID".formatted(value, key));
+                System.out.printf("Add emp: %s with %d ID%n", value, key);
                 empMap.put(key, value);
             } else {
-                System.out.println("There is already emp: %s".formatted(value));
+                System.out.printf("There is already emp: %s%n", value);
             }
         } else {
-            System.out.println("Current map already contains %d ID".formatted(key));
+            System.out.printf("Current map already contains %d ID%n", key);
         }
     }
 
     public static void updateEmps(Map<Integer, Employee> empMap, Integer id, String name, String position, String dob) {
         if (empMap.containsKey(id)) {
             Employee empToUpdate = empMap.get(id);
-            System.out.println("Old emp:%s %s %s".formatted(empToUpdate.getName(), empToUpdate.getPosition(), empToUpdate.getDob()));
+            System.out.printf("Old emp:%s %s %s%n", empToUpdate.getName(), empToUpdate.getPosition(), empToUpdate.getDob());
             empToUpdate.setName(name);
             empToUpdate.setPosition(position);
             empToUpdate.setDob(dob);
-            System.out.println("New emp:%s %s %s".formatted(empToUpdate.getName(), empToUpdate.getPosition(), empToUpdate.getDob()));
+            System.out.printf("New emp:%s %s %s%n", empToUpdate.getName(), empToUpdate.getPosition(), empToUpdate.getDob());
             dispalyEmps(empMap);
         } else {
             System.out.println("There is no such id!!!");
@@ -131,7 +131,7 @@ public class Main {
         List<Integer> sortedById = new ArrayList<>(empMap.keySet());
         sortedById.sort((id1, id2) -> Integer.compare(id1, id2));
         System.out.println("Sorted by ID:");
-        sortedById.forEach(id -> System.out.println("ID:%d\t%s".formatted(id, empMap.get(id))));
+        sortedById.forEach(id -> System.out.printf("ID:%d\t%s%n", id, empMap.get(id)));
     }
 
     public static void printSortedBySalary(Map<Integer, Employee> empMap) {
@@ -161,25 +161,5 @@ public class Main {
         System.out.println("Sorted by DOB:");
         sortedByDob.forEach(emp -> System.out.println(emp));
     }
-    public static void test(){
-        Map<Integer, Employee> employeeMap = new HashMap<Integer, Employee>();
-        initWorkers(employeeMap);
-        dispalyEmps(employeeMap);
-        addingWithoutDuplicates(employeeMap, 3, new Employee("Oleh", "Project manager", 2500, "11/09/2000"));
-        addingWithoutDuplicates(employeeMap, 18, new Employee("Mark", "SEO", 1500, "11/09/2002"));
-        dispalyEmps(employeeMap);
 
-
-        displayEmpById(employeeMap);
-        SCANNER.nextLine();
-
-        dispalyEmpByName(employeeMap);
-
-        updateEmps(employeeMap, 1, "Ioan", "Java Programer", "12/21/2004");
-        printSortedById(employeeMap);
-        printSortedBySalary(employeeMap);
-        printSortedByName(employeeMap);
-        printSortedByPositioin(employeeMap);
-        printSortedByDob(employeeMap);
-    }
 }
