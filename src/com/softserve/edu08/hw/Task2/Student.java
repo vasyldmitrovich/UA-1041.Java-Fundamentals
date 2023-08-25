@@ -6,14 +6,22 @@ import com.softserve.edu08.hw.Task1.Person;
 public class Student extends Person implements Cloneable {
     private int course;
 
-    //Where is constructor without parameters?
+    public Student(FullName fullName, int age) {
+        super(fullName, age);
+    }
 
     public Student(FullName fullName, int age, int course) {
         super(fullName, age);
         this.course = course;
     }
+    public int getCourse() {
+        return course;
+    }
 
-    //Getters and setters should be here
+    public void setCourse(int course) {
+        this.course = course;
+    }
+
 
     @Override
     public void info() {
@@ -26,13 +34,7 @@ public class Student extends Person implements Cloneable {
        return "I study at university";
     }
 
-    public int getCourse() {
-        return course;
-    }
 
-    public void setCourse(int course) {
-        this.course = course;
-    }
     @Override
     protected Student clone() throws CloneNotSupportedException {
         return (Student) super.clone();

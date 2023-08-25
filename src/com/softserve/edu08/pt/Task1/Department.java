@@ -8,8 +8,14 @@ public class Department implements Cloneable {
         private String city;
         private String street ;
         private int  building;
+        public Address(String city, String street, int building) {
+            this.city = city;
+            this.street = street;
+            this.building = building;
+        }
 
-        //Constructors should be here
+        public Address() {
+        }
 
         public String getCity() {
             return city;
@@ -37,14 +43,7 @@ public class Department implements Cloneable {
 
 
 
-        public Address(String city, String street, int building) {
-            this.city = city;
-            this.street = street;
-            this.building = building;
-        }
 
-        public Address() {
-        }
 
         @Override
         public String toString() {

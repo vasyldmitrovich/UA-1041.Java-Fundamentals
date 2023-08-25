@@ -1,13 +1,19 @@
 package com.softserve.edu08.hw.Task1;
 
+import java.util.Objects;
+
 public class FullName {
 
     private String firstName;
     private String lastName;
 
-    //Add constructor without parameters
+    public FullName() {
+    }
+    public FullName(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
-    //And move constructor with parameters here
 
     public  String getFirstName() {
         return firstName;
@@ -25,10 +31,25 @@ public class FullName {
         this.lastName = lastName;
     }
 
-    public FullName(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        FullName fullName = (FullName) o;
+        return Objects.equals(firstName, fullName.firstName) && Objects.equals(lastName, fullName.lastName);
     }
 
-    //Add equals hashCode and toString here
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName);
+    }
+
+    @Override
+    public String toString() {
+        return "FullName{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
 }

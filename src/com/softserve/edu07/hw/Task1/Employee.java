@@ -1,8 +1,8 @@
 package com.softserve.edu07.hw.Task1;
 
-abstract class Employee {//This class should implement Payment
+abstract class Employee implements Payment {
     protected String employeeId;
-    String name;//Always use private field
+    protected String name;
 
     public Employee(String employeeId, String name) {
         this.employeeId = employeeId;

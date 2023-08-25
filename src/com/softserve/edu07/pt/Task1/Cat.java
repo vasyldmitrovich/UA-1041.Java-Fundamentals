@@ -1,9 +1,10 @@
 package com.softserve.edu07.pt.Task1;
 
 public class Cat implements Animal{
-    int numberOfCat;//Should be private
+    private int numberOfCat;
 
-    //Add constructor without parameters
+    public Cat() {
+    }
 
     public Cat(int numberOfCat) {
         this.numberOfCat = numberOfCat;

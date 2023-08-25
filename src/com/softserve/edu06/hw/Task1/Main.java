@@ -1,6 +1,6 @@
 package com.softserve.edu06.hw.Task1;
 
-public class main {//Should be Main.java
+public class Main {
     public static void main(String[] args) {
         Bird[]birds=new Bird[]{
           new Eagle(),

@@ -10,7 +10,7 @@ public class Main {
         for(Person person:people){
             person.print();
         }
-        //
+
         for (Person person : people) {
             if (person instanceof Teachers || person instanceof Cleaners) {
                 ((Staff) person).salary();
