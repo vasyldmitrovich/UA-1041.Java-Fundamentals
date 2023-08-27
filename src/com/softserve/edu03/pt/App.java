@@ -7,7 +7,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        // Task1
+        // Task 1
         System.out.println("Task 1");
 
         Task1 result = new Task1();
@@ -17,7 +17,7 @@ public class App {
         System.out.println(Task1.getAverage(num1, num2));
         System.out.println();
 
-        // Print Task12
+        // Task 2
         System.out.println("Task 2");
 
         Employee employee1 = new Employee();
@@ -29,7 +29,6 @@ public class App {
         Employee employee3 = new Employee();
         Employee.parameters(employee3);
 
-        // don't calculate total salary
         Employee.printEmployeeSalaries();
 
         System.out.println(employee1);
