@@ -5,7 +5,6 @@ import java.time.Year;
 import static com.softserve.edu03.hw.App.SCANNER;
 
 public class Person {
-    private int age;
     private String firstName;
     private String lastName;
     private int birthYear;

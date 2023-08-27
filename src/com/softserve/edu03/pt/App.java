@@ -8,7 +8,7 @@ public class App {
     public static void main(String[] args) {
 
         // Task1
-        System.out.println("Task1");
+        System.out.println("Task 1");
 
         Task1 result = new Task1();
         int num1 = Task1.getNumber("Enter the first number: ");
@@ -18,7 +18,7 @@ public class App {
         System.out.println();
 
         // Print Task12
-        System.out.println("Task2");
+        System.out.println("Task 2");
 
         Employee employee1 = new Employee();
         Employee.parameters(employee1);

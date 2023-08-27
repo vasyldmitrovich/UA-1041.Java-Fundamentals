@@ -13,8 +13,7 @@ public class Task1 {
 
     public static String getTotal(int int1, int int2) {
         sum= int1+int2;
-        message = "The sum of " + int1 + " and " + int2 +
-                " is " + sum;
+        message = "The sum of " + int1 + " and " + int2 + " is " + sum;
         return message;
     }
 
