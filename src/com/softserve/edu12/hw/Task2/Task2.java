@@ -1,6 +1,6 @@
 package com.softserve.edu12.hw.Task2;
 
-import java.sql.SQLOutput;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
