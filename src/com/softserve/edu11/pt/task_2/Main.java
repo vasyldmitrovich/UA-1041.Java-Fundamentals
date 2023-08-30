@@ -7,30 +7,37 @@ public class Main {
 
     public static void main(String[] args) {
         FullName fullName = getFullName();
-        outputLastAndInit(fullName);
-        outputFirst(fullName);
-        outputFirstMiddleLast(fullName);
+        String s1 = outputLastAndInit(fullName);
+        System.out.println(s1);
+        String s2 = outputFirst(fullName);
+        System.out.println(s2);
+        String s3 = outputFirstMiddleLast(fullName);
+        System.out.println(s3);
 
     }
 
-    private static void outputFirstMiddleLast(FullName fullName) {
-        System.out.printf("%s %s %s%n",
+    private static String outputFirstMiddleLast(FullName fullName) {
+
+        return "%s %s %s".formatted(
                 fullName.getFirstName(),
                 fullName.getMiddleName(),
                 fullName.getLastName()
         );
     }
 
-    private static void outputFirst(FullName fullName) {
-        System.out.println(fullName.getFirstName());
+    private static String outputFirst(FullName fullName) {
+        return fullName.getFirstName();
     }
 
-    private static void outputLastAndInit(FullName fullName) {
-        System.out.format("%s %s%s%n",
+    private static String outputLastAndInit(FullName fullName) {
+
+
+        return "%s %s%s".formatted(
                 fullName.getLastName(),
-                fullName.getFirstName().substring(0, 1).toUpperCase(),
-                fullName.getMiddleName().substring(0, 1).toUpperCase()
+                fullName.getFirstName().charAt(0),
+                fullName.getMiddleName().charAt(0)
         );
+
     }
 
     private static FullName getFullName() {
