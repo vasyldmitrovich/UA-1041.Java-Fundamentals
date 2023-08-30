@@ -1,4 +1,5 @@
 package com.softserve.edu11.hw.task_3;
+
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -9,10 +10,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String inputText = "I bought a book for $15.99 and a coffee for $3.50 and €4,50";
+        String text = "I exchanged $50.52, $70.1 and €10.70 for 240 UAH";
+        System.out.println("some text:\n" + text);
 
-        currencyFormats(inputText);
+        findCurrencyFormatUS(text);
     }
+
+    private static void findCurrencyFormatUS(String text) {
+
+        Pattern p = Pattern.compile("\\$\\d+(\\.)?(\\d+)?");
+        Matcher m = p.matcher(text);
+        while (m.find()) {
+            System.out.println(text.substring(m.start(), m.end()));
+        }
+    }
+
 
     private static void currencyFormats(String inputText) {
         String currencyPattern = "\\$\\d+\\.\\d{2}";
