@@ -14,19 +14,12 @@ public class Main {
                 words[longInd], words[longInd].length());
         System.out.printf("the second word of the sentence in reverse order: %s",
                 reversWord(words[1]));
-
-
     }
 
     private static String reversWord(String word) {
-        String revers;
-        char[] array = word.toCharArray();
-        for (int i = 0; i < array.length / 2; i++) {
-            char temp = array[i];
-            array[i] = array[array.length - 1 - i];
-            array[array.length - 1 - i] = temp;
-        }
-        return String.valueOf(array);
+        StringBuilder sb = new StringBuilder(word);
+        sb.reverse();
+        return String.valueOf(sb);
     }
 
     private static int FindIndexLongestWord(String[] words) {
