@@ -25,18 +25,4 @@ public class Main {
         }
     }
 
-
-    private static void currencyFormats(String inputText) {
-        String currencyPattern = "\\$\\d+\\.\\d{2}";
-
-        Pattern pattern = Pattern.compile(currencyPattern);
-        Matcher matcher = pattern.matcher(inputText);
-        System.out.println("US currency formats found:");
-
-        while (matcher.find()) {
-            String match = matcher.group();
-            System.out.println(match);
-        }
-    }
-
 }
