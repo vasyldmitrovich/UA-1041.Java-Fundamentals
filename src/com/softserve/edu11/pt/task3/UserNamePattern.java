@@ -27,7 +27,7 @@ public class UserNamePattern {
 
     public static boolean checkUsername(String username){
         // (?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*_)
-        Pattern pattern = Pattern.compile("^[a-zA-Z\\d_]{5,}$");
+        Pattern pattern = Pattern.compile("^[a-zA-Z\\d_]{3,15}$");
         Matcher matcher = pattern.matcher(username);
         return matcher.find();
     }
