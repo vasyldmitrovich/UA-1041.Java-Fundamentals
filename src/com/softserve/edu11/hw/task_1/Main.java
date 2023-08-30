@@ -19,7 +19,7 @@ public class Main {
     private static String reversWord(String word) {
         StringBuilder sb = new StringBuilder(word);
         sb.reverse();
-        return String.valueOf(sb);
+        return sb.toString();
     }
 
     private static int FindIndexLongestWord(String[] words) {
