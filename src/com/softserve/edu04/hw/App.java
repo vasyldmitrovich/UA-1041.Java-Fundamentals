@@ -7,6 +7,7 @@ public class App {
 
     public static void main(String[] args) {
         // Task 1
+
         System.out.println("Task1");
 
         Task01 result1 = new Task01();
@@ -50,9 +51,7 @@ public class App {
         System.out.println();
 
         // Task 5
-        System.out.println("Task5");
-
-        System.out.println("I don`t understand why code works not correct.");
+        System.out.println("Task 5");
 
         Dog dog1 = new Dog();
         Dog.inputDates(dog1);
@@ -88,6 +87,6 @@ public class App {
         }
 
         System.out.println("The oldest dog is " + breedOfOldestDog + " " +
-                nameOfOldestDog + ").");
+                nameOfOldestDog + ".");
     }
 }

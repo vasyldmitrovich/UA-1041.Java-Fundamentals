@@ -21,11 +21,14 @@ public class Dog {
     public static void inputDates(Dog dog) {
         System.out.print("Input the name of the dog: ");
         String dogName = SCANNER.nextLine();
+        dog.setName(dogName);
         System.out.print("Input the breed of " + dogName + ": ");
         String dogBreed = SCANNER.nextLine();
+        dog.setBreed(dogBreed);
         System.out.print("Input the age of " + dogName + ": ");
         int dogAge = SCANNER.nextInt();
         SCANNER.nextLine();
+        dog.setAge(dogAge);
         System.out.println();
     }
 
