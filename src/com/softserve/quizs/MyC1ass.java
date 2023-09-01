@@ -1,5 +1,7 @@
 package com.softserve.quizs;
 
+import java.util.*;
+
 public class MyC1ass {
     public enum TrafficLights {
         RED, YELLOW, GREEN;
@@ -12,7 +14,42 @@ public class MyC1ass {
         }
     }
 
+
     public static void main(String[] args) {
+        Set<Object> set=new HashSet<>();
+        set.add("null");
+        set.add(null);
+        set.add(null);
+        set.add(10);
+        set.add("10");
+        set.forEach(System.out::println);
+        System.out.println(set);
+
+
+
+        Integer k1=1;
+        Integer k2=1;
+        Map<Integer,String> map1=new HashMap<>();
+        map1.put(k1,"dfgdgf");
+        map1.put(k2,"rthdrth");
+        System.out.println(map1);
+
+        for (var el:map1.keySet()) {
+            System.out.println(map1.get(el));
+        }
+        System.out.println("dkfvjhdkjfvh");
+        List<String> list1=new ArrayList<String>(Arrays.asList("F","D","c"));
+        list1.set(0,"D");
+        System.out.println(list1);
+        list1.clear();
+        List<String> list2=Arrays.asList("F");
+
+        System.out.println(list2);
+
+        System.out.println(list1);
+        Int1 int1= new Class2(5);
+        Class1 c2=(Class1) new Class1();
+        Class1 c1=new Class2(2);
         TrafficLights color = TrafficLights.RED;
         color.next();  // Assign the result of next() back to the variable
         int[] a={1,2,3,4,5};
