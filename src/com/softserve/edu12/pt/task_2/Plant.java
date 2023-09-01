@@ -8,7 +8,7 @@ public class Plant {
     public Plant() {
     }
 
-      public Plant(int size, String color, String type) {
+    public Plant(int size, String color, String type) {
         this.size = readSize(size);
         this.color = readColor(color);
         this.type = readType(type);
@@ -18,7 +18,7 @@ public class Plant {
 
     private static int readSize(int size) {
         try {
-            if (size<0||size>200) {
+            if (size < 0 || size > 200) {
                 throw new SizeException("Size " + size + " not correct, try again!");
             }
             return size;
