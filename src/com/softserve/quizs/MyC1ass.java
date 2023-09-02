@@ -16,6 +16,7 @@ public class MyC1ass {
 
 
     public static void main(String[] args) {
+
         Set<Object> set=new HashSet<>();
         set.add("null");
         set.add(null);
@@ -38,11 +39,11 @@ public class MyC1ass {
             System.out.println(map1.get(el));
         }
         System.out.println("dkfvjhdkjfvh");
-        List<String> list1=new ArrayList<String>(Arrays.asList("F","D","c"));
+        List<String> list1= new ArrayList<>(Arrays.asList("F", "D", "c"));
         list1.set(0,"D");
         System.out.println(list1);
         list1.clear();
-        List<String> list2=Arrays.asList("F");
+        List<String> list2= List.of("F");
 
         System.out.println(list2);
 
