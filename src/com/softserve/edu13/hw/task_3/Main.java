@@ -1,6 +1,7 @@
 package com.softserve.edu13.hw.task_3;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Scanner;
 
 public class Main {
@@ -15,10 +16,15 @@ public class Main {
 
     }
 
+//    private static boolean isLeapYear(int year) {
+//        if (year % 4 == 0 && (year % 400 == 0 || year % 100 != 0)) {
+//            return true;
+//        }
+//        return false;
+//    }
+
     private static boolean isLeapYear(int year) {
-        if (year % 4 == 0 && (year % 400 == 0 || year % 100 != 0)) {
-            return true;
-        }
-        return false;
+
+        return LocalDate.ofYearDay(year, 1).isLeapYear();
     }
 }
