@@ -1,7 +1,6 @@
 package com.softserve.edu14.homework;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Product {
@@ -12,8 +11,6 @@ public class Product {
     private double price;
     private LocalDate produceDate;
 
-    public Product(List<String> x) {
-    }
 
     public Product(String manufactureCategory, int year, int month, int day, double price) {
         this.manufactureCategory = manufactureCategory;

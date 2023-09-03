@@ -38,7 +38,6 @@ public class Main {
     }
 
     private static void getLocalDayOfWeek() {
-        LocalDate date = LocalDate.now();
         System.out.println("Day of the week: " + LocalDate.now().getDayOfWeek());
     }
 
@@ -52,10 +51,8 @@ public class Main {
         return counter;
     }
 
-    public static List promptUserList() {
-        List list = new ArrayList<>();
-        list.addAll(Arrays.asList("Bob", "Jane", "Alice", "Matt", "Robert", "Dan", "Mark", "Melony", "Lora"));
-        return list;
+    public static List<String> promptUserList() {
+        return new ArrayList<>(Arrays.asList("Bob", "Jane", "Alice", "Matt", "Robert", "Dan", "Mark", "Melony", "Lora"));
     }
 
     public static List sort(List<String> list) {
