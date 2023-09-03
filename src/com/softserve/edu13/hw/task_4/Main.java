@@ -3,7 +3,6 @@ package com.softserve.edu13.hw.task_4;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.TemporalAccessor;
 
 public class Main {
     public static void main(String[] args) {
