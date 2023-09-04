@@ -19,9 +19,6 @@ public class Division {
             System.err.println("You should input double numbers");
         }
 
-
-
-
     }
 
     public static double division(double fNum, double sNum){
