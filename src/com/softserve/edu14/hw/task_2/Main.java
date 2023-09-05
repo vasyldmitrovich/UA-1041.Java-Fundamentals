@@ -1,26 +1,34 @@
 package com.softserve.edu14.hw.task_2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.*;
+
 
 public class Main {
     public static void main(String[] args) {
-        List<Employee> employees = new ArrayList<>(
-                Arrays.asList(
-                        new Employee("Bob", 18),
-                        new Employee("Din", 25),
-                        new Employee("Sam", 12),
-                        new Employee("Sam", 47)
-                ));
-        mostPopularName(employees.stream());
+        Stream<Employee> employees = Stream.of(
+                new Employee("Bob", 18),
+                new Employee("Din", 25),
+                new Employee("Sam", 12),
+                new Employee("Sam", 47)
+        );
+        System.out.println("most popular name: "+mostPopularName(employees).get());
     }
-   private static Optional<String> mostPopularName(Stream< Employee> employees) {
-//        employees
-//                .mapTo
-//                .count()
-        return null;
+
+    private static Optional<String> mostPopularName(Stream<Employee> employees) {
+        return employees
+                .collect(groupingBy(Employee::getName, counting()))
+                .entrySet()
+                .stream()
+                .max(Comparator.comparing(Map.Entry::getValue))
+                .map(Map.Entry::getKey);
+
     }
 }
