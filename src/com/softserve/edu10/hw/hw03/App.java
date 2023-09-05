@@ -15,6 +15,8 @@ public class App {
         students.add(new Student("Karl", 5));
         students.add(new Student("Sonya", 5));
 
+        System.out.println(students);
+
         System.out.println("Enter course number: ");
         int course = CS.nextInt();
         Student.printStudents(students, course);
