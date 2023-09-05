@@ -9,8 +9,6 @@ public class Main {
         var sortList = products.stream()
                 .filter(product -> product.getPrice() > 3000)
                 .filter(product -> (LocalDate.now().getYear() - product.getDate().getYear()) >= 1)
-                .toList()
-                .stream()
                 .sorted(Comparator.comparing(Product::getPrice))
                 .toList();
 
