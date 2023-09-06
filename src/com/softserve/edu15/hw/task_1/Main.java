@@ -8,9 +8,11 @@ public class Main {
         var t3 = getThread3();
         t1.start();
         t2.start();
-        t3.start();
+
         t1.join();
         t2.join();
+
+        t3.start();
     }
 
     private static Thread getThread1() {
@@ -43,7 +45,7 @@ public class Main {
             for (int i = 0; i < 5; i++) {
                 System.out.println("Java");
                 try {
-                    Thread.sleep(5000);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
