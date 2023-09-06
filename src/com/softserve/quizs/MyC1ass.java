@@ -1,6 +1,11 @@
 package com.softserve.quizs;
 
+import java.time.LocalDate;
+import java.time.temporal.TemporalAccessor;
+import java.time.temporal.TemporalAdjusters;
 import java.util.*;
+import java.util.function.Consumer;
+import java.util.stream.Stream;
 
 public class MyC1ass {
     public enum TrafficLights {
@@ -16,8 +21,12 @@ public class MyC1ass {
 
 
     public static void main(String[] args) {
+        LocalDate date=LocalDate.of(2020,9,1);
+        date.plusDays(5).minusWeeks(3);
+        date.with(TemporalAdjusters.firstDayOfMonth());
+        System.out.println(date);
 
-        Set<Object> set=new HashSet<>();
+        Set<Object> set = new HashSet<>();
         set.add("null");
         set.add(null);
         set.add(null);
@@ -27,45 +36,45 @@ public class MyC1ass {
         System.out.println(set);
 
 
-
-        Integer k1=1;
-        Integer k2=1;
-        Map<Integer,String> map1=new HashMap<>();
-        map1.put(k1,"dfgdgf");
-        map1.put(k2,"rthdrth");
+        Integer k1 = 1;
+        Integer k2 = 1;
+        Map<Integer, String> map1 = new HashMap<>();
+        map1.put(k1, "dfgdgf");
+        map1.put(k2, "rthdrth");
         System.out.println(map1);
 
-        for (var el:map1.keySet()) {
+        for (var el : map1.keySet()) {
             System.out.println(map1.get(el));
         }
         System.out.println("dkfvjhdkjfvh");
-        List<String> list1= new ArrayList<>(Arrays.asList("F", "D", "c"));
-        list1.set(0,"D");
+        List<String> list1 = new ArrayList<>(Arrays.asList("F", "D", "c"));
+        list1.set(0, "D");
         System.out.println(list1);
         list1.clear();
-        List<String> list2= List.of("F");
+        List<String> list2 = List.of("F");
 
         System.out.println(list2);
 
         System.out.println(list1);
-        Int1 int1= new Class2(5);
-        Class1 c2=(Class1) new Class1();
-        Class1 c1=new Class2(2);
+        Int1 int1 = new Class2(5);
+        Class1 c2 = (Class1) new Class1();
+        Class1 c1 = new Class2(2);
         TrafficLights color = TrafficLights.RED;
         color.next();  // Assign the result of next() back to the variable
-        int[] a={1,2,3,4,5};
+        int[] a = {1, 2, 3, 4, 5};
 
-        double res=0;
+        double res = 0;
         for (int j = 0; j < a.length; j++) {
-            res+=res+a[j];
+            res += res + a[j];
             System.out.println(res);
         }
-        System.out.println(res/a.length);
+        System.out.println(res / a.length);
 
 
-        int i=0;
+        int i = 0;
 
- int [][] x= new int[2][];x[0]=new int[2];
+        int[][] x = new int[2][];
+        x[0] = new int[2];
         switch (color) {
             case RED:
                 System.out.print("Stop");
