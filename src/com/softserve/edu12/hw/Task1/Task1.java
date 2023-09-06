@@ -1,6 +1,8 @@
 package com.softserve.edu12.hw.Task1;
 
+
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Task1 {
@@ -24,6 +26,8 @@ public class Task1 {
                 System.out.println();
             }
         }
+        int []arr = new int[0];
+
 
     }
     public static double div(double firstNumber, double secondNumber) {
