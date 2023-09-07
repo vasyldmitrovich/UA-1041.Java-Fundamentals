@@ -1,7 +1,6 @@
 package com.softserve.edu14.homework;
 
 import java.time.LocalDate;
-import java.util.List;
 
 public class Product {
     private String manufactureCategory;

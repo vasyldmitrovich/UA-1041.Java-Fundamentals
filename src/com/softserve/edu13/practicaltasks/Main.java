@@ -55,7 +55,7 @@ public class Main {
         return new ArrayList<>(Arrays.asList("Bob", "Jane", "Alice", "Matt", "Robert", "Dan", "Mark", "Melony", "Lora"));
     }
 
-    public static List sort(List<String> list) {
+    public static List<String> sort(List<String> list) {
         list.sort(Comparator.naturalOrder());
         return list;
     }
