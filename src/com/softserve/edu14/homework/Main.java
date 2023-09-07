@@ -58,6 +58,13 @@ public class Main {
 
     public static Optional<String> mostPopularProduct(Stream<Product> product) {
 
+//        return product
+//                .collect(Collectors.groupingBy(Product::getManufactureCategory, LinkedHashMap::new, Collectors.counting()))
+//                .entrySet()
+//                .stream()
+//                .max(Comparator.comparing(Map.Entry::getValue))
+//                .map(Map.Entry::getKey);
+
         Map<String, Long> counter = product
                 .collect(Collectors.groupingBy(Product::getManufactureCategory, Collectors.counting()));
         Optional<Map.Entry<String, Long>> popularProduct = counter
