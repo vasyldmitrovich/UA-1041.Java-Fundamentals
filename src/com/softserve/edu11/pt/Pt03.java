@@ -5,7 +5,7 @@ public class Pt03 {
         String[] users = {
                 "AndreyKagaml",
                 "Shadozx",
-                " Andrii Synytsia",
+                "Andrii Synytsia",
                 "Nikolay Vergeles",
                 "annakachmarchyk"
         };
