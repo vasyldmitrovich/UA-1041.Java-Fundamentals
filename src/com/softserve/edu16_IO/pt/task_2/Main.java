@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) throws IOException {
         var text = Files.lines(Path.of("mytext.txt"))
-                .limit(50)
+                .limit(100)
                 .toList();
         System.out.println("--------");
 
@@ -18,28 +18,8 @@ public class Main {
         beginVowels(text);
         System.out.println("--------");
 
-//  2) find and output to the console all words for which the last letter of one word
-//matches the first letter of the next word.
+//  2) find and output to the console all words for which the last letter of one word matches the first letter of the next word.
         lastOfFirstLetter(text);
-
-
-    }
-
-    private static void lastOfFirstLetter(List<String> text) {
-        var splitter = Pattern.compile("\\W+");
-
-        text.stream()
-                .flatMap(splitter::splitAsStream)
-                .filter(word -> word.length() > 0)
-                .limit(200)
-                .reduce((first, second) -> {
-                    char lastChar = first.toLowerCase().charAt(first.length() - 1);
-                    char firstChar = second.toLowerCase().charAt(0);
-                    if (lastChar == firstChar) {
-                        System.out.println((first + ',' + second));
-                    }
-                    return second;
-                });
 
 
     }
@@ -53,5 +33,25 @@ public class Main {
                 .limit(10)
                 .forEach(System.out::println);
     }
+
+    private static void lastOfFirstLetter(List<String> text) {
+        var splitter = Pattern.compile("\\W+");
+
+        var words = text.stream()
+                .flatMap(splitter::splitAsStream)
+                .filter(word -> word.length() > 0)
+                .toList();
+        for (int i = 0; i < words.size() - 1; i++) {
+            var first = words.get(i);
+            var second = words.get(i + 1);
+            char lastChar = first.toLowerCase().charAt(first.length() - 1);
+            char firstChar = second.toLowerCase().charAt(0);
+            if (lastChar == firstChar) {
+                System.out.println((first + ',' + second));
+
+            }
+        }
+    }
+
 
 }
