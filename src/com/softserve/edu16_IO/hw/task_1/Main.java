@@ -28,7 +28,7 @@ public class Main {
 
 //  3) your name and birthday date
         data.append("My name is Mykola,\nMy birthday 03.04.90");
-        try (var fw = new FileWriter(file2.toFile())) {
+        try (var fw = Files.newBufferedWriter(file2)) {
             fw.write(data.toString());
             System.out.println("data was writing to " + file2.toString());
         }
