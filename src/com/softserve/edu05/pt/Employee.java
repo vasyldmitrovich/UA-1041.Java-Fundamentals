@@ -3,6 +3,7 @@ package com.softserve.edu05.pt;
 import java.util.*;
 
 public class Employee {
+    Employee employee;
     private String name;
     private int departmentNumber;
     private double salary;
@@ -16,15 +17,37 @@ public class Employee {
         this.salary = salary;
     }
 
-    public static void getEmployees(int departmentNumber, Employee... employees) {
-        List<Employee> list = new ArrayList<>();
-        for (Employee employee : employees) {
-            if (employee.departmentNumber == departmentNumber) {
-                list.add(employee);
+    public static void getEmployees(int departmentNumber, String employees[][]) {
+        List<String> listNames = new ArrayList<>();
+        for (int iRow = 0; iRow < employees.length; iRow++) {
+            int department = Integer.parseInt(employees[iRow][1]);
+            String name = employees[iRow][0];
+            if (departmentNumber == department) {
+                listNames.add(name);
             }
         }
-        //    list.toArray(Employee[]::new);
-        System.out.println("In the " + departmentNumber + " working next employees: " + list.toString());
+        //  listNames.toArray(String[]::new);
+        System.out.println("In the " + departmentNumber + "th department working next employees: " + listNames);
+    }
+
+    public static void rangeEmployeesBySalary(String employees[][]) {
+        List<Double> listSalary = new ArrayList<>();
+        for (int i = 0; i < employees.length; i++) {
+            double salary = Double.parseDouble(employees[i][2]);
+            listSalary.add(salary);
+        }
+        Double[] arr = listSalary.toArray(Double[]::new);
+        Arrays.sort(arr);
+        System.out.println();
+        System.out.println("Employees sorted by salary:");
+        for (int iArr = employees.length-1; iArr >= 0; iArr--) {
+            if (iArr>0 && arr[iArr]==arr[iArr-1]) continue;
+            double sortedSalary = arr[iArr];
+            for (int iRow = 0; iRow < employees.length; iRow++) {
+                double iSalary = Double.parseDouble(employees[iRow][2]);
+                if (sortedSalary==iSalary) System.out.println(Arrays.toString(employees[iRow]));
+            }
+        }
     }
 
     public String getName() {
@@ -58,18 +81,6 @@ public class Employee {
                 ", departmentNumber=" + departmentNumber +
                 ", salary=" + salary +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Employee employee)) return false;
-        return getDepartmentNumber() == employee.getDepartmentNumber() && Double.compare(employee.getSalary(), getSalary()) == 0 && Objects.equals(getName(), employee.getName());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getName(), getDepartmentNumber(), getSalary());
     }
 }
 

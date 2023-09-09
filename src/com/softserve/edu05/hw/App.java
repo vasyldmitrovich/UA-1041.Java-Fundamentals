@@ -1,15 +1,13 @@
 package com.softserve.edu05.hw;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class App {
     static public final Scanner SCANNER = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         // Task 1
-  /*
         System.out.println("Task 1");
 
         Task_1.getCountDaysInTheMonth();
@@ -22,24 +20,21 @@ public class App {
         // Task 2
         System.out.println("Task 2");
         Task_2.getNumbers();
-*/
+
         // Task 3
         System.out.println("Task 3");
 
-        Car car1 = new Car();
-        Car.inputParameters(car1);
-
-        Car car2 = new Car();
-        Car.inputParameters(car2);
-
-        Car car3 = new Car();
-        Car.inputParameters(car3);
-
-        Car car4 = new Car();
-        Car.inputParameters(car4);
-
+        String[][] cars = {{"audy", "2013", "5.6"},
+                {"honda", "2022", "3.2"},
+                {"opel", "2008", "3.5"},
+                {"bmw", "2019", "6.0"},
+                {"mazda", "2006", "4.8"}};
         Car.getModelYear();
+        System.out.println();
 
+        // Task 4
+        System.out.println("Task 4");
+        Task_4.getRandomNumber();
 
     }
 }

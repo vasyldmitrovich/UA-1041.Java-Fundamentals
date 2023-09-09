@@ -7,7 +7,7 @@ public class App {
     public static void main(String[] args) {
 
         // Task 1
-  /*      System.out.println("Task 1");
+        System.out.println("Task 1");
 
         System.out.println("Input 5 words separated by ,");
         Task_1.getArrayString();
@@ -29,16 +29,9 @@ public class App {
         System.out.println("Task 3");
         Task_3.getResult();
         System.out.println();
-*/
 
         // Task 4
         System.out.println("Task 4");
-
-  //      Employee employee1=new Employee("Ann", 1, 3245.50);
-    //    Employee employee2=new Employee("Bob", 2, 4533);
-      //  Employee employee3=new Employee("Alice", 3, 5343);
-        //Employee employee4=new Employee("Stew", 4, 3424.6);
-        //Employee employee5=new Employee("Greg", 5, 5432.3);
 
         String[] [] employees={{"Ann", "1", "3245.50"},
                             {"Bob", "2", "4533"},
@@ -49,9 +42,9 @@ public class App {
         System.out.println("Input number of the department from the list: 1,2,3,4,5");
         int departmentNumber = SCANNER.nextInt();
         SCANNER.nextLine();
-        Employee.getEmployees(departmentNumber);
+        Employee.getEmployees(departmentNumber, employees);
 
-
+        Employee.rangeEmployeesBySalary(employees);
 
     }
 }

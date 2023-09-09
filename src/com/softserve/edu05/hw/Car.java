@@ -19,24 +19,11 @@ public class Car {
         this.engineCapacity = engineCapacity;
     }
 
-    public static void inputParameters(Car car) {
-        System.out.print("Input the parameters of the car: ");
-        System.out.print("- type of the car: ");
-        String type = SCANNER.nextLine();
-        car.setType(type);
-        System.out.print("- type of the car: ");
-        int yearOfProduction = SCANNER.nextInt();
-        SCANNER.nextLine();
-        car.setYearOfProduction(yearOfProduction);
-        double engineCapacity = SCANNER.nextDouble();
-        SCANNER.nextLine();
-        car.setEngineCapacity(engineCapacity);
-    }
-
-    public static void getModelYear() {
+    public static int getModelYear() {
         System.out.println("Enter model year: ");
         int modelYear=SCANNER.nextInt();
         SCANNER.nextLine();
+        return modelYear;
     }
 
     public static void modelYearArray(int modelYear, Car...cars){
