@@ -1,0 +1,79 @@
+When Cătălin asked me to write this foreword, I realized that for 17 years of my career,
+I’ve mostly been dealing with the problems that are discussed and solved in this book.
+Historically, we’ve come to a state where most data is persisted in relational DBMSs.
+The task may sound quite simple; save data in a database, read it, modify it if needed,
+and finally delete it. Many (even senior) developers don’t realize how much computer
+science there is in those several operations. Talking to a relational database from an
+OOP language like Java is like speaking to a person from another world who lives by
+completely different rules.
+In the early years of my career, I spent most of my time just mapping “ResultSets”
+to Java objects without any sophisticated logic. It wasn’t hard, but it was really timeconsuming.
+I was only dreaming, thinking that our architects wouldn’t suddenly
+change the object structure so that I’d have to rewrite everything from scratch. And I
+wasn’t the only one!
+To save manual work and automate these translation tasks, frameworks like Hibernate,
+and later Spring Data, were created. They really do a lot of work for you. You just
+need to add them as a dependency, add some annotations to your code, and the
+magic will happen! This works perfectly on small projects, but in real life, projects are
+way bigger with a lot of corner cases!
+Hibernate and Spring Data have quite a long history with tremendous effort
+invested to make this magic work. In this book, you’ll find definitive descriptions of
+the functionality of each framework, their corner cases, suggested optimizations, and
+best practices.
+FOREWORDS xv
+The flow of this book is designed so that you first understand the fundamental
+theory of relational databases and the main problems of object/relational mapping
+(ORM). Then, you’ll see how this is solved with Hibernate, and how the functionality
+is extended in Spring Data for the Spring Framework universe. Finally, you’ll get
+acquainted with the usage of ORM for NoSQL solutions.
+And I can say that these technologies are everywhere! Like literally everywhere!
+Should you open your bank account, buy an airline ticket, send a request to your government,
+or write a comment on a blog post, behind the curtains, with high probability,
+Hibernate and/or Spring Data are handling the persistence in those applications!
+These technologies are important, and this book provides information about their
+various applications.
+Knowing your tools is essential for doing your job right. In this book, you will find
+everything you need to work effectively with Hibernate and Spring Data, backed by
+theory in computer science. It is absolutely a must-read for all Java developers, especially
+those working in enterprise technology.
+—DMITRY ALEKSANDROV
+SOFTWARE DEVELOPER AT ORACLE, JAVA CHAMPION,
+CO-LEAD OF BULGARIAN JAVA USER GROUP, AUTHOR OF HELIDON IN ACTION
+Data persistence is a crucial part of any application, and databases are indisputably at
+the core of the modern enterprise. While programming languages like Java provide an
+object-oriented view of business entities, the data underlying these entities are usually
+relational in nature. It is this challenge—bridging relational data and Java objects—that
+Hibernate and Spring Data take on through object/relational mapping (ORM).
+As Cătălin demonstrates in this book, the effective use of ORM technology in all
+but the simplest of enterprise environments requires understanding and configuring
+the mediation between relational data and objects. This demands that the developer
+be knowledgeable about the application and its data requirements, as well as the SQL
+query language, relational storage structures, and the potential for optimization.
+This book provides a comprehensive overview of Java persistence using the
+industry-leading tools Spring Data and Hibernate. It covers how to use their typemapping
+capabilities and facilities for modeling associations and inheritance; how to
+retrieve objects efficiently by querying JPA with Querydsl; how to process and manage
+transactions with Spring Data and Hibernate; how to create fetch plans, strategies,
+and profiles; how to filter data; how to configure Hibernate for use in both managed
+and unmanaged environments; and how to use their commands. In addition, you will
+learn about building Spring Data REST projects, using Java persistence with nonrelational
+databases, and testing Java persistence applications. Throughout the book,
+the author provides insights into the underlying problems of ORM and the design
+choices behind Hibernate. These insights will give the reader a deep understanding of
+the effective use of ORM as an enterprise technology.
+xvi FOREWORDS
+Java Persistence with Spring Data and Hibernate is the definitive guide to persistence
+with these popular tools. You will benefit from detailed coverage of Spring Data JPA,
+Spring Data JDBC, Spring Data REST, JPA, and Hibernate, comparing and contrasting
+the alternatives to be able to choose what is best for your code in enterprise computing
+today.
+For two reasons, it is an honor to recommend this book. Firstly, I share with its
+author the hope that it will assist you in the production of increasingly performant,
+secure, testable software with a quality upon which others may rely with confidence.
+Secondly, I know the author personally, and he is outstanding on both personal and
+technical levels. He has long experience in the software development industry, and his
+professional activity, including videos, books, and articles, is oriented to benefit the
+worldwide developer community.
+—MOHAMED TAMAM
+CHIEF SOLUTIONS ARCHITECT, NORTAL
+JAVA CHAMPION, ORACLE ACE, JCP MEMBER
