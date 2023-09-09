@@ -1,6 +1,6 @@
 When Cătălin asked me to write this foreword, I realized that for 17 years of my career,
 I’ve mostly been dealing with the problems that are discussed and solved in this book.
-Historically, we’ve come to a state where most data is persisted in relational DBMSs.
+Historically, we’ve come to a state where most data is persisted in relational lDBMSs.
 The task may sound quite simple; save data in a database, read it, modify it if needed,
 and finally delete it. Many (even senior) developers don’t realize how much computer
 science there is in those several operations. Talking to a relational database from an
