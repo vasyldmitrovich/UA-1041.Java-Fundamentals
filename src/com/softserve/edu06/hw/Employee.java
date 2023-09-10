@@ -5,6 +5,9 @@ public class Employee {
     int age;
     double salary;
 
+    public Employee() {
+    }
+
     public Employee(String name, int age, double salary) {
         this.name = name;
         this.age = age;
@@ -21,9 +24,13 @@ public class Employee {
 class Developer extends Employee {
     private String position;
 
+    public Developer() {
+
+    }
+
     public Developer(String name, int age, String position, double salary) {
         super(name, age, salary);
-        this.position=position;
+        this.position = position;
     }
 
     @Override

@@ -1,10 +1,6 @@
 package com.softserve.edu06.hw;
 
-import java.util.Scanner;
-
 public class App {
-
-    static public final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -19,8 +15,9 @@ public class App {
         };
 
         for (var bird : birds) {
-            System.out.println(bird);
             bird.fly();
+            System.out.println(bird);
+            System.out.println();
         }
 
         // Task 2

@@ -79,6 +79,7 @@ class Eagle extends FlyingBird {
 
     @Override
     void fly() {
+        super.fly();
         System.out.println("Eagle flies.");
     }
 }
@@ -93,6 +94,7 @@ class Swallow extends FlyingBird {
 
     @Override
     void fly() {
+        super.fly();
         System.out.println("Swallow flies.");
     }
 }
@@ -107,6 +109,7 @@ class Penguin extends NonFlyingBird {
 
     @Override
     void fly() {
+        super.fly();
         System.out.println("Penguin doesn't fly.");
     }
 }
@@ -122,6 +125,7 @@ class Kiwi extends NonFlyingBird {
 
     @Override
     void fly() {
+        super.fly();
         System.out.println("Kiwi doesn't fly.");
     }
 }
