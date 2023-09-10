@@ -1,5 +1,6 @@
 package com.softserve.quizs;
 
+import java.io.*;
 import java.time.LocalDate;
 import java.time.temporal.TemporalAccessor;
 import java.time.temporal.TemporalAdjusters;
@@ -7,7 +8,7 @@ import java.util.*;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
-public class MyC1ass {
+public class MyC1ass implements Serializable {
     public enum TrafficLights {
         RED, YELLOW, GREEN;
 
@@ -20,7 +21,21 @@ public class MyC1ass {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        String obj = "abc";
+        byte b[] = obj.getBytes();
+        ByteArrayInputStream obj1 = new ByteArrayInputStream(b);
+        for (int i = 0; i < 2; ++ i) {
+            int c;
+            while ((c = obj1.read()) != -1) {
+                if (i == 0) {
+                    System.out.print((char)c);
+                }
+            }
+        }
+        InputStream obj2= new FileInputStream("data.txt");
+        System.out.print(obj1.available());
+
         LocalDate date=LocalDate.of(2020,9,1);
         date.plusDays(5).minusWeeks(3);
         date.with(TemporalAdjusters.firstDayOfMonth());
