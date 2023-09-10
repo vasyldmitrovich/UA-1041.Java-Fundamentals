@@ -14,6 +14,7 @@ public class App {
                 new ContractEmployee("Boris", "19", "34543", 23, 43)
         };
         Arrays.sort(personnel, Comparator.comparing(employee -> employee.calculatePay()));
+
         for (var person : personnel) {
             System.out.println(person);
             System.out.println();
