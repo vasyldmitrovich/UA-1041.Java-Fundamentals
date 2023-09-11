@@ -20,23 +20,23 @@ public class Randomnumbersmain {//Good
         }
         System.out.println("origin array:" + Arrays.toString(array));
 
-        //• the biggest number in the array
+
         int max = findBiggestNumber(array);
         System.out.println("the biggest number in the array is:" + max);
 
-        //• the sum of positive numbers
+
         int sumPositive = findSumPositiveNumbers(array);
         System.out.println("the sum of positive numbers:" + sumPositive);
 
-        //• count the number of negative numbers
+
         int countNegative = findCountNegativeNumbers(array);
         System.out.println("count the number of negative numbers:" + countNegative);
 
-        //• count the number of positive numbers
+
         int countPositive = findCountPositiveNumbers(array);
         System.out.println("count the number of positive numbers:" + countPositive);
 
-        //determine whether there are more negative or positive values in the array.
+
         morePosOrNeg(countNegative, countPositive);
 
 
