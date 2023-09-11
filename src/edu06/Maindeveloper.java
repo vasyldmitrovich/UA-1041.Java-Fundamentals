@@ -1,6 +1,6 @@
 package edu06;
 
-public class Maindeveloper {
+public class Main {
     public static void main(String[] args) {
         Developer developer1 = new Developer("Sergii", 20, 50000, "Junior  developer");
         Employee employee1 = new Employee("Helena", 46, 16000.50);
