@@ -10,6 +10,7 @@ class FullName implements Cloneable {
     public FullName(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+
     }
 
     public String getFirstName() {
