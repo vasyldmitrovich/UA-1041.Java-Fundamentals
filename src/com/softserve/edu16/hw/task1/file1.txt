@@ -1,0 +1,33 @@
+Andrii Kahamlyk
+Date of birth: 14.06.2023
+
+Objective:
+Dedicated and results-oriented software engineer without experience.
+
+Summary of Qualifications:
+- Proficient in Java and related technologies.
+- Extensive experience in front-end and back-end web development.
+- Excellent communication and interpersonal skills.
+
+Education:
+SoftServe Academy
+Ukraine Kyiv
+August 2023
+
+Relevant Courses:
+- Web Development
+- Data Structures and Algorithms
+- Software Engineering
+- Database Management
+
+Skills:
+Programming Languages: Java, Python, JavaScript
+Web Technologies: HTML, CSS, React, Node.js
+Database Management: SQL, MongoDB
+Tools & Frameworks: Git, Bootstrap, Express.js
+Problem-Solving: Algorithm design, debugging
+Operating Systems: Windows, Linux, macOS
+
+Languages:
+- English (Intermediate)
+- Ukrainian (Fluent)
