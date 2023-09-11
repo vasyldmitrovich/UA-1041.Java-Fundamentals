@@ -16,6 +16,7 @@ public class Student extends Person implements Cloneable {
         return courseNumber;
     }
 
+
     public void setCourseNumber(int courseNumber) {
         this.courseNumber = courseNumber;
     }
