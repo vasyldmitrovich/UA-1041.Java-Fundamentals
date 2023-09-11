@@ -1,7 +1,7 @@
 package edu06;
 
 public class Main {
-    public static void main(String[] args) {//Good
+    public static void main(String[] args) {
         Bird[] birds = {
                 new Dove("Dove1"),
                 new Swan("Swan1"),
