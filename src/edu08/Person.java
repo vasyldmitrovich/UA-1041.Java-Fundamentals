@@ -5,6 +5,7 @@ public abstract class Person {
     private int age;
 
     public Person() {
+
     }
 
     public Person(FullName fullName, int age) {
