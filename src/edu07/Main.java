@@ -1,52 +1,27 @@
 package edu07;
 
-public class ContractEmployee extends Employee{
-    private int hours;
-    private double fixedRate;
-    private String federalTaxIdMember;
+import java.util.Arrays;
+import java.util.Comparator;
 
-    public ContractEmployee() {
+public class Main {
+    public static void main(String[] args) {
+        Employee[] employees = {
+                new ContractEmployee("1", "Kateryna", 200, 150, "123456"),
+                new SalariedEmployee("2", "Leonid", 100000, "987654321"),
+                new ContractEmployee("3", "Arkadii", 350, 500, "876954321")
+        };
+        System.out.println("Before sort");
+        for (var el : employees
+        ) {
+            System.out.println(el);
 
-    }
+        }
+        System.out.println("After sort:");
+        Arrays.sort(employees, Comparator.comparing(Employee::calculatePay));
+        for (var el : employees
+        ) {
+            System.out.println(el);
 
-    public ContractEmployee(String employeeId, String name, int hours, double fixedRate, String federalTaxIdMember) {
-        super(employeeId, name);
-        this.hours = hours;
-        this.fixedRate = fixedRate;
-        this.federalTaxIdMember = federalTaxIdMember;
-    }
-
-    public int getHours() {
-        return hours;
-    }
-
-    public void setHours(int hours) {
-        this.hours = hours;
-    }
-
-    public double getFixedRate() {
-        return fixedRate;
-    }
-
-    public void setFixedRate(double fixedRate) {
-        this.fixedRate = fixedRate;
-    }
-
-    public String getFederalTaxIdMember() {
-        return federalTaxIdMember;
-    }
-
-    public void setFederalTaxIdMember(String federalTaxIdMember) {
-        this.federalTaxIdMember = federalTaxIdMember;
-    }
-
-    @Override
-    public double calculatePay() {
-        return hours * fixedRate;
-    }
-
-    @Override
-    public String toString() {
-        return "ContractEmployee{" + super.toString() + " " + calculatePay() + "uah}";
+        }
     }
 }

@@ -1,6 +1,6 @@
 package edu07;
 
-public class ContractEmployee extends Employee{
+class ContractEmployee extends Employee{
     private int hours;
     private double fixedRate;
     private String federalTaxIdMember;

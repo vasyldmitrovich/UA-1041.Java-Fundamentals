@@ -1,15 +1,15 @@
 package edu07;
 
-public class SalariedEmployee extends Employee{
+public class Salariedemployee extends Employee{
     private double fixedMonthlyPayment;
     private String socialSecurityNumber;
 
 
-    public SalariedEmployee() {
+    public Salariedemployee() {
     }
 
 
-    public SalariedEmployee(String employeeId, String name, double fixedMonthlyPayment, String socialSecurityNumber) {
+    public Salariedemployee(String employeeId, String name, double fixedMonthlyPayment, String socialSecurityNumber) {
         super(employeeId, name);
         this.fixedMonthlyPayment = fixedMonthlyPayment;
         this.socialSecurityNumber = socialSecurityNumber;
