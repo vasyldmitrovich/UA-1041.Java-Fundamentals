@@ -47,7 +47,7 @@ abstract class Person {
     String info() {
         String msg = "First name: " + fullName.getFirstName() + ", Last name: " +
                 fullName.getLastName() + ", Age: " + age;
-return msg;
+        return msg;
     }
 
     public FullName getFullName() {
