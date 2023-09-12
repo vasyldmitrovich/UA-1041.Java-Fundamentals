@@ -1,0 +1,4 @@
+Number of lines in file1.txt: 21
+Longest line in file1.txt: And so, in this city of dreams and aspirations, life continued its relentless march forward, one moment at a time, one story at a time, weaving the tapestry of existence.
+My name: Ivan Holotsvan
+Birthday: December 21, 2004
