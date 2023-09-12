@@ -1,10 +1,8 @@
-package com.softserve.edu16_IO.hw.task_1;
+package com.softserve.edu16.hw.task_1;
 
-import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.StandardOpenOption;
 import java.util.Comparator;
 import java.util.List;
 

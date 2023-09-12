@@ -1,4 +1,4 @@
-package com.softserve.quizs;
+package com.softserve.quizes;
 
 public class Class2 extends Class1{
 private int x=10;

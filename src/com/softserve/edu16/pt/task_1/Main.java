@@ -1,4 +1,4 @@
-package com.softserve.edu16_IO.pt.task_1;
+package com.softserve.edu16.pt.task_1;
 
 import java.io.IOException;
 import java.nio.file.Files;

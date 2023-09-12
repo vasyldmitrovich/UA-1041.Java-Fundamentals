@@ -1,4 +1,4 @@
-package com.softserve.quizs;
+package com.softserve.quizes;
 
 class Student{
     int name;

@@ -1,12 +1,9 @@
-package com.softserve.quizs;
+package com.softserve.quizes;
 
 import java.io.*;
 import java.time.LocalDate;
-import java.time.temporal.TemporalAccessor;
 import java.time.temporal.TemporalAdjusters;
 import java.util.*;
-import java.util.function.Consumer;
-import java.util.stream.Stream;
 
 public class MyC1ass implements Serializable {
     public enum TrafficLights {

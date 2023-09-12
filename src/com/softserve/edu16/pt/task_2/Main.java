@@ -1,9 +1,8 @@
-package com.softserve.edu16_IO.pt.task_2;
+package com.softserve.edu16.pt.task_2;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 

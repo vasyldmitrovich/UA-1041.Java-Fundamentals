@@ -1,4 +1,4 @@
-package com.softserve.quizs;
+package com.softserve.quizes;
 
 public class C3 extends Class2{
     @Override
