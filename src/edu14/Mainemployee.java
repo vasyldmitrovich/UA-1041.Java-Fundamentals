@@ -15,10 +15,10 @@ public class Mainemployee {
     public class Main {
         public static void main(String[] args) {
             Stream<Employee> employees = Stream.of(
-                    new Employee("Bob", 18),
-                    new Employee("Din", 25),
-                    new Employee("Sam", 12),
-                    new Employee("Sam", 47)
+                    new Employee("Lola", 20),
+                    new Employee("Mira", 29),
+                    new Employee("Jack", 32),
+                    new Employee("Joe", 55)
             );
             System.out.println("most popular name: "+mostPopularName(employees).get());
         }
