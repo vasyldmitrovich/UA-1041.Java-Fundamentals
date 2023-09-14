@@ -1,0 +1,21 @@
+Prepare mytext.txt file with a lot of text inside.
+Read context from file into array of strings.
+Each array item contains one line from file.
+Complete next tasks:
+1) count and write the number of symbols in every line.
+2) find the longest and the shortest line.
+3) find and write only that lines, which consist of word «var»
+2. Prepare a file with text:
+1) find and output to the console all words starting with a vowel.
+2) find and output to the console all words for which the last letter of one word
+matches the first letter of the next word.
+1. Create file1.txt file with a text about your career.
+Read context from file into array of strings. Each array item contains one line from file.
+Write in to the file2.txt
+1) number of lines in file1.txt.
+2) the longest line in file1.txt.
+3) your name and birthday date.
+A file with java code is given. Read program text from file and all words public in the
+declaration of class attributes and methods should be replaced with the word private.
+Save the result to another previously created file. nfiuii ivfsvknd
+Ameba folllllvarsdcs ofgerwnovjnwrovnewrovnowren fdolbvkmq fkn kmn var

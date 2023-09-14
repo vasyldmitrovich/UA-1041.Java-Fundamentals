@@ -1,0 +1,6 @@
+number of lines:
+21
+number of max length lines:
+90
+birthday:
+name=Dmytro, birthday=27.06.2005

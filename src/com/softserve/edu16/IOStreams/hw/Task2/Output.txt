@@ -1,0 +1,25 @@
+
+
+abstract private class Bird {
+    private String feathers;
+    private int layEggs;
+    abstract void fly();
+
+    private abstract void type();
+
+    private String getFeathers() {
+        return feathers;
+    }
+
+    private void setFeathers(String feathers) {
+        this.feathers = feathers;
+    }
+
+    private int getLayEggs() {
+        return layEggs;
+    }
+
+    private void setLayEggs(int layEggs) {
+        this.layEggs = layEggs;
+    }
+}
