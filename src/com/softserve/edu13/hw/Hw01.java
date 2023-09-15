@@ -1,15 +1,10 @@
 package com.softserve.edu13.hw;
 
 public class Hw01 {
-    private static final String TEXT = "xyzabcdefghijklmnopqrstuvwxyz";
+    private static final int ALPHABET_SIZE = 26;
 
-    private static char shift(char symbol, int position) {
-        var ix = TEXT.indexOf(symbol);
-        if (ix != -1) {
-            return TEXT.charAt((ix + position) % TEXT.length());
-        } else {
-            return symbol;
-        }
+    private static char shift(char ch, int position) {
+        return (char) ((ch - 'a' + position + 100 * ALPHABET_SIZE) % ALPHABET_SIZE + 'a');
     }
 
     private static String encrypt(String string, int position) {
@@ -30,7 +25,7 @@ public class Hw01 {
     }
 
     public static void main(String[] args) {
-        String string = "abc";
+        String string = "xyzabc";
         int position = 3;
 
         var codedString = encrypt(string, position);
