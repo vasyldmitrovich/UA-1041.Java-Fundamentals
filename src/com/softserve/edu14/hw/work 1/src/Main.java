@@ -30,10 +30,10 @@ public class Main {
         }
 
         List<Product> filteredProducts = products.stream()
+                .distinct()
                 .filter(product -> product.getCategory().equals("Phone"))
                 .filter(product -> product.getPrice() > 3000)
                 .filter(product -> product.getDateOfManufacture().isBefore(LocalDate.now().minusYears(1)))
-                .distinct()
                 .sorted(Comparator.comparingDouble(Product::getPrice))
                 .collect(Collectors.toList());
 
