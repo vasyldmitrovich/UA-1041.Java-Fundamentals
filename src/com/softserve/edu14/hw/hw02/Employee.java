@@ -36,7 +36,7 @@ public class Employee {
     }
 
 
-    static Optional<String> mostPopularName(Stream<Employee> employees) {
+    public static Optional<String> mostPopularName(Stream<Employee> employees) {
         return employees
                 .collect(groupingBy(Employee::getName, counting()))
                 .entrySet()
