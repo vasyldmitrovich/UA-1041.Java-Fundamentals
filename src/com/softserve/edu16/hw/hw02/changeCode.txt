@@ -1,0 +1,38 @@
+﻿package com.softserve.edu08.hw;
+
+
+private abstract class Person {
+    private FullName fullName;
+    private int age;
+
+    private Person() {
+    }
+
+    private Person(FullName fullName, int age) {
+        this.fullName = fullName;
+        this.age = age;
+    }
+
+    private FullName getFullName() {
+        return fullName;
+    }
+
+    private void setFullName(FullName fullName) {
+        this.fullName = fullName;
+    }
+
+    private int getAge() {
+        return age;
+    }
+
+    private void setAge(int age) {
+        this.age = age;
+    }
+
+    private String info() {
+        return "First name: " + fullName.getFirstName() + ", Last name: " + fullName.getLastName() + ", Age: " + getAge();
+    }
+
+    abstract private String activity();
+
+}
