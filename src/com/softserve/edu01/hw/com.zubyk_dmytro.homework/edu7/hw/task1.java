@@ -1,52 +1,6 @@
 package edu7.hw;
 import java.util.*;
 
-interface Payment {
-    double calculatePay();
-}
-
-abstract class Employee {
-    String employeeId;
-
-    public Employee(String employeeId) {
-        this.employeeId = employeeId;
-    }
-}
-
-class SalariedEmployee extends Employee implements Payment {
-    private String socialSecurityNumber;
-    private double fixedMonthlyPayment;
-
-    public SalariedEmployee(String employeeId, String socialSecurityNumber, double fixedMonthlyPayment) {
-        super(employeeId);
-        this.socialSecurityNumber = socialSecurityNumber;
-        this.fixedMonthlyPayment = fixedMonthlyPayment;
-    }
-
-    @Override
-    public double calculatePay() {
-        return fixedMonthlyPayment;
-    }
-}
-
-class ContractEmployee extends Employee implements Payment {
-    private String federalTaxId;
-    private double hourlyRate;
-    private int hoursWorked;
-
-    public ContractEmployee(String employeeId, String federalTaxId, double hourlyRate, int hoursWorked) {
-        super(employeeId);
-        this.federalTaxId = federalTaxId;
-        this.hourlyRate = hourlyRate;
-        this.hoursWorked = hoursWorked;
-    }
-
-    @Override
-    public double calculatePay() {
-        return hourlyRate * hoursWorked;
-    }
-}
-
 public class task1 {
     public static void main(String[] args) {
         List<Payment> employees = new ArrayList<>();

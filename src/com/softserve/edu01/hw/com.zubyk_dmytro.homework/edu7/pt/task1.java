@@ -1,38 +1,5 @@
 package edu7.pt;
 
-// Interface Animal
-interface Animal {
-    void voice();
-
-    void feed();
-}
-
-// Class Cat implementing Animal
-class Cat implements Animal {
-    @Override
-    public void voice() {
-        System.out.println("Cat says: Meow!");
-    }
-
-    @Override
-    public void feed() {
-        System.out.println("Cat is eating.");
-    }
-}
-
-// Class Dog implementing Animal
-class Dog implements Animal {
-    @Override
-    public void voice() {
-        System.out.println("Dog says: Woof!");
-    }
-
-    @Override
-    public void feed() {
-        System.out.println("Dog is eating.");
-    }
-}
-
 public class task1 {
     public static void main(String[] args) {
         // Create an array of Animal objects
