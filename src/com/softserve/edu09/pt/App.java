@@ -17,12 +17,9 @@ public class App {
         boxes.add(new HeavyBox(3, "Bun"));
         boxes.add(new HeavyBox(5, "Gingerbread"));
 
-        //in the task we do the same loop twice, how can it be added to the loop?
-        //    public void printResult() {
         for (var box : boxes) {
             System.out.println(box);
         }
-        //  }
 
         boxes.get(0).setWeight(1);
 

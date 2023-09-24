@@ -24,7 +24,7 @@ public class Student {
         students.add(new Student("Dave",3));
         students.add(new Student("Dan",2));
         students.add(new Student("Bob",3));
-        students.add(new Student("Brian",4));
+        students.add(new Student("Brian",2));
         students.add(new Student("Brian",3));
         return students;
     }

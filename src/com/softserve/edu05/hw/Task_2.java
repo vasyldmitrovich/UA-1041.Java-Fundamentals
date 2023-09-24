@@ -16,8 +16,6 @@ public class Task_2 {
             sum += number;
             count++;
         } while (count < 2);
-        //   System.out.println("Sum of your numbers is " + sum +".\n");
-
         do {
             System.out.println("Do you want to perform the operation again?\n" +
                     "Please input 'yes' or 'no'.");
