@@ -8,8 +8,6 @@ public class Task_2 {
     public static int readNumber(int start, int end) {
         System.out.print("Enter the number: ");
         int num = Integer.parseInt(SCANNER.nextLine());
-    //    start = 1;
-      //  end = 100;
         if (num < start || num > end) {
             System.out.println("Out of range.");
         }
