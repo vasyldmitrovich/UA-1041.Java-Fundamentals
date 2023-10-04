@@ -19,6 +19,5 @@ public class Main {
         }
         System.out.println("There are character " + character + " "
                 + countCharacters + " times in the word " + testWord);
-
     }
 }
