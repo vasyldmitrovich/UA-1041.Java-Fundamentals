@@ -1,0 +1,4 @@
+1) Number of lines in file1.txt: 3
+2) The longest line in file1.txt: I have been studying in the IT industry for 1 year.
+3) Name: Maryna Osypova
+Birthday: August 4, 2005
